@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.br.refactoring.dsl/src"
+    modelPluginID="com.br.refactoring.dsl" modelName="Refactoring" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>refactoring.ecore</foreignModel>
+  <genPackages prefix="Refactoring" basePackage="com.br.refactoring.dsl" disposableProviderFactory="true"
+      ecorePackage="refactoring.ecore#/">
+    <genClasses ecoreClass="refactoring.ecore#//Model">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Model/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//Model/contains"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//Model/imports"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="refactoring.ecore#//Type"/>
+    <genClasses ecoreClass="refactoring.ecore#//Class">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Class/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="refactoring.ecore#//Refactoring"/>
+    <genClasses ecoreClass="refactoring.ecore#//RenameFeature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameFeature/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameFeature/allRefactorings"/>
+    </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//RenameClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameClass/newName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameClass/classToBeRename"/>
+    </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//Import">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Import/importURI"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
