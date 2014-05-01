@@ -15,6 +15,7 @@
     <genClasses image="false" ecoreClass="refactoring.ecore#//Type"/>
     <genClasses ecoreClass="refactoring.ecore#//Class">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Class/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//Class/codeElements"/>
     </genClasses>
     <genClasses image="false" ecoreClass="refactoring.ecore#//Refactoring"/>
     <genClasses ecoreClass="refactoring.ecore#//RenameFeature">
@@ -27,6 +28,14 @@
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//Import">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Import/importURI"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="refactoring.ecore#//CodeItem"/>
+    <genClasses ecoreClass="refactoring.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Attribute/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Attribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//Method">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Method/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

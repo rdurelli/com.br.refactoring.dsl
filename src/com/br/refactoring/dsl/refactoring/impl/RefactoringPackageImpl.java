@@ -6,7 +6,10 @@
  */
 package com.br.refactoring.dsl.refactoring.impl;
 
+import com.br.refactoring.dsl.refactoring.Attribute;
+import com.br.refactoring.dsl.refactoring.CodeItem;
 import com.br.refactoring.dsl.refactoring.Import;
+import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
@@ -77,6 +80,27 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * @generated
 	 */
 	private EClass importEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass codeItemEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass attributeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass methodEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -207,6 +231,15 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getClass_CodeElements() {
+		return (EReference)classEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getRefactoring() {
 		return refactoringEClass;
 	}
@@ -288,6 +321,60 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getCodeItem() {
+		return codeItemEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAttribute() {
+		return attributeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttribute_Name() {
+		return (EAttribute)attributeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttribute_Type() {
+		return (EAttribute)attributeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMethod() {
+		return methodEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMethod_Name() {
+		return (EAttribute)methodEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RefactoringFactory getRefactoringFactory() {
 		return (RefactoringFactory)getEFactoryInstance();
 	}
@@ -320,6 +407,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 
 		classEClass = createEClass(CLASS);
 		createEAttribute(classEClass, CLASS__NAME);
+		createEReference(classEClass, CLASS__CODE_ELEMENTS);
 
 		refactoringEClass = createEClass(REFACTORING);
 
@@ -333,6 +421,15 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 
 		importEClass = createEClass(IMPORT);
 		createEAttribute(importEClass, IMPORT__IMPORT_URI);
+
+		codeItemEClass = createEClass(CODE_ITEM);
+
+		attributeEClass = createEClass(ATTRIBUTE);
+		createEAttribute(attributeEClass, ATTRIBUTE__NAME);
+		createEAttribute(attributeEClass, ATTRIBUTE__TYPE);
+
+		methodEClass = createEClass(METHOD);
+		createEAttribute(methodEClass, METHOD__NAME);
 	}
 
 	/**
@@ -367,6 +464,8 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		refactoringEClass.getESuperTypes().add(this.getType());
 		renameFeatureEClass.getESuperTypes().add(this.getRefactoring());
 		renameClassEClass.getESuperTypes().add(this.getRenameFeature());
+		attributeEClass.getESuperTypes().add(this.getCodeItem());
+		methodEClass.getESuperTypes().add(this.getCodeItem());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -378,6 +477,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 
 		initEClass(classEClass, com.br.refactoring.dsl.refactoring.Class.class, "Class", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getClass_Name(), ecorePackage.getEString(), "name", null, 0, 1, com.br.refactoring.dsl.refactoring.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClass_CodeElements(), this.getCodeItem(), null, "codeElements", null, 0, -1, com.br.refactoring.dsl.refactoring.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(refactoringEClass, Refactoring.class, "Refactoring", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -391,6 +491,15 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 
 		initEClass(importEClass, Import.class, "Import", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getImport_ImportURI(), ecorePackage.getEString(), "importURI", null, 0, 1, Import.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(codeItemEClass, CodeItem.class, "CodeItem", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAttribute_Name(), ecorePackage.getEString(), "name", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttribute_Type(), ecorePackage.getEString(), "type", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(methodEClass, Method.class, "Method", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMethod_Name(), ecorePackage.getEString(), "name", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

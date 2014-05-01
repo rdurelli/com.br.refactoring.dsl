@@ -6,36 +6,29 @@
  */
 package com.br.refactoring.dsl.refactoring.impl;
 
-import com.br.refactoring.dsl.refactoring.CodeItem;
+import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 
-import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Class</b></em>'.
+ * An implementation of the model object '<em><b>Method</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ClassImpl#getName <em>Name</em>}</li>
- *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ClassImpl#getCodeElements <em>Code Elements</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MethodImpl#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class ClassImpl extends TypeImpl implements com.br.refactoring.dsl.refactoring.Class {
+public class MethodImpl extends CodeItemImpl implements Method {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -57,21 +50,11 @@ public class ClassImpl extends TypeImpl implements com.br.refactoring.dsl.refact
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getCodeElements() <em>Code Elements</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCodeElements()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<CodeItem> codeElements;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ClassImpl() {
+	protected MethodImpl() {
 		super();
 	}
 
@@ -82,7 +65,7 @@ public class ClassImpl extends TypeImpl implements com.br.refactoring.dsl.refact
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RefactoringPackage.Literals.CLASS;
+		return RefactoringPackage.Literals.METHOD;
 	}
 
 	/**
@@ -103,33 +86,7 @@ public class ClassImpl extends TypeImpl implements com.br.refactoring.dsl.refact
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RefactoringPackage.CLASS__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<CodeItem> getCodeElements() {
-		if (codeElements == null) {
-			codeElements = new EObjectContainmentEList<CodeItem>(CodeItem.class, this, RefactoringPackage.CLASS__CODE_ELEMENTS);
-		}
-		return codeElements;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case RefactoringPackage.CLASS__CODE_ELEMENTS:
-				return ((InternalEList<?>)getCodeElements()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+			eNotify(new ENotificationImpl(this, Notification.SET, RefactoringPackage.METHOD__NAME, oldName, name));
 	}
 
 	/**
@@ -140,10 +97,8 @@ public class ClassImpl extends TypeImpl implements com.br.refactoring.dsl.refact
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case RefactoringPackage.CLASS__NAME:
+			case RefactoringPackage.METHOD__NAME:
 				return getName();
-			case RefactoringPackage.CLASS__CODE_ELEMENTS:
-				return getCodeElements();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -153,16 +108,11 @@ public class ClassImpl extends TypeImpl implements com.br.refactoring.dsl.refact
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case RefactoringPackage.CLASS__NAME:
+			case RefactoringPackage.METHOD__NAME:
 				setName((String)newValue);
-				return;
-			case RefactoringPackage.CLASS__CODE_ELEMENTS:
-				getCodeElements().clear();
-				getCodeElements().addAll((Collection<? extends CodeItem>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -176,11 +126,8 @@ public class ClassImpl extends TypeImpl implements com.br.refactoring.dsl.refact
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case RefactoringPackage.CLASS__NAME:
+			case RefactoringPackage.METHOD__NAME:
 				setName(NAME_EDEFAULT);
-				return;
-			case RefactoringPackage.CLASS__CODE_ELEMENTS:
-				getCodeElements().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -194,10 +141,8 @@ public class ClassImpl extends TypeImpl implements com.br.refactoring.dsl.refact
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case RefactoringPackage.CLASS__NAME:
+			case RefactoringPackage.METHOD__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case RefactoringPackage.CLASS__CODE_ELEMENTS:
-				return codeElements != null && !codeElements.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -218,4 +163,4 @@ public class ClassImpl extends TypeImpl implements com.br.refactoring.dsl.refact
 		return result.toString();
 	}
 
-} //ClassImpl
+} //MethodImpl

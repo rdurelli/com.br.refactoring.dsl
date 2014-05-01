@@ -71,6 +71,24 @@ public interface RefactoringFactory extends EFactory {
 	Import createImport();
 
 	/**
+	 * Returns a new object of class '<em>Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attribute</em>'.
+	 * @generated
+	 */
+	Attribute createAttribute();
+
+	/**
+	 * Returns a new object of class '<em>Method</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Method</em>'.
+	 * @generated
+	 */
+	Method createMethod();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

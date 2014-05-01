@@ -6,7 +6,10 @@
  */
 package com.br.refactoring.dsl.refactoring.util;
 
+import com.br.refactoring.dsl.refactoring.Attribute;
+import com.br.refactoring.dsl.refactoring.CodeItem;
 import com.br.refactoring.dsl.refactoring.Import;
+import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -104,6 +107,18 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseImport(Import object) {
 				return createImportAdapter();
+			}
+			@Override
+			public Adapter caseCodeItem(CodeItem object) {
+				return createCodeItemAdapter();
+			}
+			@Override
+			public Adapter caseAttribute(Attribute object) {
+				return createAttributeAdapter();
+			}
+			@Override
+			public Adapter caseMethod(Method object) {
+				return createMethodAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -220,6 +235,48 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createImportAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.CodeItem <em>Code Item</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.CodeItem
+	 * @generated
+	 */
+	public Adapter createCodeItemAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.Attribute <em>Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.Attribute
+	 * @generated
+	 */
+	public Adapter createAttributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.Method <em>Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.Method
+	 * @generated
+	 */
+	public Adapter createMethodAdapter() {
 		return null;
 	}
 

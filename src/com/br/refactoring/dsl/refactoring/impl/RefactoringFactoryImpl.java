@@ -6,7 +6,9 @@
  */
 package com.br.refactoring.dsl.refactoring.impl;
 
+import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.Import;
+import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -70,6 +72,8 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.RENAME_FEATURE: return createRenameFeature();
 			case RefactoringPackage.RENAME_CLASS: return createRenameClass();
 			case RefactoringPackage.IMPORT: return createImport();
+			case RefactoringPackage.ATTRIBUTE: return createAttribute();
+			case RefactoringPackage.METHOD: return createMethod();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -123,6 +127,26 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public Import createImport() {
 		ImportImpl import_ = new ImportImpl();
 		return import_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attribute createAttribute() {
+		AttributeImpl attribute = new AttributeImpl();
+		return attribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Method createMethod() {
+		MethodImpl method = new MethodImpl();
+		return method;
 	}
 
 	/**

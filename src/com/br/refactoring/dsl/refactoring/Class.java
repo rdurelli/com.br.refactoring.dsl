@@ -6,6 +6,8 @@
  */
 package com.br.refactoring.dsl.refactoring;
 
+import org.eclipse.emf.common.util.EList;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -16,6 +18,7 @@ package com.br.refactoring.dsl.refactoring;
  * The following features are supported:
  * <ul>
  *   <li>{@link com.br.refactoring.dsl.refactoring.Class#getName <em>Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.Class#getCodeElements <em>Code Elements</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,5 +52,21 @@ public interface Class extends Type {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Code Elements</b></em>' containment reference list.
+	 * The list contents are of type {@link com.br.refactoring.dsl.refactoring.CodeItem}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Code Elements</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Code Elements</em>' containment reference list.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getClass_CodeElements()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<CodeItem> getCodeElements();
 
 } // Class

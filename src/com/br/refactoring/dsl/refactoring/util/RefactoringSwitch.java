@@ -6,7 +6,10 @@
  */
 package com.br.refactoring.dsl.refactoring.util;
 
+import com.br.refactoring.dsl.refactoring.Attribute;
+import com.br.refactoring.dsl.refactoring.CodeItem;
 import com.br.refactoring.dsl.refactoring.Import;
+import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -125,6 +128,26 @@ public class RefactoringSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case RefactoringPackage.CODE_ITEM: {
+				CodeItem codeItem = (CodeItem)theEObject;
+				T result = caseCodeItem(codeItem);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.ATTRIBUTE: {
+				Attribute attribute = (Attribute)theEObject;
+				T result = caseAttribute(attribute);
+				if (result == null) result = caseCodeItem(attribute);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.METHOD: {
+				Method method = (Method)theEObject;
+				T result = caseMethod(method);
+				if (result == null) result = caseCodeItem(method);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -231,6 +254,51 @@ public class RefactoringSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseImport(Import object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Code Item</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Code Item</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCodeItem(CodeItem object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Attribute</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAttribute(Attribute object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Method</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Method</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMethod(Method object) {
 		return null;
 	}
 

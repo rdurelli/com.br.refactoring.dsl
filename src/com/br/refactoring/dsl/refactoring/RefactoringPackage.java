@@ -144,13 +144,22 @@ public interface RefactoringPackage extends EPackage {
 	int CLASS__NAME = TYPE_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Code Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__CODE_ELEMENTS = TYPE_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_FEATURE_COUNT = TYPE_FEATURE_COUNT + 1;
+	int CLASS_FEATURE_COUNT = TYPE_FEATURE_COUNT + 2;
 
 
 	/**
@@ -295,6 +304,91 @@ public interface RefactoringPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.CodeItemImpl <em>Code Item</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.CodeItemImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getCodeItem()
+	 * @generated
+	 */
+	int CODE_ITEM = 7;
+
+	/**
+	 * The number of structural features of the '<em>Code Item</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CODE_ITEM_FEATURE_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.AttributeImpl <em>Attribute</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.AttributeImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getAttribute()
+	 * @generated
+	 */
+	int ATTRIBUTE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__NAME = CODE_ITEM_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__TYPE = CODE_ITEM_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_FEATURE_COUNT = CODE_ITEM_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.MethodImpl <em>Method</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.MethodImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getMethod()
+	 * @generated
+	 */
+	int METHOD = 9;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD__NAME = CODE_ITEM_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Method</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_FEATURE_COUNT = CODE_ITEM_FEATURE_COUNT + 1;
+
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Model <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -367,6 +461,17 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getClass_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.br.refactoring.dsl.refactoring.Class#getCodeElements <em>Code Elements</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Code Elements</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.Class#getCodeElements()
+	 * @see #getClass_()
+	 * @generated
+	 */
+	EReference getClass_CodeElements();
 
 	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Refactoring <em>Refactoring</em>}'.
@@ -464,6 +569,69 @@ public interface RefactoringPackage extends EPackage {
 	EAttribute getImport_ImportURI();
 
 	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.CodeItem <em>Code Item</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Code Item</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.CodeItem
+	 * @generated
+	 */
+	EClass getCodeItem();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Attribute <em>Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Attribute</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.Attribute
+	 * @generated
+	 */
+	EClass getAttribute();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.Attribute#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.Attribute#getName()
+	 * @see #getAttribute()
+	 * @generated
+	 */
+	EAttribute getAttribute_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.Attribute#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.Attribute#getType()
+	 * @see #getAttribute()
+	 * @generated
+	 */
+	EAttribute getAttribute_Type();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Method <em>Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Method</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.Method
+	 * @generated
+	 */
+	EClass getMethod();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.Method#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.Method#getName()
+	 * @see #getMethod()
+	 * @generated
+	 */
+	EAttribute getMethod_Name();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -548,6 +716,14 @@ public interface RefactoringPackage extends EPackage {
 		EAttribute CLASS__NAME = eINSTANCE.getClass_Name();
 
 		/**
+		 * The meta object literal for the '<em><b>Code Elements</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS__CODE_ELEMENTS = eINSTANCE.getClass_CodeElements();
+
+		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.RefactoringImpl <em>Refactoring</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -626,6 +802,60 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute IMPORT__IMPORT_URI = eINSTANCE.getImport_ImportURI();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.CodeItemImpl <em>Code Item</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.CodeItemImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getCodeItem()
+		 * @generated
+		 */
+		EClass CODE_ITEM = eINSTANCE.getCodeItem();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.AttributeImpl <em>Attribute</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.AttributeImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getAttribute()
+		 * @generated
+		 */
+		EClass ATTRIBUTE = eINSTANCE.getAttribute();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE__NAME = eINSTANCE.getAttribute_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE__TYPE = eINSTANCE.getAttribute_Type();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.MethodImpl <em>Method</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.MethodImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getMethod()
+		 * @generated
+		 */
+		EClass METHOD = eINSTANCE.getMethod();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD__NAME = eINSTANCE.getMethod_Name();
 
 	}
 
