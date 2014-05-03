@@ -7,14 +7,20 @@
 package com.br.refactoring.dsl.refactoring.impl;
 
 import com.br.refactoring.dsl.refactoring.Attribute;
+import com.br.refactoring.dsl.refactoring.BasicType;
+import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
+import com.br.refactoring.dsl.refactoring.MoveAttribute;
+import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
-
+import com.br.refactoring.dsl.refactoring.RenameAttribute;
 import com.br.refactoring.dsl.refactoring.RenameClass;
 import com.br.refactoring.dsl.refactoring.RenameFeature;
+
+import com.br.refactoring.dsl.refactoring.RenameMethod;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -74,6 +80,12 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.IMPORT: return createImport();
 			case RefactoringPackage.ATTRIBUTE: return createAttribute();
 			case RefactoringPackage.METHOD: return createMethod();
+			case RefactoringPackage.BASIC_TYPE: return createBasicType();
+			case RefactoringPackage.CLASS_TYPE: return createClassType();
+			case RefactoringPackage.RENAME_ATTRIBUTE: return createRenameAttribute();
+			case RefactoringPackage.RENAME_METHOD: return createRenameMethod();
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS: return createMovingFeaturesBetweenObjects();
+			case RefactoringPackage.MOVE_ATTRIBUTE: return createMoveAttribute();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -147,6 +159,66 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public Method createMethod() {
 		MethodImpl method = new MethodImpl();
 		return method;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BasicType createBasicType() {
+		BasicTypeImpl basicType = new BasicTypeImpl();
+		return basicType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassType createClassType() {
+		ClassTypeImpl classType = new ClassTypeImpl();
+		return classType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RenameAttribute createRenameAttribute() {
+		RenameAttributeImpl renameAttribute = new RenameAttributeImpl();
+		return renameAttribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RenameMethod createRenameMethod() {
+		RenameMethodImpl renameMethod = new RenameMethodImpl();
+		return renameMethod;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MovingFeaturesBetweenObjects createMovingFeaturesBetweenObjects() {
+		MovingFeaturesBetweenObjectsImpl movingFeaturesBetweenObjects = new MovingFeaturesBetweenObjectsImpl();
+		return movingFeaturesBetweenObjects;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MoveAttribute createMoveAttribute() {
+		MoveAttributeImpl moveAttribute = new MoveAttributeImpl();
+		return moveAttribute;
 	}
 
 	/**

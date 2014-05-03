@@ -7,14 +7,20 @@
 package com.br.refactoring.dsl.refactoring.util;
 
 import com.br.refactoring.dsl.refactoring.Attribute;
-import com.br.refactoring.dsl.refactoring.CodeItem;
+import com.br.refactoring.dsl.refactoring.BasicType;
+import com.br.refactoring.dsl.refactoring.ClassType;
+import com.br.refactoring.dsl.refactoring.ElementType;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
+import com.br.refactoring.dsl.refactoring.MoveAttribute;
+import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
+import com.br.refactoring.dsl.refactoring.RenameAttribute;
 import com.br.refactoring.dsl.refactoring.RenameClass;
 import com.br.refactoring.dsl.refactoring.RenameFeature;
+import com.br.refactoring.dsl.refactoring.RenameMethod;
 import com.br.refactoring.dsl.refactoring.Type;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -109,16 +115,40 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 				return createImportAdapter();
 			}
 			@Override
-			public Adapter caseCodeItem(CodeItem object) {
-				return createCodeItemAdapter();
-			}
-			@Override
 			public Adapter caseAttribute(Attribute object) {
 				return createAttributeAdapter();
 			}
 			@Override
 			public Adapter caseMethod(Method object) {
 				return createMethodAdapter();
+			}
+			@Override
+			public Adapter caseElementType(ElementType object) {
+				return createElementTypeAdapter();
+			}
+			@Override
+			public Adapter caseBasicType(BasicType object) {
+				return createBasicTypeAdapter();
+			}
+			@Override
+			public Adapter caseClassType(ClassType object) {
+				return createClassTypeAdapter();
+			}
+			@Override
+			public Adapter caseRenameAttribute(RenameAttribute object) {
+				return createRenameAttributeAdapter();
+			}
+			@Override
+			public Adapter caseRenameMethod(RenameMethod object) {
+				return createRenameMethodAdapter();
+			}
+			@Override
+			public Adapter caseMovingFeaturesBetweenObjects(MovingFeaturesBetweenObjects object) {
+				return createMovingFeaturesBetweenObjectsAdapter();
+			}
+			@Override
+			public Adapter caseMoveAttribute(MoveAttribute object) {
+				return createMoveAttributeAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -239,20 +269,6 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.CodeItem <em>Code Item</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see com.br.refactoring.dsl.refactoring.CodeItem
-	 * @generated
-	 */
-	public Adapter createCodeItemAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.Attribute <em>Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -277,6 +293,104 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMethodAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.ElementType <em>Element Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.ElementType
+	 * @generated
+	 */
+	public Adapter createElementTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.BasicType <em>Basic Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.BasicType
+	 * @generated
+	 */
+	public Adapter createBasicTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.ClassType <em>Class Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.ClassType
+	 * @generated
+	 */
+	public Adapter createClassTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.RenameAttribute <em>Rename Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.RenameAttribute
+	 * @generated
+	 */
+	public Adapter createRenameAttributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.RenameMethod <em>Rename Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.RenameMethod
+	 * @generated
+	 */
+	public Adapter createRenameMethodAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects <em>Moving Features Between Objects</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects
+	 * @generated
+	 */
+	public Adapter createMovingFeaturesBetweenObjectsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.MoveAttribute <em>Move Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.MoveAttribute
+	 * @generated
+	 */
+	public Adapter createMoveAttributeAdapter() {
 		return null;
 	}
 

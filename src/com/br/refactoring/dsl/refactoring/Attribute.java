@@ -6,6 +6,7 @@
  */
 package com.br.refactoring.dsl.refactoring;
 
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -16,7 +17,7 @@ package com.br.refactoring.dsl.refactoring;
  * The following features are supported:
  * <ul>
  *   <li>{@link com.br.refactoring.dsl.refactoring.Attribute#getName <em>Name</em>}</li>
- *   <li>{@link com.br.refactoring.dsl.refactoring.Attribute#getType <em>Type</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.Attribute#getElementType <em>Element Type</em>}</li>
  * </ul>
  * </p>
  *
@@ -24,7 +25,7 @@ package com.br.refactoring.dsl.refactoring;
  * @model
  * @generated
  */
-public interface Attribute extends CodeItem {
+public interface Attribute extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -52,29 +53,29 @@ public interface Attribute extends CodeItem {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Type</b></em>' attribute.
+	 * Returns the value of the '<em><b>Element Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Element Type</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see #setType(String)
-	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getAttribute_Type()
-	 * @model
+	 * @return the value of the '<em>Element Type</em>' containment reference.
+	 * @see #setElementType(ElementType)
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getAttribute_ElementType()
+	 * @model containment="true"
 	 * @generated
 	 */
-	String getType();
+	ElementType getElementType();
 
 	/**
-	 * Sets the value of the '{@link com.br.refactoring.dsl.refactoring.Attribute#getType <em>Type</em>}' attribute.
+	 * Sets the value of the '{@link com.br.refactoring.dsl.refactoring.Attribute#getElementType <em>Element Type</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see #getType()
+	 * @param value the new value of the '<em>Element Type</em>' containment reference.
+	 * @see #getElementType()
 	 * @generated
 	 */
-	void setType(String value);
+	void setElementType(ElementType value);
 
 } // Attribute

@@ -10,22 +10,22 @@ import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Rename Feature</b></em>'.
+ * A representation of the model object '<em><b>Moving Features Between Objects</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link com.br.refactoring.dsl.refactoring.RenameFeature#getName <em>Name</em>}</li>
- *   <li>{@link com.br.refactoring.dsl.refactoring.RenameFeature#getAllRefactorings <em>All Refactorings</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects#getName <em>Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects#getAllRefactorings <em>All Refactorings</em>}</li>
  * </ul>
  * </p>
  *
- * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getRenameFeature()
+ * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getMovingFeaturesBetweenObjects()
  * @model
  * @generated
  */
-public interface RenameFeature extends Refactoring {
+public interface MovingFeaturesBetweenObjects extends Refactoring {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -36,14 +36,14 @@ public interface RenameFeature extends Refactoring {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getRenameFeature_Name()
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getMovingFeaturesBetweenObjects_Name()
 	 * @model
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link com.br.refactoring.dsl.refactoring.RenameFeature#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -54,7 +54,7 @@ public interface RenameFeature extends Refactoring {
 
 	/**
 	 * Returns the value of the '<em><b>All Refactorings</b></em>' containment reference list.
-	 * The list contents are of type {@link com.br.refactoring.dsl.refactoring.RenameFeature}.
+	 * The list contents are of type {@link com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>All Refactorings</em>' containment reference list isn't clear,
@@ -62,10 +62,10 @@ public interface RenameFeature extends Refactoring {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>All Refactorings</em>' containment reference list.
-	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getRenameFeature_AllRefactorings()
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getMovingFeaturesBetweenObjects_AllRefactorings()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<RenameFeature> getAllRefactorings();
+	EList<MovingFeaturesBetweenObjects> getAllRefactorings();
 
-} // RenameFeature
+} // MovingFeaturesBetweenObjects

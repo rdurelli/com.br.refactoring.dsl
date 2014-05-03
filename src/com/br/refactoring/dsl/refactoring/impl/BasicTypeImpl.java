@@ -6,7 +6,7 @@
  */
 package com.br.refactoring.dsl.refactoring.impl;
 
-import com.br.refactoring.dsl.refactoring.Method;
+import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -14,48 +14,47 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Method</b></em>'.
+ * An implementation of the model object '<em><b>Basic Type</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MethodImpl#getName <em>Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.BasicTypeImpl#getTypeName <em>Type Name</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class MethodImpl extends EObjectImpl implements Method {
+public class BasicTypeImpl extends ElementTypeImpl implements BasicType {
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The default value of the '{@link #getTypeName() <em>Type Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getTypeName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = null;
+	protected static final String TYPE_NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The cached value of the '{@link #getTypeName() <em>Type Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getTypeName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String name = NAME_EDEFAULT;
+	protected String typeName = TYPE_NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MethodImpl() {
+	protected BasicTypeImpl() {
 		super();
 	}
 
@@ -66,7 +65,7 @@ public class MethodImpl extends EObjectImpl implements Method {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RefactoringPackage.Literals.METHOD;
+		return RefactoringPackage.Literals.BASIC_TYPE;
 	}
 
 	/**
@@ -74,8 +73,8 @@ public class MethodImpl extends EObjectImpl implements Method {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
+	public String getTypeName() {
+		return typeName;
 	}
 
 	/**
@@ -83,11 +82,11 @@ public class MethodImpl extends EObjectImpl implements Method {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
+	public void setTypeName(String newTypeName) {
+		String oldTypeName = typeName;
+		typeName = newTypeName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RefactoringPackage.METHOD__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, RefactoringPackage.BASIC_TYPE__TYPE_NAME, oldTypeName, typeName));
 	}
 
 	/**
@@ -98,8 +97,8 @@ public class MethodImpl extends EObjectImpl implements Method {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case RefactoringPackage.METHOD__NAME:
-				return getName();
+			case RefactoringPackage.BASIC_TYPE__TYPE_NAME:
+				return getTypeName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -112,8 +111,8 @@ public class MethodImpl extends EObjectImpl implements Method {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case RefactoringPackage.METHOD__NAME:
-				setName((String)newValue);
+			case RefactoringPackage.BASIC_TYPE__TYPE_NAME:
+				setTypeName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -127,8 +126,8 @@ public class MethodImpl extends EObjectImpl implements Method {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case RefactoringPackage.METHOD__NAME:
-				setName(NAME_EDEFAULT);
+			case RefactoringPackage.BASIC_TYPE__TYPE_NAME:
+				setTypeName(TYPE_NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -142,8 +141,8 @@ public class MethodImpl extends EObjectImpl implements Method {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case RefactoringPackage.METHOD__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case RefactoringPackage.BASIC_TYPE__TYPE_NAME:
+				return TYPE_NAME_EDEFAULT == null ? typeName != null : !TYPE_NAME_EDEFAULT.equals(typeName);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -158,10 +157,10 @@ public class MethodImpl extends EObjectImpl implements Method {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
+		result.append(" (typeName: ");
+		result.append(typeName);
 		result.append(')');
 		return result.toString();
 	}
 
-} //MethodImpl
+} //BasicTypeImpl

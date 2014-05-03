@@ -7,14 +7,20 @@
 package com.br.refactoring.dsl.refactoring.util;
 
 import com.br.refactoring.dsl.refactoring.Attribute;
-import com.br.refactoring.dsl.refactoring.CodeItem;
+import com.br.refactoring.dsl.refactoring.BasicType;
+import com.br.refactoring.dsl.refactoring.ClassType;
+import com.br.refactoring.dsl.refactoring.ElementType;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
+import com.br.refactoring.dsl.refactoring.MoveAttribute;
+import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
+import com.br.refactoring.dsl.refactoring.RenameAttribute;
 import com.br.refactoring.dsl.refactoring.RenameClass;
 import com.br.refactoring.dsl.refactoring.RenameFeature;
+import com.br.refactoring.dsl.refactoring.RenameMethod;
 import com.br.refactoring.dsl.refactoring.Type;
 
 import org.eclipse.emf.ecore.EObject;
@@ -128,23 +134,70 @@ public class RefactoringSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case RefactoringPackage.CODE_ITEM: {
-				CodeItem codeItem = (CodeItem)theEObject;
-				T result = caseCodeItem(codeItem);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case RefactoringPackage.ATTRIBUTE: {
 				Attribute attribute = (Attribute)theEObject;
 				T result = caseAttribute(attribute);
-				if (result == null) result = caseCodeItem(attribute);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case RefactoringPackage.METHOD: {
 				Method method = (Method)theEObject;
 				T result = caseMethod(method);
-				if (result == null) result = caseCodeItem(method);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.ELEMENT_TYPE: {
+				ElementType elementType = (ElementType)theEObject;
+				T result = caseElementType(elementType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.BASIC_TYPE: {
+				BasicType basicType = (BasicType)theEObject;
+				T result = caseBasicType(basicType);
+				if (result == null) result = caseElementType(basicType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.CLASS_TYPE: {
+				ClassType classType = (ClassType)theEObject;
+				T result = caseClassType(classType);
+				if (result == null) result = caseElementType(classType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.RENAME_ATTRIBUTE: {
+				RenameAttribute renameAttribute = (RenameAttribute)theEObject;
+				T result = caseRenameAttribute(renameAttribute);
+				if (result == null) result = caseRenameFeature(renameAttribute);
+				if (result == null) result = caseRefactoring(renameAttribute);
+				if (result == null) result = caseType(renameAttribute);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.RENAME_METHOD: {
+				RenameMethod renameMethod = (RenameMethod)theEObject;
+				T result = caseRenameMethod(renameMethod);
+				if (result == null) result = caseRenameFeature(renameMethod);
+				if (result == null) result = caseRefactoring(renameMethod);
+				if (result == null) result = caseType(renameMethod);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS: {
+				MovingFeaturesBetweenObjects movingFeaturesBetweenObjects = (MovingFeaturesBetweenObjects)theEObject;
+				T result = caseMovingFeaturesBetweenObjects(movingFeaturesBetweenObjects);
+				if (result == null) result = caseRefactoring(movingFeaturesBetweenObjects);
+				if (result == null) result = caseType(movingFeaturesBetweenObjects);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.MOVE_ATTRIBUTE: {
+				MoveAttribute moveAttribute = (MoveAttribute)theEObject;
+				T result = caseMoveAttribute(moveAttribute);
+				if (result == null) result = caseMovingFeaturesBetweenObjects(moveAttribute);
+				if (result == null) result = caseRefactoring(moveAttribute);
+				if (result == null) result = caseType(moveAttribute);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -258,21 +311,6 @@ public class RefactoringSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Code Item</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Code Item</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCodeItem(CodeItem object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Attribute</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -299,6 +337,111 @@ public class RefactoringSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMethod(Method object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Element Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Element Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseElementType(ElementType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Basic Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Basic Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBasicType(BasicType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Class Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Class Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClassType(ClassType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rename Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rename Attribute</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRenameAttribute(RenameAttribute object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rename Method</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rename Method</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRenameMethod(RenameMethod object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Moving Features Between Objects</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Moving Features Between Objects</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMovingFeaturesBetweenObjects(MovingFeaturesBetweenObjects object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Move Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Move Attribute</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMoveAttribute(MoveAttribute object) {
 		return null;
 	}
 

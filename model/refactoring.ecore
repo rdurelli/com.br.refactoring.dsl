@@ -13,8 +13,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="Type" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Class" eSuperTypes="#//Type">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="codeElements" upperBound="-1"
-        eType="#//CodeItem" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methods" upperBound="-1"
+        eType="#//Method" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Refactoring" abstract="true" eSuperTypes="#//Type"/>
   <eClassifiers xsi:type="ecore:EClass" name="RenameFeature" eSuperTypes="#//Refactoring">
@@ -29,12 +31,39 @@
   <eClassifiers xsi:type="ecore:EClass" name="Import">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="importURI" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CodeItem" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Attribute" eSuperTypes="#//CodeItem">
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementType" eType="#//ElementType"
+        containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Method" eSuperTypes="#//CodeItem">
+  <eClassifiers xsi:type="ecore:EClass" name="Method">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ElementType" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicType" eSuperTypes="#//ElementType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassType" eSuperTypes="#//ElementType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classType" eType="#//Class"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RenameAttribute" eSuperTypes="#//RenameFeature">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeToBeRename" eType="#//Attribute"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RenameMethod" eSuperTypes="#//RenameFeature">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methodToBeRename" eType="#//Method"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MovingFeaturesBetweenObjects" eSuperTypes="#//Refactoring">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allRefactorings" upperBound="-1"
+        eType="#//MovingFeaturesBetweenObjects" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MoveAttribute" eSuperTypes="#//MovingFeaturesBetweenObjects">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeToBeMoved" eType="#//Attribute"/>
   </eClassifiers>
 </ecore:EPackage>

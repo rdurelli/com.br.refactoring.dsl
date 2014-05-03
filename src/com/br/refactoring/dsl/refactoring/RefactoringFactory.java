@@ -89,6 +89,60 @@ public interface RefactoringFactory extends EFactory {
 	Method createMethod();
 
 	/**
+	 * Returns a new object of class '<em>Basic Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Basic Type</em>'.
+	 * @generated
+	 */
+	BasicType createBasicType();
+
+	/**
+	 * Returns a new object of class '<em>Class Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class Type</em>'.
+	 * @generated
+	 */
+	ClassType createClassType();
+
+	/**
+	 * Returns a new object of class '<em>Rename Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rename Attribute</em>'.
+	 * @generated
+	 */
+	RenameAttribute createRenameAttribute();
+
+	/**
+	 * Returns a new object of class '<em>Rename Method</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rename Method</em>'.
+	 * @generated
+	 */
+	RenameMethod createRenameMethod();
+
+	/**
+	 * Returns a new object of class '<em>Moving Features Between Objects</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Moving Features Between Objects</em>'.
+	 * @generated
+	 */
+	MovingFeaturesBetweenObjects createMovingFeaturesBetweenObjects();
+
+	/**
+	 * Returns a new object of class '<em>Move Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Move Attribute</em>'.
+	 * @generated
+	 */
+	MoveAttribute createMoveAttribute();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

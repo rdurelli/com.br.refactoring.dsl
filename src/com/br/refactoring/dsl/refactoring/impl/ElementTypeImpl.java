@@ -6,7 +6,7 @@
  */
 package com.br.refactoring.dsl.refactoring.impl;
 
-import com.br.refactoring.dsl.refactoring.CodeItem;
+import com.br.refactoring.dsl.refactoring.ElementType;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 
 import org.eclipse.emf.ecore.EClass;
@@ -15,20 +15,20 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Code Item</b></em>'.
+ * An implementation of the model object '<em><b>Element Type</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public abstract class CodeItemImpl extends EObjectImpl implements CodeItem {
+public abstract class ElementTypeImpl extends EObjectImpl implements ElementType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CodeItemImpl() {
+	protected ElementTypeImpl() {
 		super();
 	}
 
@@ -39,7 +39,7 @@ public abstract class CodeItemImpl extends EObjectImpl implements CodeItem {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RefactoringPackage.Literals.CODE_ITEM;
+		return RefactoringPackage.Literals.ELEMENT_TYPE;
 	}
 
-} //CodeItemImpl
+} //ElementTypeImpl

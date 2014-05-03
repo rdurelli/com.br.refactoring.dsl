@@ -6,6 +6,7 @@
  */
 package com.br.refactoring.dsl.refactoring;
 
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +24,7 @@ package com.br.refactoring.dsl.refactoring;
  * @model
  * @generated
  */
-public interface Method extends CodeItem {
+public interface Method extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,13 +7,17 @@
 package com.br.refactoring.dsl.refactoring.impl;
 
 import com.br.refactoring.dsl.refactoring.Attribute;
+import com.br.refactoring.dsl.refactoring.ElementType;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,13 +27,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * <ul>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.AttributeImpl#getName <em>Name</em>}</li>
- *   <li>{@link com.br.refactoring.dsl.refactoring.impl.AttributeImpl#getType <em>Type</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.AttributeImpl#getElementType <em>Element Type</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class AttributeImpl extends CodeItemImpl implements Attribute {
+public class AttributeImpl extends EObjectImpl implements Attribute {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -51,24 +55,14 @@ public class AttributeImpl extends CodeItemImpl implements Attribute {
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * The cached value of the '{@link #getElementType() <em>Element Type</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getType()
+	 * @see #getElementType()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TYPE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getType()
-	 * @generated
-	 * @ordered
-	 */
-	protected String type = TYPE_EDEFAULT;
+	protected ElementType elementType;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -115,8 +109,8 @@ public class AttributeImpl extends CodeItemImpl implements Attribute {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getType() {
-		return type;
+	public ElementType getElementType() {
+		return elementType;
 	}
 
 	/**
@@ -124,11 +118,47 @@ public class AttributeImpl extends CodeItemImpl implements Attribute {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(String newType) {
-		String oldType = type;
-		type = newType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RefactoringPackage.ATTRIBUTE__TYPE, oldType, type));
+	public NotificationChain basicSetElementType(ElementType newElementType, NotificationChain msgs) {
+		ElementType oldElementType = elementType;
+		elementType = newElementType;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, RefactoringPackage.ATTRIBUTE__ELEMENT_TYPE, oldElementType, newElementType);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setElementType(ElementType newElementType) {
+		if (newElementType != elementType) {
+			NotificationChain msgs = null;
+			if (elementType != null)
+				msgs = ((InternalEObject)elementType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - RefactoringPackage.ATTRIBUTE__ELEMENT_TYPE, null, msgs);
+			if (newElementType != null)
+				msgs = ((InternalEObject)newElementType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - RefactoringPackage.ATTRIBUTE__ELEMENT_TYPE, null, msgs);
+			msgs = basicSetElementType(newElementType, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, RefactoringPackage.ATTRIBUTE__ELEMENT_TYPE, newElementType, newElementType));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case RefactoringPackage.ATTRIBUTE__ELEMENT_TYPE:
+				return basicSetElementType(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -141,8 +171,8 @@ public class AttributeImpl extends CodeItemImpl implements Attribute {
 		switch (featureID) {
 			case RefactoringPackage.ATTRIBUTE__NAME:
 				return getName();
-			case RefactoringPackage.ATTRIBUTE__TYPE:
-				return getType();
+			case RefactoringPackage.ATTRIBUTE__ELEMENT_TYPE:
+				return getElementType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -158,8 +188,8 @@ public class AttributeImpl extends CodeItemImpl implements Attribute {
 			case RefactoringPackage.ATTRIBUTE__NAME:
 				setName((String)newValue);
 				return;
-			case RefactoringPackage.ATTRIBUTE__TYPE:
-				setType((String)newValue);
+			case RefactoringPackage.ATTRIBUTE__ELEMENT_TYPE:
+				setElementType((ElementType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -176,8 +206,8 @@ public class AttributeImpl extends CodeItemImpl implements Attribute {
 			case RefactoringPackage.ATTRIBUTE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case RefactoringPackage.ATTRIBUTE__TYPE:
-				setType(TYPE_EDEFAULT);
+			case RefactoringPackage.ATTRIBUTE__ELEMENT_TYPE:
+				setElementType((ElementType)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -193,8 +223,8 @@ public class AttributeImpl extends CodeItemImpl implements Attribute {
 		switch (featureID) {
 			case RefactoringPackage.ATTRIBUTE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case RefactoringPackage.ATTRIBUTE__TYPE:
-				return TYPE_EDEFAULT == null ? type != null : !TYPE_EDEFAULT.equals(type);
+			case RefactoringPackage.ATTRIBUTE__ELEMENT_TYPE:
+				return elementType != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -211,8 +241,6 @@ public class AttributeImpl extends CodeItemImpl implements Attribute {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
-		result.append(", type: ");
-		result.append(type);
 		result.append(')');
 		return result.toString();
 	}

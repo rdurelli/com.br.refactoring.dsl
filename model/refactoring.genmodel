@@ -15,7 +15,8 @@
     <genClasses image="false" ecoreClass="refactoring.ecore#//Type"/>
     <genClasses ecoreClass="refactoring.ecore#//Class">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Class/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//Class/codeElements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//Class/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//Class/methods"/>
     </genClasses>
     <genClasses image="false" ecoreClass="refactoring.ecore#//Refactoring"/>
     <genClasses ecoreClass="refactoring.ecore#//RenameFeature">
@@ -29,13 +30,38 @@
     <genClasses ecoreClass="refactoring.ecore#//Import">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Import/importURI"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="refactoring.ecore#//CodeItem"/>
     <genClasses ecoreClass="refactoring.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Attribute/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Attribute/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//Attribute/elementType"/>
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//Method">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Method/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="refactoring.ecore#//ElementType"/>
+    <genClasses ecoreClass="refactoring.ecore#//BasicType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//BasicType/typeName"/>
+    </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//ClassType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ClassType/classType"/>
+    </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//RenameAttribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameAttribute/newName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameAttribute/attributeToBeRename"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameAttribute/sourceClass"/>
+    </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//RenameMethod">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameMethod/newName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameMethod/methodToBeRename"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameMethod/sourceClass"/>
+    </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//MovingFeaturesBetweenObjects">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//MovingFeaturesBetweenObjects/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//MovingFeaturesBetweenObjects/allRefactorings"/>
+    </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//MoveAttribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//MoveAttribute/sourceClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//MoveAttribute/targetClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//MoveAttribute/attributeToBeMoved"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -6,8 +6,8 @@
  */
 package com.br.refactoring.dsl.refactoring.impl;
 
+import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
-import com.br.refactoring.dsl.refactoring.RenameFeature;
 
 import java.util.Collection;
 
@@ -26,19 +26,19 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Rename Feature</b></em>'.
+ * An implementation of the model object '<em><b>Moving Features Between Objects</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameFeatureImpl#getName <em>Name</em>}</li>
- *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameFeatureImpl#getAllRefactorings <em>All Refactorings</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MovingFeaturesBetweenObjectsImpl#getName <em>Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MovingFeaturesBetweenObjectsImpl#getAllRefactorings <em>All Refactorings</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature {
+public class MovingFeaturesBetweenObjectsImpl extends RefactoringImpl implements MovingFeaturesBetweenObjects {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -67,14 +67,14 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<RenameFeature> allRefactorings;
+	protected EList<MovingFeaturesBetweenObjects> allRefactorings;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RenameFeatureImpl() {
+	protected MovingFeaturesBetweenObjectsImpl() {
 		super();
 	}
 
@@ -85,7 +85,7 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RefactoringPackage.Literals.RENAME_FEATURE;
+		return RefactoringPackage.Literals.MOVING_FEATURES_BETWEEN_OBJECTS;
 	}
 
 	/**
@@ -106,7 +106,7 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RefactoringPackage.RENAME_FEATURE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__NAME, oldName, name));
 	}
 
 	/**
@@ -114,9 +114,9 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RenameFeature> getAllRefactorings() {
+	public EList<MovingFeaturesBetweenObjects> getAllRefactorings() {
 		if (allRefactorings == null) {
-			allRefactorings = new EObjectContainmentEList<RenameFeature>(RenameFeature.class, this, RefactoringPackage.RENAME_FEATURE__ALL_REFACTORINGS);
+			allRefactorings = new EObjectContainmentEList<MovingFeaturesBetweenObjects>(MovingFeaturesBetweenObjects.class, this, RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS);
 		}
 		return allRefactorings;
 	}
@@ -129,7 +129,7 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case RefactoringPackage.RENAME_FEATURE__ALL_REFACTORINGS:
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS:
 				return ((InternalEList<?>)getAllRefactorings()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -143,9 +143,9 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case RefactoringPackage.RENAME_FEATURE__NAME:
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__NAME:
 				return getName();
-			case RefactoringPackage.RENAME_FEATURE__ALL_REFACTORINGS:
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS:
 				return getAllRefactorings();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -160,12 +160,12 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case RefactoringPackage.RENAME_FEATURE__NAME:
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__NAME:
 				setName((String)newValue);
 				return;
-			case RefactoringPackage.RENAME_FEATURE__ALL_REFACTORINGS:
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS:
 				getAllRefactorings().clear();
-				getAllRefactorings().addAll((Collection<? extends RenameFeature>)newValue);
+				getAllRefactorings().addAll((Collection<? extends MovingFeaturesBetweenObjects>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -179,10 +179,10 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case RefactoringPackage.RENAME_FEATURE__NAME:
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case RefactoringPackage.RENAME_FEATURE__ALL_REFACTORINGS:
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS:
 				getAllRefactorings().clear();
 				return;
 		}
@@ -197,9 +197,9 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case RefactoringPackage.RENAME_FEATURE__NAME:
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case RefactoringPackage.RENAME_FEATURE__ALL_REFACTORINGS:
+			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS:
 				return allRefactorings != null && !allRefactorings.isEmpty();
 		}
 		return super.eIsSet(featureID);
@@ -221,4 +221,4 @@ public class RenameFeatureImpl extends RefactoringImpl implements RenameFeature 
 		return result.toString();
 	}
 
-} //RenameFeatureImpl
+} //MovingFeaturesBetweenObjectsImpl

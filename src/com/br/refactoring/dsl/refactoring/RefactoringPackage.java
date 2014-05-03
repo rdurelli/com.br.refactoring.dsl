@@ -144,13 +144,22 @@ public interface RefactoringPackage extends EPackage {
 	int CLASS__NAME = TYPE_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Code Elements</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__CODE_ELEMENTS = TYPE_FEATURE_COUNT + 1;
+	int CLASS__ATTRIBUTES = TYPE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Methods</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__METHODS = TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Class</em>' class.
@@ -159,8 +168,7 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_FEATURE_COUNT = TYPE_FEATURE_COUNT + 2;
-
+	int CLASS_FEATURE_COUNT = TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.RefactoringImpl <em>Refactoring</em>}' class.
@@ -273,7 +281,6 @@ public interface RefactoringPackage extends EPackage {
 	 */
 	int RENAME_CLASS_FEATURE_COUNT = RENAME_FEATURE_FEATURE_COUNT + 2;
 
-
 	/**
 	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.ImportImpl <em>Import</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -302,26 +309,6 @@ public interface RefactoringPackage extends EPackage {
 	 */
 	int IMPORT_FEATURE_COUNT = 1;
 
-
-	/**
-	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.CodeItemImpl <em>Code Item</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see com.br.refactoring.dsl.refactoring.impl.CodeItemImpl
-	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getCodeItem()
-	 * @generated
-	 */
-	int CODE_ITEM = 7;
-
-	/**
-	 * The number of structural features of the '<em>Code Item</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CODE_ITEM_FEATURE_COUNT = 0;
-
 	/**
 	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.AttributeImpl <em>Attribute</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -330,7 +317,7 @@ public interface RefactoringPackage extends EPackage {
 	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getAttribute()
 	 * @generated
 	 */
-	int ATTRIBUTE = 8;
+	int ATTRIBUTE = 7;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -339,16 +326,16 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__NAME = CODE_ITEM_FEATURE_COUNT + 0;
+	int ATTRIBUTE__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * The feature id for the '<em><b>Element Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__TYPE = CODE_ITEM_FEATURE_COUNT + 1;
+	int ATTRIBUTE__ELEMENT_TYPE = 1;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -357,7 +344,7 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE_FEATURE_COUNT = CODE_ITEM_FEATURE_COUNT + 2;
+	int ATTRIBUTE_FEATURE_COUNT = 2;
 
 	/**
 	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.MethodImpl <em>Method</em>}' class.
@@ -367,7 +354,7 @@ public interface RefactoringPackage extends EPackage {
 	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getMethod()
 	 * @generated
 	 */
-	int METHOD = 9;
+	int METHOD = 8;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -376,7 +363,7 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__NAME = CODE_ITEM_FEATURE_COUNT + 0;
+	int METHOD__NAME = 0;
 
 	/**
 	 * The number of structural features of the '<em>Method</em>' class.
@@ -385,7 +372,314 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD_FEATURE_COUNT = CODE_ITEM_FEATURE_COUNT + 1;
+	int METHOD_FEATURE_COUNT = 1;
+
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.ElementTypeImpl <em>Element Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.ElementTypeImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getElementType()
+	 * @generated
+	 */
+	int ELEMENT_TYPE = 9;
+
+	/**
+	 * The number of structural features of the '<em>Element Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_TYPE_FEATURE_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.BasicTypeImpl <em>Basic Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.BasicTypeImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getBasicType()
+	 * @generated
+	 */
+	int BASIC_TYPE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Type Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_TYPE__TYPE_NAME = ELEMENT_TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Basic Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_TYPE_FEATURE_COUNT = ELEMENT_TYPE_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.ClassTypeImpl <em>Class Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.ClassTypeImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getClassType()
+	 * @generated
+	 */
+	int CLASS_TYPE = 11;
+
+	/**
+	 * The feature id for the '<em><b>Class Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_TYPE__CLASS_TYPE = ELEMENT_TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Class Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_TYPE_FEATURE_COUNT = ELEMENT_TYPE_FEATURE_COUNT + 1;
+
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.RenameAttributeImpl <em>Rename Attribute</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.RenameAttributeImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getRenameAttribute()
+	 * @generated
+	 */
+	int RENAME_ATTRIBUTE = 12;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_ATTRIBUTE__NAME = RENAME_FEATURE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_ATTRIBUTE__ALL_REFACTORINGS = RENAME_FEATURE__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>New Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_ATTRIBUTE__NEW_NAME = RENAME_FEATURE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Be Rename</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_ATTRIBUTE__ATTRIBUTE_TO_BE_RENAME = RENAME_FEATURE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_ATTRIBUTE__SOURCE_CLASS = RENAME_FEATURE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Rename Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_ATTRIBUTE_FEATURE_COUNT = RENAME_FEATURE_FEATURE_COUNT + 3;
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl <em>Rename Method</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getRenameMethod()
+	 * @generated
+	 */
+	int RENAME_METHOD = 13;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_METHOD__NAME = RENAME_FEATURE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_METHOD__ALL_REFACTORINGS = RENAME_FEATURE__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>New Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_METHOD__NEW_NAME = RENAME_FEATURE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Method To Be Rename</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_METHOD__METHOD_TO_BE_RENAME = RENAME_FEATURE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_METHOD__SOURCE_CLASS = RENAME_FEATURE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Rename Method</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_METHOD_FEATURE_COUNT = RENAME_FEATURE_FEATURE_COUNT + 3;
+
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.MovingFeaturesBetweenObjectsImpl <em>Moving Features Between Objects</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.MovingFeaturesBetweenObjectsImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getMovingFeaturesBetweenObjects()
+	 * @generated
+	 */
+	int MOVING_FEATURES_BETWEEN_OBJECTS = 14;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVING_FEATURES_BETWEEN_OBJECTS__NAME = REFACTORING_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS = REFACTORING_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Moving Features Between Objects</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT = REFACTORING_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl <em>Move Attribute</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getMoveAttribute()
+	 * @generated
+	 */
+	int MOVE_ATTRIBUTE = 15;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_ATTRIBUTE__NAME = MOVING_FEATURES_BETWEEN_OBJECTS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_ATTRIBUTE__ALL_REFACTORINGS = MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_ATTRIBUTE__SOURCE_CLASS = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_ATTRIBUTE__TARGET_CLASS = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Be Moved</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Move Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_ATTRIBUTE_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
 
 
 	/**
@@ -463,15 +757,26 @@ public interface RefactoringPackage extends EPackage {
 	EAttribute getClass_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link com.br.refactoring.dsl.refactoring.Class#getCodeElements <em>Code Elements</em>}'.
+	 * Returns the meta object for the containment reference list '{@link com.br.refactoring.dsl.refactoring.Class#getAttributes <em>Attributes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Code Elements</em>'.
-	 * @see com.br.refactoring.dsl.refactoring.Class#getCodeElements()
+	 * @return the meta object for the containment reference list '<em>Attributes</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.Class#getAttributes()
 	 * @see #getClass_()
 	 * @generated
 	 */
-	EReference getClass_CodeElements();
+	EReference getClass_Attributes();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.br.refactoring.dsl.refactoring.Class#getMethods <em>Methods</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Methods</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.Class#getMethods()
+	 * @see #getClass_()
+	 * @generated
+	 */
+	EReference getClass_Methods();
 
 	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Refactoring <em>Refactoring</em>}'.
@@ -569,16 +874,6 @@ public interface RefactoringPackage extends EPackage {
 	EAttribute getImport_ImportURI();
 
 	/**
-	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.CodeItem <em>Code Item</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Code Item</em>'.
-	 * @see com.br.refactoring.dsl.refactoring.CodeItem
-	 * @generated
-	 */
-	EClass getCodeItem();
-
-	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Attribute <em>Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -600,15 +895,15 @@ public interface RefactoringPackage extends EPackage {
 	EAttribute getAttribute_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.Attribute#getType <em>Type</em>}'.
+	 * Returns the meta object for the containment reference '{@link com.br.refactoring.dsl.refactoring.Attribute#getElementType <em>Element Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see com.br.refactoring.dsl.refactoring.Attribute#getType()
+	 * @return the meta object for the containment reference '<em>Element Type</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.Attribute#getElementType()
 	 * @see #getAttribute()
 	 * @generated
 	 */
-	EAttribute getAttribute_Type();
+	EReference getAttribute_ElementType();
 
 	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Method <em>Method</em>}'.
@@ -630,6 +925,219 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getMethod_Name();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.ElementType <em>Element Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Element Type</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ElementType
+	 * @generated
+	 */
+	EClass getElementType();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.BasicType <em>Basic Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Basic Type</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.BasicType
+	 * @generated
+	 */
+	EClass getBasicType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.BasicType#getTypeName <em>Type Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.BasicType#getTypeName()
+	 * @see #getBasicType()
+	 * @generated
+	 */
+	EAttribute getBasicType_TypeName();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.ClassType <em>Class Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Class Type</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ClassType
+	 * @generated
+	 */
+	EClass getClassType();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.ClassType#getClassType <em>Class Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Class Type</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ClassType#getClassType()
+	 * @see #getClassType()
+	 * @generated
+	 */
+	EReference getClassType_ClassType();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.RenameAttribute <em>Rename Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Rename Attribute</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameAttribute
+	 * @generated
+	 */
+	EClass getRenameAttribute();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.RenameAttribute#getNewName <em>New Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>New Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameAttribute#getNewName()
+	 * @see #getRenameAttribute()
+	 * @generated
+	 */
+	EAttribute getRenameAttribute_NewName();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.RenameAttribute#getAttributeToBeRename <em>Attribute To Be Rename</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Attribute To Be Rename</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameAttribute#getAttributeToBeRename()
+	 * @see #getRenameAttribute()
+	 * @generated
+	 */
+	EReference getRenameAttribute_AttributeToBeRename();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.RenameAttribute#getSourceClass <em>Source Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameAttribute#getSourceClass()
+	 * @see #getRenameAttribute()
+	 * @generated
+	 */
+	EReference getRenameAttribute_SourceClass();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.RenameMethod <em>Rename Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Rename Method</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameMethod
+	 * @generated
+	 */
+	EClass getRenameMethod();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.RenameMethod#getNewName <em>New Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>New Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameMethod#getNewName()
+	 * @see #getRenameMethod()
+	 * @generated
+	 */
+	EAttribute getRenameMethod_NewName();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.RenameMethod#getMethodToBeRename <em>Method To Be Rename</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Method To Be Rename</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameMethod#getMethodToBeRename()
+	 * @see #getRenameMethod()
+	 * @generated
+	 */
+	EReference getRenameMethod_MethodToBeRename();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.RenameMethod#getSourceClass <em>Source Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameMethod#getSourceClass()
+	 * @see #getRenameMethod()
+	 * @generated
+	 */
+	EReference getRenameMethod_SourceClass();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects <em>Moving Features Between Objects</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Moving Features Between Objects</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects
+	 * @generated
+	 */
+	EClass getMovingFeaturesBetweenObjects();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects#getName()
+	 * @see #getMovingFeaturesBetweenObjects()
+	 * @generated
+	 */
+	EAttribute getMovingFeaturesBetweenObjects_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects#getAllRefactorings <em>All Refactorings</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>All Refactorings</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects#getAllRefactorings()
+	 * @see #getMovingFeaturesBetweenObjects()
+	 * @generated
+	 */
+	EReference getMovingFeaturesBetweenObjects_AllRefactorings();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.MoveAttribute <em>Move Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Move Attribute</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveAttribute
+	 * @generated
+	 */
+	EClass getMoveAttribute();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getSourceClass <em>Source Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveAttribute#getSourceClass()
+	 * @see #getMoveAttribute()
+	 * @generated
+	 */
+	EReference getMoveAttribute_SourceClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getTargetClass <em>Target Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveAttribute#getTargetClass()
+	 * @see #getMoveAttribute()
+	 * @generated
+	 */
+	EReference getMoveAttribute_TargetClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getAttributeToBeMoved <em>Attribute To Be Moved</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Attribute To Be Moved</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveAttribute#getAttributeToBeMoved()
+	 * @see #getMoveAttribute()
+	 * @generated
+	 */
+	EReference getMoveAttribute_AttributeToBeMoved();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -716,12 +1224,20 @@ public interface RefactoringPackage extends EPackage {
 		EAttribute CLASS__NAME = eINSTANCE.getClass_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Code Elements</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Attributes</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CLASS__CODE_ELEMENTS = eINSTANCE.getClass_CodeElements();
+		EReference CLASS__ATTRIBUTES = eINSTANCE.getClass_Attributes();
+
+		/**
+		 * The meta object literal for the '<em><b>Methods</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS__METHODS = eINSTANCE.getClass_Methods();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.RefactoringImpl <em>Refactoring</em>}' class.
@@ -804,16 +1320,6 @@ public interface RefactoringPackage extends EPackage {
 		EAttribute IMPORT__IMPORT_URI = eINSTANCE.getImport_ImportURI();
 
 		/**
-		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.CodeItemImpl <em>Code Item</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see com.br.refactoring.dsl.refactoring.impl.CodeItemImpl
-		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getCodeItem()
-		 * @generated
-		 */
-		EClass CODE_ITEM = eINSTANCE.getCodeItem();
-
-		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.AttributeImpl <em>Attribute</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -832,12 +1338,12 @@ public interface RefactoringPackage extends EPackage {
 		EAttribute ATTRIBUTE__NAME = eINSTANCE.getAttribute_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Element Type</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ATTRIBUTE__TYPE = eINSTANCE.getAttribute_Type();
+		EReference ATTRIBUTE__ELEMENT_TYPE = eINSTANCE.getAttribute_ElementType();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.MethodImpl <em>Method</em>}' class.
@@ -856,6 +1362,180 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute METHOD__NAME = eINSTANCE.getMethod_Name();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.ElementTypeImpl <em>Element Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.ElementTypeImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getElementType()
+		 * @generated
+		 */
+		EClass ELEMENT_TYPE = eINSTANCE.getElementType();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.BasicTypeImpl <em>Basic Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.BasicTypeImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getBasicType()
+		 * @generated
+		 */
+		EClass BASIC_TYPE = eINSTANCE.getBasicType();
+
+		/**
+		 * The meta object literal for the '<em><b>Type Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BASIC_TYPE__TYPE_NAME = eINSTANCE.getBasicType_TypeName();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.ClassTypeImpl <em>Class Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.ClassTypeImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getClassType()
+		 * @generated
+		 */
+		EClass CLASS_TYPE = eINSTANCE.getClassType();
+
+		/**
+		 * The meta object literal for the '<em><b>Class Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS_TYPE__CLASS_TYPE = eINSTANCE.getClassType_ClassType();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.RenameAttributeImpl <em>Rename Attribute</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.RenameAttributeImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getRenameAttribute()
+		 * @generated
+		 */
+		EClass RENAME_ATTRIBUTE = eINSTANCE.getRenameAttribute();
+
+		/**
+		 * The meta object literal for the '<em><b>New Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENAME_ATTRIBUTE__NEW_NAME = eINSTANCE.getRenameAttribute_NewName();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Be Rename</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RENAME_ATTRIBUTE__ATTRIBUTE_TO_BE_RENAME = eINSTANCE.getRenameAttribute_AttributeToBeRename();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RENAME_ATTRIBUTE__SOURCE_CLASS = eINSTANCE.getRenameAttribute_SourceClass();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl <em>Rename Method</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getRenameMethod()
+		 * @generated
+		 */
+		EClass RENAME_METHOD = eINSTANCE.getRenameMethod();
+
+		/**
+		 * The meta object literal for the '<em><b>New Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENAME_METHOD__NEW_NAME = eINSTANCE.getRenameMethod_NewName();
+
+		/**
+		 * The meta object literal for the '<em><b>Method To Be Rename</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RENAME_METHOD__METHOD_TO_BE_RENAME = eINSTANCE.getRenameMethod_MethodToBeRename();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RENAME_METHOD__SOURCE_CLASS = eINSTANCE.getRenameMethod_SourceClass();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.MovingFeaturesBetweenObjectsImpl <em>Moving Features Between Objects</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.MovingFeaturesBetweenObjectsImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getMovingFeaturesBetweenObjects()
+		 * @generated
+		 */
+		EClass MOVING_FEATURES_BETWEEN_OBJECTS = eINSTANCE.getMovingFeaturesBetweenObjects();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVING_FEATURES_BETWEEN_OBJECTS__NAME = eINSTANCE.getMovingFeaturesBetweenObjects_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>All Refactorings</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS = eINSTANCE.getMovingFeaturesBetweenObjects_AllRefactorings();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl <em>Move Attribute</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getMoveAttribute()
+		 * @generated
+		 */
+		EClass MOVE_ATTRIBUTE = eINSTANCE.getMoveAttribute();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MOVE_ATTRIBUTE__SOURCE_CLASS = eINSTANCE.getMoveAttribute_SourceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MOVE_ATTRIBUTE__TARGET_CLASS = eINSTANCE.getMoveAttribute_TargetClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Be Moved</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED = eINSTANCE.getMoveAttribute_AttributeToBeMoved();
 
 	}
 
