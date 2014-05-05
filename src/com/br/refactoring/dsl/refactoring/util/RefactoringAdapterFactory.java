@@ -10,6 +10,7 @@ import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.ElementType;
+import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
@@ -154,6 +155,10 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseMoveMethod(MoveMethod object) {
 				return createMoveMethodAdapter();
+			}
+			@Override
+			public Adapter caseExtractClass(ExtractClass object) {
+				return createExtractClassAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -410,6 +415,20 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMoveMethodAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.ExtractClass <em>Extract Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.ExtractClass
+	 * @generated
+	 */
+	public Adapter createExtractClassAdapter() {
 		return null;
 	}
 

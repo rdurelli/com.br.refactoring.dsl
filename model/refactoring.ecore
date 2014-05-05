@@ -71,4 +71,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//Class"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="methodToBeMoved" eType="#//Method"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExtractClass" eSuperTypes="#//MovingFeaturesBetweenObjects">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributesToBeMoved" upperBound="-1"
+        eType="#//Attribute"/>
+  </eClassifiers>
 </ecore:EPackage>

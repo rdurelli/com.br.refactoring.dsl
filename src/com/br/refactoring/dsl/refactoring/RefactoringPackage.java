@@ -748,6 +748,71 @@ public interface RefactoringPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl <em>Extract Class</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getExtractClass()
+	 * @generated
+	 */
+	int EXTRACT_CLASS = 17;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACT_CLASS__NAME = MOVING_FEATURES_BETWEEN_OBJECTS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACT_CLASS__ALL_REFACTORINGS = MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>New Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACT_CLASS__NEW_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACT_CLASS__SOURCE_CLASS = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Attributes To Be Moved</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Extract Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACT_CLASS_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
+
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Model <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1248,6 +1313,49 @@ public interface RefactoringPackage extends EPackage {
 	EReference getMoveMethod_MethodToBeMoved();
 
 	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.ExtractClass <em>Extract Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Extract Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ExtractClass
+	 * @generated
+	 */
+	EClass getExtractClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.ExtractClass#getNewName <em>New Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>New Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ExtractClass#getNewName()
+	 * @see #getExtractClass()
+	 * @generated
+	 */
+	EAttribute getExtractClass_NewName();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.ExtractClass#getSourceClass <em>Source Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ExtractClass#getSourceClass()
+	 * @see #getExtractClass()
+	 * @generated
+	 */
+	EReference getExtractClass_SourceClass();
+
+	/**
+	 * Returns the meta object for the reference list '{@link com.br.refactoring.dsl.refactoring.ExtractClass#getAttributesToBeMoved <em>Attributes To Be Moved</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Attributes To Be Moved</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ExtractClass#getAttributesToBeMoved()
+	 * @see #getExtractClass()
+	 * @generated
+	 */
+	EReference getExtractClass_AttributesToBeMoved();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1678,6 +1786,40 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MOVE_METHOD__METHOD_TO_BE_MOVED = eINSTANCE.getMoveMethod_MethodToBeMoved();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl <em>Extract Class</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getExtractClass()
+		 * @generated
+		 */
+		EClass EXTRACT_CLASS = eINSTANCE.getExtractClass();
+
+		/**
+		 * The meta object literal for the '<em><b>New Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTRACT_CLASS__NEW_NAME = eINSTANCE.getExtractClass_NewName();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EXTRACT_CLASS__SOURCE_CLASS = eINSTANCE.getExtractClass_SourceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Attributes To Be Moved</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED = eINSTANCE.getExtractClass_AttributesToBeMoved();
 
 	}
 

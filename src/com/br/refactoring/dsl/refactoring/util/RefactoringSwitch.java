@@ -10,6 +10,7 @@ import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.ElementType;
+import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
@@ -208,6 +209,15 @@ public class RefactoringSwitch<T> extends Switch<T> {
 				if (result == null) result = caseMovingFeaturesBetweenObjects(moveMethod);
 				if (result == null) result = caseRefactoring(moveMethod);
 				if (result == null) result = caseType(moveMethod);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.EXTRACT_CLASS: {
+				ExtractClass extractClass = (ExtractClass)theEObject;
+				T result = caseExtractClass(extractClass);
+				if (result == null) result = caseMovingFeaturesBetweenObjects(extractClass);
+				if (result == null) result = caseRefactoring(extractClass);
+				if (result == null) result = caseType(extractClass);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -467,6 +477,21 @@ public class RefactoringSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMoveMethod(MoveMethod object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Extract Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Extract Class</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExtractClass(ExtractClass object) {
 		return null;
 	}
 

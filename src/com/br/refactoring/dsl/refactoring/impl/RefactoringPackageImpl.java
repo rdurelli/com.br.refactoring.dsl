@@ -10,6 +10,7 @@ import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.ElementType;
+import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
@@ -157,6 +158,13 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * @generated
 	 */
 	private EClass moveMethodEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass extractClassEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -647,6 +655,42 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getExtractClass() {
+		return extractClassEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getExtractClass_NewName() {
+		return (EAttribute)extractClassEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getExtractClass_SourceClass() {
+		return (EReference)extractClassEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getExtractClass_AttributesToBeMoved() {
+		return (EReference)extractClassEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RefactoringFactory getRefactoringFactory() {
 		return (RefactoringFactory)getEFactoryInstance();
 	}
@@ -733,6 +777,11 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(moveMethodEClass, MOVE_METHOD__SOURCE_CLASS);
 		createEReference(moveMethodEClass, MOVE_METHOD__TARGET_CLASS);
 		createEReference(moveMethodEClass, MOVE_METHOD__METHOD_TO_BE_MOVED);
+
+		extractClassEClass = createEClass(EXTRACT_CLASS);
+		createEAttribute(extractClassEClass, EXTRACT_CLASS__NEW_NAME);
+		createEReference(extractClassEClass, EXTRACT_CLASS__SOURCE_CLASS);
+		createEReference(extractClassEClass, EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED);
 	}
 
 	/**
@@ -774,6 +823,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		movingFeaturesBetweenObjectsEClass.getESuperTypes().add(this.getRefactoring());
 		moveAttributeEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
 		moveMethodEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
+		extractClassEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -839,6 +889,11 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getMoveMethod_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMoveMethod_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMoveMethod_MethodToBeMoved(), this.getMethod(), null, "methodToBeMoved", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(extractClassEClass, ExtractClass.class, "ExtractClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getExtractClass_NewName(), ecorePackage.getEString(), "newName", null, 0, 1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getExtractClass_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getExtractClass_AttributesToBeMoved(), this.getAttribute(), null, "attributesToBeMoved", null, 0, -1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

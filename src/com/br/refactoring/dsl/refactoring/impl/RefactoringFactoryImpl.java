@@ -9,6 +9,7 @@ package com.br.refactoring.dsl.refactoring.impl;
 import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
+import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
@@ -88,6 +89,7 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS: return createMovingFeaturesBetweenObjects();
 			case RefactoringPackage.MOVE_ATTRIBUTE: return createMoveAttribute();
 			case RefactoringPackage.MOVE_METHOD: return createMoveMethod();
+			case RefactoringPackage.EXTRACT_CLASS: return createExtractClass();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -231,6 +233,16 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public MoveMethod createMoveMethod() {
 		MoveMethodImpl moveMethod = new MoveMethodImpl();
 		return moveMethod;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExtractClass createExtractClass() {
+		ExtractClassImpl extractClass = new ExtractClassImpl();
+		return extractClass;
 	}
 
 	/**

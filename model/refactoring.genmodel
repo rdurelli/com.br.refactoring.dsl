@@ -68,5 +68,10 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//MoveMethod/targetClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//MoveMethod/methodToBeMoved"/>
     </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//ExtractClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//ExtractClass/newName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ExtractClass/sourceClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ExtractClass/attributesToBeMoved"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>
