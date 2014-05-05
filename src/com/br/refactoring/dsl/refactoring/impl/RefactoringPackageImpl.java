@@ -14,6 +14,7 @@ import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
+import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
@@ -149,6 +150,13 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * @generated
 	 */
 	private EClass moveAttributeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass moveMethodEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -603,6 +611,42 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getMoveMethod() {
+		return moveMethodEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMoveMethod_SourceClass() {
+		return (EReference)moveMethodEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMoveMethod_TargetClass() {
+		return (EReference)moveMethodEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMoveMethod_MethodToBeMoved() {
+		return (EReference)moveMethodEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RefactoringFactory getRefactoringFactory() {
 		return (RefactoringFactory)getEFactoryInstance();
 	}
@@ -684,6 +728,11 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(moveAttributeEClass, MOVE_ATTRIBUTE__SOURCE_CLASS);
 		createEReference(moveAttributeEClass, MOVE_ATTRIBUTE__TARGET_CLASS);
 		createEReference(moveAttributeEClass, MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED);
+
+		moveMethodEClass = createEClass(MOVE_METHOD);
+		createEReference(moveMethodEClass, MOVE_METHOD__SOURCE_CLASS);
+		createEReference(moveMethodEClass, MOVE_METHOD__TARGET_CLASS);
+		createEReference(moveMethodEClass, MOVE_METHOD__METHOD_TO_BE_MOVED);
 	}
 
 	/**
@@ -724,6 +773,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		renameMethodEClass.getESuperTypes().add(this.getRenameFeature());
 		movingFeaturesBetweenObjectsEClass.getESuperTypes().add(this.getRefactoring());
 		moveAttributeEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
+		moveMethodEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -784,6 +834,11 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getMoveAttribute_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, MoveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMoveAttribute_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, MoveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMoveAttribute_AttributeToBeMoved(), this.getAttribute(), null, "attributeToBeMoved", null, 0, 1, MoveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(moveMethodEClass, MoveMethod.class, "MoveMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getMoveMethod_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMoveMethod_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMoveMethod_MethodToBeMoved(), this.getMethod(), null, "methodToBeMoved", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

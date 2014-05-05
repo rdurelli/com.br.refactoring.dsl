@@ -683,6 +683,71 @@ public interface RefactoringPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl <em>Move Method</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getMoveMethod()
+	 * @generated
+	 */
+	int MOVE_METHOD = 16;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_METHOD__NAME = MOVING_FEATURES_BETWEEN_OBJECTS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_METHOD__ALL_REFACTORINGS = MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_METHOD__SOURCE_CLASS = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_METHOD__TARGET_CLASS = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Method To Be Moved</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_METHOD__METHOD_TO_BE_MOVED = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Move Method</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_METHOD_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
+
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Model <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1140,6 +1205,49 @@ public interface RefactoringPackage extends EPackage {
 	EReference getMoveAttribute_AttributeToBeMoved();
 
 	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.MoveMethod <em>Move Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Move Method</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveMethod
+	 * @generated
+	 */
+	EClass getMoveMethod();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.MoveMethod#getSourceClass <em>Source Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveMethod#getSourceClass()
+	 * @see #getMoveMethod()
+	 * @generated
+	 */
+	EReference getMoveMethod_SourceClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.MoveMethod#getTargetClass <em>Target Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveMethod#getTargetClass()
+	 * @see #getMoveMethod()
+	 * @generated
+	 */
+	EReference getMoveMethod_TargetClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.MoveMethod#getMethodToBeMoved <em>Method To Be Moved</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Method To Be Moved</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveMethod#getMethodToBeMoved()
+	 * @see #getMoveMethod()
+	 * @generated
+	 */
+	EReference getMoveMethod_MethodToBeMoved();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1536,6 +1644,40 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED = eINSTANCE.getMoveAttribute_AttributeToBeMoved();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl <em>Move Method</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getMoveMethod()
+		 * @generated
+		 */
+		EClass MOVE_METHOD = eINSTANCE.getMoveMethod();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MOVE_METHOD__SOURCE_CLASS = eINSTANCE.getMoveMethod_SourceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MOVE_METHOD__TARGET_CLASS = eINSTANCE.getMoveMethod_TargetClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Method To Be Moved</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MOVE_METHOD__METHOD_TO_BE_MOVED = eINSTANCE.getMoveMethod_MethodToBeMoved();
 
 	}
 

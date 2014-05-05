@@ -66,4 +66,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//Class"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributeToBeMoved" eType="#//Attribute"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MoveMethod" eSuperTypes="#//MovingFeaturesBetweenObjects">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methodToBeMoved" eType="#//Method"/>
+  </eClassifiers>
 </ecore:EPackage>

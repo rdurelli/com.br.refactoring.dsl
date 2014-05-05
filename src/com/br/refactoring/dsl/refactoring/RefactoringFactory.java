@@ -143,6 +143,15 @@ public interface RefactoringFactory extends EFactory {
 	MoveAttribute createMoveAttribute();
 
 	/**
+	 * Returns a new object of class '<em>Move Method</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Move Method</em>'.
+	 * @generated
+	 */
+	MoveMethod createMoveMethod();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

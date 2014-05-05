@@ -13,6 +13,7 @@ import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
+import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -86,6 +87,7 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.RENAME_METHOD: return createRenameMethod();
 			case RefactoringPackage.MOVING_FEATURES_BETWEEN_OBJECTS: return createMovingFeaturesBetweenObjects();
 			case RefactoringPackage.MOVE_ATTRIBUTE: return createMoveAttribute();
+			case RefactoringPackage.MOVE_METHOD: return createMoveMethod();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -219,6 +221,16 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public MoveAttribute createMoveAttribute() {
 		MoveAttributeImpl moveAttribute = new MoveAttributeImpl();
 		return moveAttribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MoveMethod createMoveMethod() {
+		MoveMethodImpl moveMethod = new MoveMethodImpl();
+		return moveMethod;
 	}
 
 	/**

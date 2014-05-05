@@ -14,6 +14,7 @@ import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
+import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -149,6 +150,10 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseMoveAttribute(MoveAttribute object) {
 				return createMoveAttributeAdapter();
+			}
+			@Override
+			public Adapter caseMoveMethod(MoveMethod object) {
+				return createMoveMethodAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -391,6 +396,20 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMoveAttributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.MoveMethod <em>Move Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.MoveMethod
+	 * @generated
+	 */
+	public Adapter createMoveMethodAdapter() {
 		return null;
 	}
 
