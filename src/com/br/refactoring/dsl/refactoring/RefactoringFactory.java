@@ -161,6 +161,15 @@ public interface RefactoringFactory extends EFactory {
 	ExtractClass createExtractClass();
 
 	/**
+	 * Returns a new object of class '<em>Inline Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Inline Class</em>'.
+	 * @generated
+	 */
+	InlineClass createInlineClass();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

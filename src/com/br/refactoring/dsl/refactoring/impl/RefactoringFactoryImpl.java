@@ -11,6 +11,7 @@ import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
+import com.br.refactoring.dsl.refactoring.InlineClass;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
@@ -90,6 +91,7 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.MOVE_ATTRIBUTE: return createMoveAttribute();
 			case RefactoringPackage.MOVE_METHOD: return createMoveMethod();
 			case RefactoringPackage.EXTRACT_CLASS: return createExtractClass();
+			case RefactoringPackage.INLINE_CLASS: return createInlineClass();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -243,6 +245,16 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public ExtractClass createExtractClass() {
 		ExtractClassImpl extractClass = new ExtractClassImpl();
 		return extractClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InlineClass createInlineClass() {
+		InlineClassImpl inlineClass = new InlineClassImpl();
+		return inlineClass;
 	}
 
 	/**

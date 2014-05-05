@@ -813,6 +813,62 @@ public interface RefactoringPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.InlineClassImpl <em>Inline Class</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.InlineClassImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getInlineClass()
+	 * @generated
+	 */
+	int INLINE_CLASS = 18;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INLINE_CLASS__NAME = MOVING_FEATURES_BETWEEN_OBJECTS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INLINE_CLASS__ALL_REFACTORINGS = MOVING_FEATURES_BETWEEN_OBJECTS__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>Class To Get All Features</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Class To Remove</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INLINE_CLASS__CLASS_TO_REMOVE = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Inline Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INLINE_CLASS_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 2;
+
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Model <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1356,6 +1412,38 @@ public interface RefactoringPackage extends EPackage {
 	EReference getExtractClass_AttributesToBeMoved();
 
 	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.InlineClass <em>Inline Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Inline Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.InlineClass
+	 * @generated
+	 */
+	EClass getInlineClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.InlineClass#getClassToGetAllFeatures <em>Class To Get All Features</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Class To Get All Features</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.InlineClass#getClassToGetAllFeatures()
+	 * @see #getInlineClass()
+	 * @generated
+	 */
+	EReference getInlineClass_ClassToGetAllFeatures();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.InlineClass#getClassToRemove <em>Class To Remove</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Class To Remove</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.InlineClass#getClassToRemove()
+	 * @see #getInlineClass()
+	 * @generated
+	 */
+	EReference getInlineClass_ClassToRemove();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1820,6 +1908,32 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED = eINSTANCE.getExtractClass_AttributesToBeMoved();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.InlineClassImpl <em>Inline Class</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.InlineClassImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getInlineClass()
+		 * @generated
+		 */
+		EClass INLINE_CLASS = eINSTANCE.getInlineClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Class To Get All Features</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES = eINSTANCE.getInlineClass_ClassToGetAllFeatures();
+
+		/**
+		 * The meta object literal for the '<em><b>Class To Remove</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INLINE_CLASS__CLASS_TO_REMOVE = eINSTANCE.getInlineClass_ClassToRemove();
 
 	}
 

@@ -12,6 +12,7 @@ import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.ElementType;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
+import com.br.refactoring.dsl.refactoring.InlineClass;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
@@ -165,6 +166,13 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * @generated
 	 */
 	private EClass extractClassEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass inlineClassEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -691,6 +699,33 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getInlineClass() {
+		return inlineClassEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getInlineClass_ClassToGetAllFeatures() {
+		return (EReference)inlineClassEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getInlineClass_ClassToRemove() {
+		return (EReference)inlineClassEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RefactoringFactory getRefactoringFactory() {
 		return (RefactoringFactory)getEFactoryInstance();
 	}
@@ -782,6 +817,10 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEAttribute(extractClassEClass, EXTRACT_CLASS__NEW_NAME);
 		createEReference(extractClassEClass, EXTRACT_CLASS__SOURCE_CLASS);
 		createEReference(extractClassEClass, EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED);
+
+		inlineClassEClass = createEClass(INLINE_CLASS);
+		createEReference(inlineClassEClass, INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES);
+		createEReference(inlineClassEClass, INLINE_CLASS__CLASS_TO_REMOVE);
 	}
 
 	/**
@@ -824,6 +863,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		moveAttributeEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
 		moveMethodEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
 		extractClassEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
+		inlineClassEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -894,6 +934,10 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEAttribute(getExtractClass_NewName(), ecorePackage.getEString(), "newName", null, 0, 1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getExtractClass_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getExtractClass_AttributesToBeMoved(), this.getAttribute(), null, "attributesToBeMoved", null, 0, -1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(inlineClassEClass, InlineClass.class, "InlineClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getInlineClass_ClassToGetAllFeatures(), this.getClass_(), null, "classToGetAllFeatures", null, 0, 1, InlineClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getInlineClass_ClassToRemove(), this.getClass_(), null, "classToRemove", null, 0, 1, InlineClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

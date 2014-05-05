@@ -77,4 +77,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributesToBeMoved" upperBound="-1"
         eType="#//Attribute"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InlineClass" eSuperTypes="#//MovingFeaturesBetweenObjects">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classToGetAllFeatures"
+        eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classToRemove" eType="#//Class"/>
+  </eClassifiers>
 </ecore:EPackage>

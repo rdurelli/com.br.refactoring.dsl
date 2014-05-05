@@ -73,5 +73,9 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ExtractClass/sourceClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ExtractClass/attributesToBeMoved"/>
     </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//InlineClass">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//InlineClass/classToGetAllFeatures"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//InlineClass/classToRemove"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -12,6 +12,7 @@ import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.ElementType;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
+import com.br.refactoring.dsl.refactoring.InlineClass;
 import com.br.refactoring.dsl.refactoring.Method;
 import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
@@ -218,6 +219,15 @@ public class RefactoringSwitch<T> extends Switch<T> {
 				if (result == null) result = caseMovingFeaturesBetweenObjects(extractClass);
 				if (result == null) result = caseRefactoring(extractClass);
 				if (result == null) result = caseType(extractClass);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.INLINE_CLASS: {
+				InlineClass inlineClass = (InlineClass)theEObject;
+				T result = caseInlineClass(inlineClass);
+				if (result == null) result = caseMovingFeaturesBetweenObjects(inlineClass);
+				if (result == null) result = caseRefactoring(inlineClass);
+				if (result == null) result = caseType(inlineClass);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -492,6 +502,21 @@ public class RefactoringSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseExtractClass(ExtractClass object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Inline Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Inline Class</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInlineClass(InlineClass object) {
 		return null;
 	}
 
