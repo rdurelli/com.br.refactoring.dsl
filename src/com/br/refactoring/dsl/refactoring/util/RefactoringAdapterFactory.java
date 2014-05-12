@@ -10,6 +10,7 @@ import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.ElementType;
+import com.br.refactoring.dsl.refactoring.EncapsulateField;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.InlineClass;
@@ -174,6 +175,10 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseReplaceDataValueWithObject(ReplaceDataValueWithObject object) {
 				return createReplaceDataValueWithObjectAdapter();
+			}
+			@Override
+			public Adapter caseEncapsulateField(EncapsulateField object) {
+				return createEncapsulateFieldAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -486,6 +491,20 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createReplaceDataValueWithObjectAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.EncapsulateField <em>Encapsulate Field</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.EncapsulateField
+	 * @generated
+	 */
+	public Adapter createEncapsulateFieldAdapter() {
 		return null;
 	}
 

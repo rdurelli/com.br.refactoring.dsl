@@ -10,6 +10,7 @@ import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.ElementType;
+import com.br.refactoring.dsl.refactoring.EncapsulateField;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.InlineClass;
@@ -189,6 +190,13 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * @generated
 	 */
 	private EClass replaceDataValueWithObjectEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass encapsulateFieldEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -805,6 +813,33 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getEncapsulateField() {
+		return encapsulateFieldEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEncapsulateField_SourceClass() {
+		return (EReference)encapsulateFieldEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEncapsulateField_AttributeToEncapsulate() {
+		return (EReference)encapsulateFieldEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RefactoringFactory getRefactoringFactory() {
 		return (RefactoringFactory)getEFactoryInstance();
 	}
@@ -909,6 +944,10 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS);
 		createEReference(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT);
 		createEReference(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES);
+
+		encapsulateFieldEClass = createEClass(ENCAPSULATE_FIELD);
+		createEReference(encapsulateFieldEClass, ENCAPSULATE_FIELD__SOURCE_CLASS);
+		createEReference(encapsulateFieldEClass, ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE);
 	}
 
 	/**
@@ -954,6 +993,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		inlineClassEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
 		organizingDataEClass.getESuperTypes().add(this.getRefactoring());
 		replaceDataValueWithObjectEClass.getESuperTypes().add(this.getOrganizingData());
+		encapsulateFieldEClass.getESuperTypes().add(this.getOrganizingData());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1037,6 +1077,10 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getReplaceDataValueWithObject_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, ReplaceDataValueWithObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReplaceDataValueWithObject_AttributeToReplaceDataWithObject(), this.getAttribute(), null, "attributeToReplaceDataWithObject", null, 0, 1, ReplaceDataValueWithObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReplaceDataValueWithObject_NewAttributes(), this.getAttribute(), null, "newAttributes", null, 0, -1, ReplaceDataValueWithObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(encapsulateFieldEClass, EncapsulateField.class, "EncapsulateField", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getEncapsulateField_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, EncapsulateField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEncapsulateField_AttributeToEncapsulate(), this.getAttribute(), null, "attributeToEncapsulate", null, 0, 1, EncapsulateField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

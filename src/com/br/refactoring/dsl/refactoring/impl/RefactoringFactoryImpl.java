@@ -9,6 +9,7 @@ package com.br.refactoring.dsl.refactoring.impl;
 import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
+import com.br.refactoring.dsl.refactoring.EncapsulateField;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.InlineClass;
@@ -96,6 +97,7 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.INLINE_CLASS: return createInlineClass();
 			case RefactoringPackage.ORGANIZING_DATA: return createOrganizingData();
 			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT: return createReplaceDataValueWithObject();
+			case RefactoringPackage.ENCAPSULATE_FIELD: return createEncapsulateField();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -279,6 +281,16 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public ReplaceDataValueWithObject createReplaceDataValueWithObject() {
 		ReplaceDataValueWithObjectImpl replaceDataValueWithObject = new ReplaceDataValueWithObjectImpl();
 		return replaceDataValueWithObject;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncapsulateField createEncapsulateField() {
+		EncapsulateFieldImpl encapsulateField = new EncapsulateFieldImpl();
+		return encapsulateField;
 	}
 
 	/**

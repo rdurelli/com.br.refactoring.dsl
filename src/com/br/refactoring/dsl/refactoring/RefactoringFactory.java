@@ -188,6 +188,15 @@ public interface RefactoringFactory extends EFactory {
 	ReplaceDataValueWithObject createReplaceDataValueWithObject();
 
 	/**
+	 * Returns a new object of class '<em>Encapsulate Field</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encapsulate Field</em>'.
+	 * @generated
+	 */
+	EncapsulateField createEncapsulateField();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

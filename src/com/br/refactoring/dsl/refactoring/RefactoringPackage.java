@@ -971,6 +971,62 @@ public interface RefactoringPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.EncapsulateFieldImpl <em>Encapsulate Field</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.EncapsulateFieldImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getEncapsulateField()
+	 * @generated
+	 */
+	int ENCAPSULATE_FIELD = 21;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCAPSULATE_FIELD__NAME = ORGANIZING_DATA__NAME;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCAPSULATE_FIELD__ALL_REFACTORINGS = ORGANIZING_DATA__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCAPSULATE_FIELD__SOURCE_CLASS = ORGANIZING_DATA_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Encapsulate</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE = ORGANIZING_DATA_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Encapsulate Field</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCAPSULATE_FIELD_FEATURE_COUNT = ORGANIZING_DATA_FEATURE_COUNT + 2;
+
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Model <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1621,6 +1677,38 @@ public interface RefactoringPackage extends EPackage {
 	EReference getReplaceDataValueWithObject_NewAttributes();
 
 	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.EncapsulateField <em>Encapsulate Field</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Encapsulate Field</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.EncapsulateField
+	 * @generated
+	 */
+	EClass getEncapsulateField();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.EncapsulateField#getSourceClass <em>Source Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.EncapsulateField#getSourceClass()
+	 * @see #getEncapsulateField()
+	 * @generated
+	 */
+	EReference getEncapsulateField_SourceClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.EncapsulateField#getAttributeToEncapsulate <em>Attribute To Encapsulate</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Attribute To Encapsulate</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.EncapsulateField#getAttributeToEncapsulate()
+	 * @see #getEncapsulateField()
+	 * @generated
+	 */
+	EReference getEncapsulateField_AttributeToEncapsulate();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2171,6 +2259,32 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES = eINSTANCE.getReplaceDataValueWithObject_NewAttributes();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.EncapsulateFieldImpl <em>Encapsulate Field</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.EncapsulateFieldImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getEncapsulateField()
+		 * @generated
+		 */
+		EClass ENCAPSULATE_FIELD = eINSTANCE.getEncapsulateField();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ENCAPSULATE_FIELD__SOURCE_CLASS = eINSTANCE.getEncapsulateField_SourceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Encapsulate</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE = eINSTANCE.getEncapsulateField_AttributeToEncapsulate();
 
 	}
 

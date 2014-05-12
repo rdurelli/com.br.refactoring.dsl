@@ -10,6 +10,7 @@ import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
 import com.br.refactoring.dsl.refactoring.ElementType;
+import com.br.refactoring.dsl.refactoring.EncapsulateField;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
 import com.br.refactoring.dsl.refactoring.InlineClass;
@@ -247,6 +248,15 @@ public class RefactoringSwitch<T> extends Switch<T> {
 				if (result == null) result = caseOrganizingData(replaceDataValueWithObject);
 				if (result == null) result = caseRefactoring(replaceDataValueWithObject);
 				if (result == null) result = caseType(replaceDataValueWithObject);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.ENCAPSULATE_FIELD: {
+				EncapsulateField encapsulateField = (EncapsulateField)theEObject;
+				T result = caseEncapsulateField(encapsulateField);
+				if (result == null) result = caseOrganizingData(encapsulateField);
+				if (result == null) result = caseRefactoring(encapsulateField);
+				if (result == null) result = caseType(encapsulateField);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -566,6 +576,21 @@ public class RefactoringSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseReplaceDataValueWithObject(ReplaceDataValueWithObject object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encapsulate Field</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encapsulate Field</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncapsulateField(EncapsulateField object) {
 		return null;
 	}
 
