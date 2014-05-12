@@ -18,12 +18,14 @@ import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
+import com.br.refactoring.dsl.refactoring.OrganizingData;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 import com.br.refactoring.dsl.refactoring.RenameAttribute;
 import com.br.refactoring.dsl.refactoring.RenameClass;
 import com.br.refactoring.dsl.refactoring.RenameFeature;
 import com.br.refactoring.dsl.refactoring.RenameMethod;
+import com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject;
 import com.br.refactoring.dsl.refactoring.Type;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -164,6 +166,14 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseInlineClass(InlineClass object) {
 				return createInlineClassAdapter();
+			}
+			@Override
+			public Adapter caseOrganizingData(OrganizingData object) {
+				return createOrganizingDataAdapter();
+			}
+			@Override
+			public Adapter caseReplaceDataValueWithObject(ReplaceDataValueWithObject object) {
+				return createReplaceDataValueWithObjectAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -448,6 +458,34 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInlineClassAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.OrganizingData <em>Organizing Data</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.OrganizingData
+	 * @generated
+	 */
+	public Adapter createOrganizingDataAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject <em>Replace Data Value With Object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject
+	 * @generated
+	 */
+	public Adapter createReplaceDataValueWithObjectAdapter() {
 		return null;
 	}
 

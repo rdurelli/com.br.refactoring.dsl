@@ -82,4 +82,16 @@
         eType="#//Class"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="classToRemove" eType="#//Class"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OrganizingData" eSuperTypes="#//Refactoring">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allRefactorings" upperBound="-1"
+        eType="#//OrganizingData" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReplaceDataValueWithObject" eSuperTypes="#//OrganizingData">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeToReplaceDataWithObject"
+        eType="#//Attribute"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="newAttributes" upperBound="-1"
+        eType="#//Attribute" containment="true"/>
+  </eClassifiers>
 </ecore:EPackage>

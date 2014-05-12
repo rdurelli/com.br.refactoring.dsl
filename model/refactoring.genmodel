@@ -77,5 +77,14 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//InlineClass/classToGetAllFeatures"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//InlineClass/classToRemove"/>
     </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//OrganizingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//OrganizingData/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//OrganizingData/allRefactorings"/>
+    </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//ReplaceDataValueWithObject">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ReplaceDataValueWithObject/sourceClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ReplaceDataValueWithObject/attributeToReplaceDataWithObject"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//ReplaceDataValueWithObject/newAttributes"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

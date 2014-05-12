@@ -18,12 +18,14 @@ import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
+import com.br.refactoring.dsl.refactoring.OrganizingData;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 import com.br.refactoring.dsl.refactoring.RenameAttribute;
 import com.br.refactoring.dsl.refactoring.RenameClass;
 import com.br.refactoring.dsl.refactoring.RenameFeature;
 import com.br.refactoring.dsl.refactoring.RenameMethod;
+import com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject;
 import com.br.refactoring.dsl.refactoring.Type;
 
 import org.eclipse.emf.ecore.EObject;
@@ -228,6 +230,23 @@ public class RefactoringSwitch<T> extends Switch<T> {
 				if (result == null) result = caseMovingFeaturesBetweenObjects(inlineClass);
 				if (result == null) result = caseRefactoring(inlineClass);
 				if (result == null) result = caseType(inlineClass);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.ORGANIZING_DATA: {
+				OrganizingData organizingData = (OrganizingData)theEObject;
+				T result = caseOrganizingData(organizingData);
+				if (result == null) result = caseRefactoring(organizingData);
+				if (result == null) result = caseType(organizingData);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT: {
+				ReplaceDataValueWithObject replaceDataValueWithObject = (ReplaceDataValueWithObject)theEObject;
+				T result = caseReplaceDataValueWithObject(replaceDataValueWithObject);
+				if (result == null) result = caseOrganizingData(replaceDataValueWithObject);
+				if (result == null) result = caseRefactoring(replaceDataValueWithObject);
+				if (result == null) result = caseType(replaceDataValueWithObject);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -517,6 +536,36 @@ public class RefactoringSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInlineClass(InlineClass object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Organizing Data</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Organizing Data</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOrganizingData(OrganizingData object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Replace Data Value With Object</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Replace Data Value With Object</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReplaceDataValueWithObject(ReplaceDataValueWithObject object) {
 		return null;
 	}
 

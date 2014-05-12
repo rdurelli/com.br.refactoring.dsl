@@ -17,6 +17,7 @@ import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
+import com.br.refactoring.dsl.refactoring.OrganizingData;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 import com.br.refactoring.dsl.refactoring.RenameAttribute;
@@ -24,6 +25,7 @@ import com.br.refactoring.dsl.refactoring.RenameClass;
 import com.br.refactoring.dsl.refactoring.RenameFeature;
 
 import com.br.refactoring.dsl.refactoring.RenameMethod;
+import com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -92,6 +94,8 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.MOVE_METHOD: return createMoveMethod();
 			case RefactoringPackage.EXTRACT_CLASS: return createExtractClass();
 			case RefactoringPackage.INLINE_CLASS: return createInlineClass();
+			case RefactoringPackage.ORGANIZING_DATA: return createOrganizingData();
+			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT: return createReplaceDataValueWithObject();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -255,6 +259,26 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public InlineClass createInlineClass() {
 		InlineClassImpl inlineClass = new InlineClassImpl();
 		return inlineClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OrganizingData createOrganizingData() {
+		OrganizingDataImpl organizingData = new OrganizingDataImpl();
+		return organizingData;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReplaceDataValueWithObject createReplaceDataValueWithObject() {
+		ReplaceDataValueWithObjectImpl replaceDataValueWithObject = new ReplaceDataValueWithObjectImpl();
+		return replaceDataValueWithObject;
 	}
 
 	/**

@@ -18,6 +18,7 @@ import com.br.refactoring.dsl.refactoring.Model;
 import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
+import com.br.refactoring.dsl.refactoring.OrganizingData;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -25,6 +26,7 @@ import com.br.refactoring.dsl.refactoring.RenameAttribute;
 import com.br.refactoring.dsl.refactoring.RenameClass;
 import com.br.refactoring.dsl.refactoring.RenameFeature;
 import com.br.refactoring.dsl.refactoring.RenameMethod;
+import com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject;
 import com.br.refactoring.dsl.refactoring.Type;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -173,6 +175,20 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * @generated
 	 */
 	private EClass inlineClassEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass organizingDataEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass replaceDataValueWithObjectEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -726,6 +742,69 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getOrganizingData() {
+		return organizingDataEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getOrganizingData_Name() {
+		return (EAttribute)organizingDataEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOrganizingData_AllRefactorings() {
+		return (EReference)organizingDataEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getReplaceDataValueWithObject() {
+		return replaceDataValueWithObjectEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getReplaceDataValueWithObject_SourceClass() {
+		return (EReference)replaceDataValueWithObjectEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getReplaceDataValueWithObject_AttributeToReplaceDataWithObject() {
+		return (EReference)replaceDataValueWithObjectEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getReplaceDataValueWithObject_NewAttributes() {
+		return (EReference)replaceDataValueWithObjectEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RefactoringFactory getRefactoringFactory() {
 		return (RefactoringFactory)getEFactoryInstance();
 	}
@@ -821,6 +900,15 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		inlineClassEClass = createEClass(INLINE_CLASS);
 		createEReference(inlineClassEClass, INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES);
 		createEReference(inlineClassEClass, INLINE_CLASS__CLASS_TO_REMOVE);
+
+		organizingDataEClass = createEClass(ORGANIZING_DATA);
+		createEAttribute(organizingDataEClass, ORGANIZING_DATA__NAME);
+		createEReference(organizingDataEClass, ORGANIZING_DATA__ALL_REFACTORINGS);
+
+		replaceDataValueWithObjectEClass = createEClass(REPLACE_DATA_VALUE_WITH_OBJECT);
+		createEReference(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS);
+		createEReference(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT);
+		createEReference(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES);
 	}
 
 	/**
@@ -864,6 +952,8 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		moveMethodEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
 		extractClassEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
 		inlineClassEClass.getESuperTypes().add(this.getMovingFeaturesBetweenObjects());
+		organizingDataEClass.getESuperTypes().add(this.getRefactoring());
+		replaceDataValueWithObjectEClass.getESuperTypes().add(this.getOrganizingData());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -938,6 +1028,15 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEClass(inlineClassEClass, InlineClass.class, "InlineClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInlineClass_ClassToGetAllFeatures(), this.getClass_(), null, "classToGetAllFeatures", null, 0, 1, InlineClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInlineClass_ClassToRemove(), this.getClass_(), null, "classToRemove", null, 0, 1, InlineClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(organizingDataEClass, OrganizingData.class, "OrganizingData", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getOrganizingData_Name(), ecorePackage.getEString(), "name", null, 0, 1, OrganizingData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOrganizingData_AllRefactorings(), this.getOrganizingData(), null, "allRefactorings", null, 0, -1, OrganizingData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(replaceDataValueWithObjectEClass, ReplaceDataValueWithObject.class, "ReplaceDataValueWithObject", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getReplaceDataValueWithObject_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, ReplaceDataValueWithObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getReplaceDataValueWithObject_AttributeToReplaceDataWithObject(), this.getAttribute(), null, "attributeToReplaceDataWithObject", null, 0, 1, ReplaceDataValueWithObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getReplaceDataValueWithObject_NewAttributes(), this.getAttribute(), null, "newAttributes", null, 0, -1, ReplaceDataValueWithObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

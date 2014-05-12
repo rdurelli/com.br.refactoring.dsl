@@ -170,6 +170,24 @@ public interface RefactoringFactory extends EFactory {
 	InlineClass createInlineClass();
 
 	/**
+	 * Returns a new object of class '<em>Organizing Data</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Organizing Data</em>'.
+	 * @generated
+	 */
+	OrganizingData createOrganizingData();
+
+	/**
+	 * Returns a new object of class '<em>Replace Data Value With Object</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Replace Data Value With Object</em>'.
+	 * @generated
+	 */
+	ReplaceDataValueWithObject createReplaceDataValueWithObject();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -869,6 +869,108 @@ public interface RefactoringPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.OrganizingDataImpl <em>Organizing Data</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.OrganizingDataImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getOrganizingData()
+	 * @generated
+	 */
+	int ORGANIZING_DATA = 19;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORGANIZING_DATA__NAME = REFACTORING_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORGANIZING_DATA__ALL_REFACTORINGS = REFACTORING_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Organizing Data</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORGANIZING_DATA_FEATURE_COUNT = REFACTORING_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl <em>Replace Data Value With Object</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getReplaceDataValueWithObject()
+	 * @generated
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT = 20;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT__NAME = ORGANIZING_DATA__NAME;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT__ALL_REFACTORINGS = ORGANIZING_DATA__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS = ORGANIZING_DATA_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Replace Data With Object</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT = ORGANIZING_DATA_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>New Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES = ORGANIZING_DATA_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Replace Data Value With Object</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT_FEATURE_COUNT = ORGANIZING_DATA_FEATURE_COUNT + 3;
+
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Model <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1444,6 +1546,81 @@ public interface RefactoringPackage extends EPackage {
 	EReference getInlineClass_ClassToRemove();
 
 	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.OrganizingData <em>Organizing Data</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Organizing Data</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.OrganizingData
+	 * @generated
+	 */
+	EClass getOrganizingData();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.OrganizingData#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.OrganizingData#getName()
+	 * @see #getOrganizingData()
+	 * @generated
+	 */
+	EAttribute getOrganizingData_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.br.refactoring.dsl.refactoring.OrganizingData#getAllRefactorings <em>All Refactorings</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>All Refactorings</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.OrganizingData#getAllRefactorings()
+	 * @see #getOrganizingData()
+	 * @generated
+	 */
+	EReference getOrganizingData_AllRefactorings();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject <em>Replace Data Value With Object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Replace Data Value With Object</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject
+	 * @generated
+	 */
+	EClass getReplaceDataValueWithObject();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getSourceClass <em>Source Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getSourceClass()
+	 * @see #getReplaceDataValueWithObject()
+	 * @generated
+	 */
+	EReference getReplaceDataValueWithObject_SourceClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getAttributeToReplaceDataWithObject <em>Attribute To Replace Data With Object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Attribute To Replace Data With Object</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getAttributeToReplaceDataWithObject()
+	 * @see #getReplaceDataValueWithObject()
+	 * @generated
+	 */
+	EReference getReplaceDataValueWithObject_AttributeToReplaceDataWithObject();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getNewAttributes <em>New Attributes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>New Attributes</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getNewAttributes()
+	 * @see #getReplaceDataValueWithObject()
+	 * @generated
+	 */
+	EReference getReplaceDataValueWithObject_NewAttributes();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1934,6 +2111,66 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference INLINE_CLASS__CLASS_TO_REMOVE = eINSTANCE.getInlineClass_ClassToRemove();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.OrganizingDataImpl <em>Organizing Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.OrganizingDataImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getOrganizingData()
+		 * @generated
+		 */
+		EClass ORGANIZING_DATA = eINSTANCE.getOrganizingData();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORGANIZING_DATA__NAME = eINSTANCE.getOrganizingData_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>All Refactorings</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORGANIZING_DATA__ALL_REFACTORINGS = eINSTANCE.getOrganizingData_AllRefactorings();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl <em>Replace Data Value With Object</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getReplaceDataValueWithObject()
+		 * @generated
+		 */
+		EClass REPLACE_DATA_VALUE_WITH_OBJECT = eINSTANCE.getReplaceDataValueWithObject();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS = eINSTANCE.getReplaceDataValueWithObject_SourceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Replace Data With Object</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT = eINSTANCE.getReplaceDataValueWithObject_AttributeToReplaceDataWithObject();
+
+		/**
+		 * The meta object literal for the '<em><b>New Attributes</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES = eINSTANCE.getReplaceDataValueWithObject_NewAttributes();
 
 	}
 
