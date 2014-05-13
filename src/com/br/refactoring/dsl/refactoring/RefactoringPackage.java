@@ -1046,13 +1046,22 @@ public interface RefactoringPackage extends EPackage {
 	int DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS = REFACTORING_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEALING_WITH_GENERALIZATION__NAME = REFACTORING_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Dealing With Generalization</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEALING_WITH_GENERALIZATION_FEATURE_COUNT = REFACTORING_FEATURE_COUNT + 1;
+	int DEALING_WITH_GENERALIZATION_FEATURE_COUNT = REFACTORING_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl <em>Push Down Method</em>}' class.
@@ -1072,6 +1081,15 @@ public interface RefactoringPackage extends EPackage {
 	 * @ordered
 	 */
 	int PUSH_DOWN_METHOD__ALL_REFACTORINGS = DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_METHOD__NAME = DEALING_WITH_GENERALIZATION__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Method To Be Pushed</b></em>' reference.
@@ -1814,6 +1832,17 @@ public interface RefactoringPackage extends EPackage {
 	EReference getDealingWithGeneralization_AllRefactorings();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.DealingWithGeneralization#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.DealingWithGeneralization#getName()
+	 * @see #getDealingWithGeneralization()
+	 * @generated
+	 */
+	EAttribute getDealingWithGeneralization_Name();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.PushDownMethod <em>Push Down Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2451,6 +2480,14 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS = eINSTANCE.getDealingWithGeneralization_AllRefactorings();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEALING_WITH_GENERALIZATION__NAME = eINSTANCE.getDealingWithGeneralization_Name();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl <em>Push Down Method</em>}' class.

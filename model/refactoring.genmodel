@@ -92,6 +92,7 @@
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//DealingWithGeneralization">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//DealingWithGeneralization/allRefactorings"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//DealingWithGeneralization/name"/>
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//PushDownMethod">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PushDownMethod/methodToBePushed"/>

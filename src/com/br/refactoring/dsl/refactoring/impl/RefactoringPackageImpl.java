@@ -874,6 +874,15 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getDealingWithGeneralization_Name() {
+		return (EAttribute)dealingWithGeneralizationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPushDownMethod() {
 		return pushDownMethodEClass;
 	}
@@ -1021,6 +1030,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 
 		dealingWithGeneralizationEClass = createEClass(DEALING_WITH_GENERALIZATION);
 		createEReference(dealingWithGeneralizationEClass, DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS);
+		createEAttribute(dealingWithGeneralizationEClass, DEALING_WITH_GENERALIZATION__NAME);
 
 		pushDownMethodEClass = createEClass(PUSH_DOWN_METHOD);
 		createEReference(pushDownMethodEClass, PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED);
@@ -1164,6 +1174,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 
 		initEClass(dealingWithGeneralizationEClass, DealingWithGeneralization.class, "DealingWithGeneralization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDealingWithGeneralization_AllRefactorings(), this.getDealingWithGeneralization(), null, "allRefactorings", null, 0, -1, DealingWithGeneralization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDealingWithGeneralization_Name(), ecorePackage.getEString(), "name", null, 0, 1, DealingWithGeneralization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pushDownMethodEClass, PushDownMethod.class, "PushDownMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPushDownMethod_MethodToBePushed(), this.getMethod(), null, "methodToBePushed", null, 0, 1, PushDownMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

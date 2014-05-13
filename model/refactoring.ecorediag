@@ -409,6 +409,10 @@
   <children xmi:type="notation:Node" xmi:id="_DCg88dq7EeObbpaqT3HUQQ" type="1001">
     <children xmi:type="notation:Node" xmi:id="_DCsjINq7EeObbpaqT3HUQQ" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_DCz34Nq7EeObbpaqT3HUQQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_EU-JsNrDEeObbpaqT3HUQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//DealingWithGeneralization/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_EU-JsdrDEeObbpaqT3HUQQ"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_DCz34dq7EeObbpaqT3HUQQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_DCz34tq7EeObbpaqT3HUQQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_DCz349q7EeObbpaqT3HUQQ"/>
