@@ -9,6 +9,7 @@ package com.br.refactoring.dsl.refactoring.impl;
 import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
+import com.br.refactoring.dsl.refactoring.DealingWithGeneralization;
 import com.br.refactoring.dsl.refactoring.EncapsulateField;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
 import com.br.refactoring.dsl.refactoring.Import;
@@ -19,6 +20,7 @@ import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
+import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 import com.br.refactoring.dsl.refactoring.RenameAttribute;
@@ -98,6 +100,8 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.ORGANIZING_DATA: return createOrganizingData();
 			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT: return createReplaceDataValueWithObject();
 			case RefactoringPackage.ENCAPSULATE_FIELD: return createEncapsulateField();
+			case RefactoringPackage.DEALING_WITH_GENERALIZATION: return createDealingWithGeneralization();
+			case RefactoringPackage.PUSH_DOWN_METHOD: return createPushDownMethod();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -291,6 +295,26 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public EncapsulateField createEncapsulateField() {
 		EncapsulateFieldImpl encapsulateField = new EncapsulateFieldImpl();
 		return encapsulateField;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DealingWithGeneralization createDealingWithGeneralization() {
+		DealingWithGeneralizationImpl dealingWithGeneralization = new DealingWithGeneralizationImpl();
+		return dealingWithGeneralization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PushDownMethod createPushDownMethod() {
+		PushDownMethodImpl pushDownMethod = new PushDownMethodImpl();
+		return pushDownMethod;
 	}
 
 	/**

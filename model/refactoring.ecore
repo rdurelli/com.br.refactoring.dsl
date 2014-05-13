@@ -99,4 +99,13 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributeToEncapsulate"
         eType="#//Attribute"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DealingWithGeneralization" eSuperTypes="#//Refactoring">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allRefactorings" upperBound="-1"
+        eType="#//DealingWithGeneralization" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PushDownMethod" eSuperTypes="#//DealingWithGeneralization">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methodToBePushed" eType="#//Method"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//Class"/>
+  </eClassifiers>
 </ecore:EPackage>

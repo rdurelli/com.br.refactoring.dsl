@@ -9,6 +9,7 @@ package com.br.refactoring.dsl.refactoring.util;
 import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
+import com.br.refactoring.dsl.refactoring.DealingWithGeneralization;
 import com.br.refactoring.dsl.refactoring.ElementType;
 import com.br.refactoring.dsl.refactoring.EncapsulateField;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
@@ -20,6 +21,7 @@ import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
+import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 import com.br.refactoring.dsl.refactoring.RenameAttribute;
@@ -257,6 +259,23 @@ public class RefactoringSwitch<T> extends Switch<T> {
 				if (result == null) result = caseOrganizingData(encapsulateField);
 				if (result == null) result = caseRefactoring(encapsulateField);
 				if (result == null) result = caseType(encapsulateField);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.DEALING_WITH_GENERALIZATION: {
+				DealingWithGeneralization dealingWithGeneralization = (DealingWithGeneralization)theEObject;
+				T result = caseDealingWithGeneralization(dealingWithGeneralization);
+				if (result == null) result = caseRefactoring(dealingWithGeneralization);
+				if (result == null) result = caseType(dealingWithGeneralization);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.PUSH_DOWN_METHOD: {
+				PushDownMethod pushDownMethod = (PushDownMethod)theEObject;
+				T result = casePushDownMethod(pushDownMethod);
+				if (result == null) result = caseDealingWithGeneralization(pushDownMethod);
+				if (result == null) result = caseRefactoring(pushDownMethod);
+				if (result == null) result = caseType(pushDownMethod);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -591,6 +610,36 @@ public class RefactoringSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseEncapsulateField(EncapsulateField object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Dealing With Generalization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Dealing With Generalization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDealingWithGeneralization(DealingWithGeneralization object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Push Down Method</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Push Down Method</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePushDownMethod(PushDownMethod object) {
 		return null;
 	}
 

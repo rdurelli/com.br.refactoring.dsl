@@ -9,6 +9,7 @@ package com.br.refactoring.dsl.refactoring.impl;
 import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
+import com.br.refactoring.dsl.refactoring.DealingWithGeneralization;
 import com.br.refactoring.dsl.refactoring.ElementType;
 import com.br.refactoring.dsl.refactoring.EncapsulateField;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
@@ -20,6 +21,7 @@ import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
+import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -197,6 +199,20 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * @generated
 	 */
 	private EClass encapsulateFieldEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dealingWithGeneralizationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pushDownMethodEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -840,6 +856,60 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getDealingWithGeneralization() {
+		return dealingWithGeneralizationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDealingWithGeneralization_AllRefactorings() {
+		return (EReference)dealingWithGeneralizationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPushDownMethod() {
+		return pushDownMethodEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPushDownMethod_MethodToBePushed() {
+		return (EReference)pushDownMethodEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPushDownMethod_SourceClass() {
+		return (EReference)pushDownMethodEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPushDownMethod_TargetClass() {
+		return (EReference)pushDownMethodEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RefactoringFactory getRefactoringFactory() {
 		return (RefactoringFactory)getEFactoryInstance();
 	}
@@ -948,6 +1018,14 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		encapsulateFieldEClass = createEClass(ENCAPSULATE_FIELD);
 		createEReference(encapsulateFieldEClass, ENCAPSULATE_FIELD__SOURCE_CLASS);
 		createEReference(encapsulateFieldEClass, ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE);
+
+		dealingWithGeneralizationEClass = createEClass(DEALING_WITH_GENERALIZATION);
+		createEReference(dealingWithGeneralizationEClass, DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS);
+
+		pushDownMethodEClass = createEClass(PUSH_DOWN_METHOD);
+		createEReference(pushDownMethodEClass, PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED);
+		createEReference(pushDownMethodEClass, PUSH_DOWN_METHOD__SOURCE_CLASS);
+		createEReference(pushDownMethodEClass, PUSH_DOWN_METHOD__TARGET_CLASS);
 	}
 
 	/**
@@ -994,6 +1072,8 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		organizingDataEClass.getESuperTypes().add(this.getRefactoring());
 		replaceDataValueWithObjectEClass.getESuperTypes().add(this.getOrganizingData());
 		encapsulateFieldEClass.getESuperTypes().add(this.getOrganizingData());
+		dealingWithGeneralizationEClass.getESuperTypes().add(this.getRefactoring());
+		pushDownMethodEClass.getESuperTypes().add(this.getDealingWithGeneralization());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1081,6 +1161,14 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEClass(encapsulateFieldEClass, EncapsulateField.class, "EncapsulateField", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEncapsulateField_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, EncapsulateField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEncapsulateField_AttributeToEncapsulate(), this.getAttribute(), null, "attributeToEncapsulate", null, 0, 1, EncapsulateField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(dealingWithGeneralizationEClass, DealingWithGeneralization.class, "DealingWithGeneralization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDealingWithGeneralization_AllRefactorings(), this.getDealingWithGeneralization(), null, "allRefactorings", null, 0, -1, DealingWithGeneralization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(pushDownMethodEClass, PushDownMethod.class, "PushDownMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getPushDownMethod_MethodToBePushed(), this.getMethod(), null, "methodToBePushed", null, 0, 1, PushDownMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPushDownMethod_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, PushDownMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPushDownMethod_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, PushDownMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -197,6 +197,24 @@ public interface RefactoringFactory extends EFactory {
 	EncapsulateField createEncapsulateField();
 
 	/**
+	 * Returns a new object of class '<em>Dealing With Generalization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Dealing With Generalization</em>'.
+	 * @generated
+	 */
+	DealingWithGeneralization createDealingWithGeneralization();
+
+	/**
+	 * Returns a new object of class '<em>Push Down Method</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Push Down Method</em>'.
+	 * @generated
+	 */
+	PushDownMethod createPushDownMethod();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

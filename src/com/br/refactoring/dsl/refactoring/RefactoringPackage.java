@@ -1027,6 +1027,90 @@ public interface RefactoringPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.DealingWithGeneralizationImpl <em>Dealing With Generalization</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.DealingWithGeneralizationImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getDealingWithGeneralization()
+	 * @generated
+	 */
+	int DEALING_WITH_GENERALIZATION = 22;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS = REFACTORING_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Dealing With Generalization</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEALING_WITH_GENERALIZATION_FEATURE_COUNT = REFACTORING_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl <em>Push Down Method</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getPushDownMethod()
+	 * @generated
+	 */
+	int PUSH_DOWN_METHOD = 23;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_METHOD__ALL_REFACTORINGS = DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>Method To Be Pushed</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_METHOD__SOURCE_CLASS = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Target Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_METHOD__TARGET_CLASS = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Push Down Method</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_METHOD_FEATURE_COUNT = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 3;
+
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Model <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1709,6 +1793,70 @@ public interface RefactoringPackage extends EPackage {
 	EReference getEncapsulateField_AttributeToEncapsulate();
 
 	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.DealingWithGeneralization <em>Dealing With Generalization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Dealing With Generalization</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.DealingWithGeneralization
+	 * @generated
+	 */
+	EClass getDealingWithGeneralization();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.br.refactoring.dsl.refactoring.DealingWithGeneralization#getAllRefactorings <em>All Refactorings</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>All Refactorings</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.DealingWithGeneralization#getAllRefactorings()
+	 * @see #getDealingWithGeneralization()
+	 * @generated
+	 */
+	EReference getDealingWithGeneralization_AllRefactorings();
+
+	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.PushDownMethod <em>Push Down Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Push Down Method</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownMethod
+	 * @generated
+	 */
+	EClass getPushDownMethod();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.PushDownMethod#getMethodToBePushed <em>Method To Be Pushed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Method To Be Pushed</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownMethod#getMethodToBePushed()
+	 * @see #getPushDownMethod()
+	 * @generated
+	 */
+	EReference getPushDownMethod_MethodToBePushed();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.PushDownMethod#getSourceClass <em>Source Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownMethod#getSourceClass()
+	 * @see #getPushDownMethod()
+	 * @generated
+	 */
+	EReference getPushDownMethod_SourceClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.PushDownMethod#getTargetClass <em>Target Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownMethod#getTargetClass()
+	 * @see #getPushDownMethod()
+	 * @generated
+	 */
+	EReference getPushDownMethod_TargetClass();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2285,6 +2433,58 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE = eINSTANCE.getEncapsulateField_AttributeToEncapsulate();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.DealingWithGeneralizationImpl <em>Dealing With Generalization</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.DealingWithGeneralizationImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getDealingWithGeneralization()
+		 * @generated
+		 */
+		EClass DEALING_WITH_GENERALIZATION = eINSTANCE.getDealingWithGeneralization();
+
+		/**
+		 * The meta object literal for the '<em><b>All Refactorings</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS = eINSTANCE.getDealingWithGeneralization_AllRefactorings();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl <em>Push Down Method</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getPushDownMethod()
+		 * @generated
+		 */
+		EClass PUSH_DOWN_METHOD = eINSTANCE.getPushDownMethod();
+
+		/**
+		 * The meta object literal for the '<em><b>Method To Be Pushed</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED = eINSTANCE.getPushDownMethod_MethodToBePushed();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PUSH_DOWN_METHOD__SOURCE_CLASS = eINSTANCE.getPushDownMethod_SourceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PUSH_DOWN_METHOD__TARGET_CLASS = eINSTANCE.getPushDownMethod_TargetClass();
 
 	}
 

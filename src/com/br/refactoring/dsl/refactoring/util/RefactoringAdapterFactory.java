@@ -9,6 +9,7 @@ package com.br.refactoring.dsl.refactoring.util;
 import com.br.refactoring.dsl.refactoring.Attribute;
 import com.br.refactoring.dsl.refactoring.BasicType;
 import com.br.refactoring.dsl.refactoring.ClassType;
+import com.br.refactoring.dsl.refactoring.DealingWithGeneralization;
 import com.br.refactoring.dsl.refactoring.ElementType;
 import com.br.refactoring.dsl.refactoring.EncapsulateField;
 import com.br.refactoring.dsl.refactoring.ExtractClass;
@@ -20,6 +21,7 @@ import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
+import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
 import com.br.refactoring.dsl.refactoring.RenameAttribute;
@@ -179,6 +181,14 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseEncapsulateField(EncapsulateField object) {
 				return createEncapsulateFieldAdapter();
+			}
+			@Override
+			public Adapter caseDealingWithGeneralization(DealingWithGeneralization object) {
+				return createDealingWithGeneralizationAdapter();
+			}
+			@Override
+			public Adapter casePushDownMethod(PushDownMethod object) {
+				return createPushDownMethodAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -505,6 +515,34 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEncapsulateFieldAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.DealingWithGeneralization <em>Dealing With Generalization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.DealingWithGeneralization
+	 * @generated
+	 */
+	public Adapter createDealingWithGeneralizationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.PushDownMethod <em>Push Down Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownMethod
+	 * @generated
+	 */
+	public Adapter createPushDownMethodAdapter() {
 		return null;
 	}
 
