@@ -1246,6 +1246,71 @@ public interface RefactoringPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl <em>Push Down Attribute</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl
+	 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getPushDownAttribute()
+	 * @generated
+	 */
+	int PUSH_DOWN_ATTRIBUTE = 24;
+
+	/**
+	 * The feature id for the '<em><b>All Refactorings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_ATTRIBUTE__ALL_REFACTORINGS = DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_ATTRIBUTE__NAME = DEALING_WITH_GENERALIZATION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Be Pushed</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_ATTRIBUTE__ATTRIBUTE_TO_BE_PUSHED = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_ATTRIBUTE__SOURCE_CLASS = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Target Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_ATTRIBUTE__TARGET_CLASS = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Push Down Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_ATTRIBUTE_FEATURE_COUNT = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 3;
+
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Model <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2146,6 +2211,49 @@ public interface RefactoringPackage extends EPackage {
 	EReference getPushDownMethod_TargetClass();
 
 	/**
+	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.PushDownAttribute <em>Push Down Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Push Down Attribute</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownAttribute
+	 * @generated
+	 */
+	EClass getPushDownAttribute();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.PushDownAttribute#getAttributeToBePushed <em>Attribute To Be Pushed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Attribute To Be Pushed</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownAttribute#getAttributeToBePushed()
+	 * @see #getPushDownAttribute()
+	 * @generated
+	 */
+	EReference getPushDownAttribute_AttributeToBePushed();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.PushDownAttribute#getSourceClass <em>Source Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownAttribute#getSourceClass()
+	 * @see #getPushDownAttribute()
+	 * @generated
+	 */
+	EReference getPushDownAttribute_SourceClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link com.br.refactoring.dsl.refactoring.PushDownAttribute#getTargetClass <em>Target Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target Class</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownAttribute#getTargetClass()
+	 * @see #getPushDownAttribute()
+	 * @generated
+	 */
+	EReference getPushDownAttribute_TargetClass();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2886,6 +2994,40 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PUSH_DOWN_METHOD__TARGET_CLASS = eINSTANCE.getPushDownMethod_TargetClass();
+
+		/**
+		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl <em>Push Down Attribute</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl
+		 * @see com.br.refactoring.dsl.refactoring.impl.RefactoringPackageImpl#getPushDownAttribute()
+		 * @generated
+		 */
+		EClass PUSH_DOWN_ATTRIBUTE = eINSTANCE.getPushDownAttribute();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Be Pushed</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PUSH_DOWN_ATTRIBUTE__ATTRIBUTE_TO_BE_PUSHED = eINSTANCE.getPushDownAttribute_AttributeToBePushed();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PUSH_DOWN_ATTRIBUTE__SOURCE_CLASS = eINSTANCE.getPushDownAttribute_SourceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PUSH_DOWN_ATTRIBUTE__TARGET_CLASS = eINSTANCE.getPushDownAttribute_TargetClass();
 
 	}
 

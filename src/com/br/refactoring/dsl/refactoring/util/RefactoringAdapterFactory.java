@@ -21,6 +21,7 @@ import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
+import com.br.refactoring.dsl.refactoring.PushDownAttribute;
 import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -189,6 +190,10 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter casePushDownMethod(PushDownMethod object) {
 				return createPushDownMethodAdapter();
+			}
+			@Override
+			public Adapter casePushDownAttribute(PushDownAttribute object) {
+				return createPushDownAttributeAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -543,6 +548,20 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPushDownMethodAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.PushDownAttribute <em>Push Down Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownAttribute
+	 * @generated
+	 */
+	public Adapter createPushDownAttributeAdapter() {
 		return null;
 	}
 

@@ -20,6 +20,7 @@ import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
+import com.br.refactoring.dsl.refactoring.PushDownAttribute;
 import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -102,6 +103,7 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.ENCAPSULATE_FIELD: return createEncapsulateField();
 			case RefactoringPackage.DEALING_WITH_GENERALIZATION: return createDealingWithGeneralization();
 			case RefactoringPackage.PUSH_DOWN_METHOD: return createPushDownMethod();
+			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE: return createPushDownAttribute();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -315,6 +317,16 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public PushDownMethod createPushDownMethod() {
 		PushDownMethodImpl pushDownMethod = new PushDownMethodImpl();
 		return pushDownMethod;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PushDownAttribute createPushDownAttribute() {
+		PushDownAttributeImpl pushDownAttribute = new PushDownAttributeImpl();
+		return pushDownAttribute;
 	}
 
 	/**

@@ -494,6 +494,22 @@
     <element xmi:type="ecore:EClass" href="refactoring.ecore#//PushDownMethod"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SP8hstrBEeObbpaqT3HUQQ" x="1602" y="351"/>
   </children>
+  <children xmi:type="notation:Node" xmi:id="_YXVaoOA7EeOZhs4EmOMmuQ" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_YXqx0OA7EeOZhs4EmOMmuQ" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_YXrY4OA7EeOZhs4EmOMmuQ" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_YXrY4eA7EeOZhs4EmOMmuQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_YXrY4uA7EeOZhs4EmOMmuQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_YXrY4-A7EeOZhs4EmOMmuQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_YXr_8OA7EeOZhs4EmOMmuQ" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_YXr_8eA7EeOZhs4EmOMmuQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_YXr_8uA7EeOZhs4EmOMmuQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_YXr_8-A7EeOZhs4EmOMmuQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_YXVaoeA7EeOZhs4EmOMmuQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="refactoring.ecore#//PushDownAttribute"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YXVaouA7EeOZhs4EmOMmuQ" x="1719" y="351"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_XtL3IM80EeOWvO27RSbfXg"/>
   <element xmi:type="ecore:EPackage" href="refactoring.ecore#/"/>
   <edges xmi:type="notation:Edge" xmi:id="_osYjMM80EeOWvO27RSbfXg" type="3002" source="_hQ4a8M80EeOWvO27RSbfXg" target="_mK420M80EeOWvO27RSbfXg">
@@ -1057,5 +1073,50 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EhhNY9rCEeObbpaqT3HUQQ" points="[9, 10, 1229, 204]$[9, 402, 1229, 596]$[-1220, 402, 0, 596]$[-1220, -190, 0, 4]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EhkQsNrCEeObbpaqT3HUQQ" id="(0.6788990825688074,0.7619047619047619)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KDLfINrCEeObbpaqT3HUQQ" id="(0.8529411764705882,0.9183673469387755)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_cf6ZkOA7EeOZhs4EmOMmuQ" type="3003" source="_YXVaoOA7EeOZhs4EmOMmuQ" target="_DCg88dq7EeObbpaqT3HUQQ">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_cf6ZkeA7EeOZhs4EmOMmuQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_cf6ZkuA7EeOZhs4EmOMmuQ" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cf6Zk-A7EeOZhs4EmOMmuQ" points="[39, -9, 703, 76]$[39, -45, 703, 40]$[-663, -45, 1, 40]$[-663, -61, 1, 24]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cf810OA7EeOZhs4EmOMmuQ" id="(0.16521739130434782,0.23809523809523808)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_jrSbIOA7EeOZhs4EmOMmuQ" type="3002" source="_YXVaoOA7EeOZhs4EmOMmuQ" target="_TVcJUNEtEeOuBKn_35FwoQ">
+    <children xmi:type="notation:Node" xmi:id="_jrTpQOA7EeOZhs4EmOMmuQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_jrTpQeA7EeOZhs4EmOMmuQ" x="-112" y="1476"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_jrUQUOA7EeOZhs4EmOMmuQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_jrUQUeA7EeOZhs4EmOMmuQ" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_jrSbIeA7EeOZhs4EmOMmuQ" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_jrSbIuA7EeOZhs4EmOMmuQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="refactoring.ecore#//PushDownAttribute/attributeToBePushed"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jrSbI-A7EeOZhs4EmOMmuQ" points="[9, 32, 1525, 98]$[9, 433, 1525, 499]$[-1516, 433, 0, 499]$[-1516, -42, 0, 24]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jrXToOA7EeOZhs4EmOMmuQ" id="(0.3217391304347826,0.21428571428571427)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_phyUcOA7EeOZhs4EmOMmuQ" type="3002" source="_YXVaoOA7EeOZhs4EmOMmuQ" target="_sCEFkM80EeOWvO27RSbfXg">
+    <children xmi:type="notation:Node" xmi:id="_phyUdOA7EeOZhs4EmOMmuQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_phyUdeA7EeOZhs4EmOMmuQ" x="-255" y="1320"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_phy7gOA7EeOZhs4EmOMmuQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_phy7geA7EeOZhs4EmOMmuQ" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_phyUceA7EeOZhs4EmOMmuQ" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_phyUcuA7EeOZhs4EmOMmuQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="refactoring.ecore#//PushDownAttribute/sourceClass"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_phyUc-A7EeOZhs4EmOMmuQ" points="[7, 20, 1363, 224]$[7, 439, 1363, 643]$[-1356, 448, 0, 652]$[-1356, -180, 0, 24]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zBl2wOA7EeOZhs4EmOMmuQ" type="3002" source="_YXVaoOA7EeOZhs4EmOMmuQ" target="_sCEFkM80EeOWvO27RSbfXg">
+    <children xmi:type="notation:Node" xmi:id="_zBmd0OA7EeOZhs4EmOMmuQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zBmd0eA7EeOZhs4EmOMmuQ" x="-258" y="1345"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zBmd0uA7EeOZhs4EmOMmuQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zBmd0-A7EeOZhs4EmOMmuQ" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zBl2weA7EeOZhs4EmOMmuQ" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zBl2wuA7EeOZhs4EmOMmuQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="refactoring.ecore#//PushDownAttribute/targetClass"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zBl2w-A7EeOZhs4EmOMmuQ" points="[0, 19, 1386, 224]$[0, 447, 1386, 652]$[-1386, 456, 0, 661]$[-1386, -181, 0, 24]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zBo6EOA7EeOZhs4EmOMmuQ" id="(0.7652173913043478,0.5476190476190477)"/>
   </edges>
 </notation:Diagram>

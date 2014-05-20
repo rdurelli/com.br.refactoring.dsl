@@ -215,6 +215,15 @@ public interface RefactoringFactory extends EFactory {
 	PushDownMethod createPushDownMethod();
 
 	/**
+	 * Returns a new object of class '<em>Push Down Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Push Down Attribute</em>'.
+	 * @generated
+	 */
+	PushDownAttribute createPushDownAttribute();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

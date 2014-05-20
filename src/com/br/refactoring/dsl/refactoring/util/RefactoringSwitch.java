@@ -21,6 +21,7 @@ import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
+import com.br.refactoring.dsl.refactoring.PushDownAttribute;
 import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.Refactoring;
 import com.br.refactoring.dsl.refactoring.RefactoringPackage;
@@ -276,6 +277,15 @@ public class RefactoringSwitch<T> extends Switch<T> {
 				if (result == null) result = caseDealingWithGeneralization(pushDownMethod);
 				if (result == null) result = caseRefactoring(pushDownMethod);
 				if (result == null) result = caseType(pushDownMethod);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE: {
+				PushDownAttribute pushDownAttribute = (PushDownAttribute)theEObject;
+				T result = casePushDownAttribute(pushDownAttribute);
+				if (result == null) result = caseDealingWithGeneralization(pushDownAttribute);
+				if (result == null) result = caseRefactoring(pushDownAttribute);
+				if (result == null) result = caseType(pushDownAttribute);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -640,6 +650,21 @@ public class RefactoringSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePushDownMethod(PushDownMethod object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Push Down Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Push Down Attribute</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePushDownAttribute(PushDownAttribute object) {
 		return null;
 	}
 
