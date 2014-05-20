@@ -224,6 +224,15 @@ public interface RefactoringFactory extends EFactory {
 	PushDownAttribute createPushDownAttribute();
 
 	/**
+	 * Returns a new object of class '<em>Pull Up Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Pull Up Attribute</em>'.
+	 * @generated
+	 */
+	PullUpAttribute createPullUpAttribute();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

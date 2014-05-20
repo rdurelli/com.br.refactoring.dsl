@@ -144,4 +144,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//Class"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PullUpAttribute" eSuperTypes="#//DealingWithGeneralization">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeToBePulled" eType="#//Attribute"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//Class"/>
+  </eClassifiers>
 </ecore:EPackage>

@@ -117,5 +117,10 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PushDownAttribute/sourceClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PushDownAttribute/targetClass"/>
     </genClasses>
+    <genClasses ecoreClass="refactoring.ecore#//PullUpAttribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PullUpAttribute/attributeToBePulled"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PullUpAttribute/sourceClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PullUpAttribute/targetClass"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

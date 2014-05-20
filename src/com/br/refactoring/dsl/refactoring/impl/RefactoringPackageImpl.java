@@ -21,6 +21,7 @@ import com.br.refactoring.dsl.refactoring.MoveAttribute;
 import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
+import com.br.refactoring.dsl.refactoring.PullUpAttribute;
 import com.br.refactoring.dsl.refactoring.PushDownAttribute;
 import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.Refactoring;
@@ -221,6 +222,13 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * @generated
 	 */
 	private EClass pushDownAttributeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pullUpAttributeEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -1080,6 +1088,42 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getPullUpAttribute() {
+		return pullUpAttributeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPullUpAttribute_AttributeToBePulled() {
+		return (EReference)pullUpAttributeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPullUpAttribute_SourceClass() {
+		return (EReference)pullUpAttributeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPullUpAttribute_TargetClass() {
+		return (EReference)pullUpAttributeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RefactoringFactory getRefactoringFactory() {
 		return (RefactoringFactory)getEFactoryInstance();
 	}
@@ -1215,6 +1259,11 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(pushDownAttributeEClass, PUSH_DOWN_ATTRIBUTE__ATTRIBUTE_TO_BE_PUSHED);
 		createEReference(pushDownAttributeEClass, PUSH_DOWN_ATTRIBUTE__SOURCE_CLASS);
 		createEReference(pushDownAttributeEClass, PUSH_DOWN_ATTRIBUTE__TARGET_CLASS);
+
+		pullUpAttributeEClass = createEClass(PULL_UP_ATTRIBUTE);
+		createEReference(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__ATTRIBUTE_TO_BE_PULLED);
+		createEReference(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__SOURCE_CLASS);
+		createEReference(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__TARGET_CLASS);
 	}
 
 	/**
@@ -1264,6 +1313,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		dealingWithGeneralizationEClass.getESuperTypes().add(this.getRefactoring());
 		pushDownMethodEClass.getESuperTypes().add(this.getDealingWithGeneralization());
 		pushDownAttributeEClass.getESuperTypes().add(this.getDealingWithGeneralization());
+		pullUpAttributeEClass.getESuperTypes().add(this.getDealingWithGeneralization());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1378,6 +1428,11 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getPushDownAttribute_AttributeToBePushed(), this.getAttribute(), null, "attributeToBePushed", null, 0, 1, PushDownAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPushDownAttribute_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, PushDownAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPushDownAttribute_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, PushDownAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(pullUpAttributeEClass, PullUpAttribute.class, "PullUpAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getPullUpAttribute_AttributeToBePulled(), this.getAttribute(), null, "attributeToBePulled", null, 0, 1, PullUpAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPullUpAttribute_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, PullUpAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPullUpAttribute_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, PullUpAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
