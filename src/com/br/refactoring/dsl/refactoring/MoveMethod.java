@@ -18,6 +18,9 @@ package com.br.refactoring.dsl.refactoring;
  *   <li>{@link com.br.refactoring.dsl.refactoring.MoveMethod#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.MoveMethod#getTargetClass <em>Target Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.MoveMethod#getMethodToBeMoved <em>Method To Be Moved</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.MoveMethod#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.MoveMethod#getTargetClassName <em>Target Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.MoveMethod#getMethodToBeMovedName <em>Method To Be Moved Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -103,5 +106,50 @@ public interface MoveMethod extends MovingFeaturesBetweenObjects {
 	 * @generated
 	 */
 	void setMethodToBeMoved(Method value);
+
+	/**
+	 * Returns the value of the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Source Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getMoveMethod_SourceClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getSourceClassName();
+
+	/**
+	 * Returns the value of the '<em><b>Target Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Target Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Target Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getMoveMethod_TargetClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getTargetClassName();
+
+	/**
+	 * Returns the value of the '<em><b>Method To Be Moved Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Method To Be Moved Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Method To Be Moved Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getMoveMethod_MethodToBeMovedName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getMethodToBeMovedName();
 
 } // MoveMethod

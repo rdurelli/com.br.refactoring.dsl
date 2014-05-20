@@ -389,7 +389,7 @@
           xsi:type="gmfgen:InnerClassViewmap"
           layoutType="TOOLBAR_LAYOUT"
           className="MoveAttributeFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class MoveAttributeFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveAttributeNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveAttributeSourceClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveAttributeTargetClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveAttributeAttributeToBeMovedNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public MoveAttributeFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mMoveAttributeTitle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mMoveAttributeTitle0.setOutline(false);&#xA;mMoveAttributeTitle0.setLineWidth(0);&#xA;&#xA;this.add(mMoveAttributeTitle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutMMoveAttributeTitle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutMMoveAttributeTitle0.numColumns = 1;&#xA;&#x9;layoutMMoveAttributeTitle0.makeColumnsEqualWidth = true;&#xA;&#x9;mMoveAttributeTitle0.setLayoutManager(layoutMMoveAttributeTitle0);&#xA;&#xA;&#xA;&#xA;fFigureMoveAttributeNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveAttributeNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveAttributeNameFigure.setFont(FFIGUREMOVEATTRIBUTENAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigureMoveAttributeNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigureMoveAttributeNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureMoveAttributeNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureMoveAttributeNameFigure.horizontalIndent = 0;&#xA;constraintFFigureMoveAttributeNameFigure.horizontalSpan = 1;&#xA;constraintFFigureMoveAttributeNameFigure.verticalSpan = 1;&#xA;constraintFFigureMoveAttributeNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigureMoveAttributeNameFigure.grabExcessVerticalSpace = true;&#xA;mMoveAttributeTitle0.add(fFigureMoveAttributeNameFigure, constraintFFigureMoveAttributeNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mMoveAttributeContent0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mMoveAttributeContent0.setLineWidth(0);&#xA;&#x9;mMoveAttributeContent0.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#xA;this.add(mMoveAttributeContent0);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutMMoveAttributeContent0 = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutMMoveAttributeContent0.setStretchMinorAxis(false);&#xA;&#x9;layoutMMoveAttributeContent0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutMMoveAttributeContent0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutMMoveAttributeContent0.setMajorSpacing(5);&#xA;&#x9;layoutMMoveAttributeContent0.setMinorSpacing(5);&#xA;&#x9;layoutMMoveAttributeContent0.setHorizontal(true);&#xA;&#xA;&#x9;mMoveAttributeContent0.setLayoutManager(layoutMMoveAttributeContent0);&#xA;&#xA;&#xA;&#xA;fFigureMoveAttributeSourceClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveAttributeSourceClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveAttributeSourceClassNameFigure.setFont(FFIGUREMOVEATTRIBUTESOURCECLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mMoveAttributeContent0.add(fFigureMoveAttributeSourceClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureMoveAttributeTargetClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveAttributeTargetClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveAttributeTargetClassNameFigure.setFont(FFIGUREMOVEATTRIBUTETARGETCLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mMoveAttributeContent0.add(fFigureMoveAttributeTargetClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureMoveAttributeAttributeToBeMovedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveAttributeAttributeToBeMovedNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveAttributeAttributeToBeMovedNameFigure.setFont(FFIGUREMOVEATTRIBUTEATTRIBUTETOBEMOVEDNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mMoveAttributeContent0.add(fFigureMoveAttributeAttributeToBeMovedNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveAttributeNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveAttributeNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveAttributeSourceClassNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveAttributeSourceClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveAttributeTargetClassNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveAttributeTargetClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveAttributeAttributeToBeMovedNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveAttributeAttributeToBeMovedNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEATTRIBUTENAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 10, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEATTRIBUTESOURCECLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEATTRIBUTETARGETCLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEATTRIBUTEATTRIBUTETOBEMOVEDNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;">
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class MoveAttributeFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveAttributeNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveAttributeSourceClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveAttributeTargetClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveAttributeAttributeToBeMovedNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public MoveAttributeFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mMoveAttributeTitle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mMoveAttributeTitle0.setOutline(false);&#xA;mMoveAttributeTitle0.setLineWidth(0);&#xA;&#xA;this.add(mMoveAttributeTitle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutMMoveAttributeTitle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutMMoveAttributeTitle0.numColumns = 1;&#xA;&#x9;layoutMMoveAttributeTitle0.makeColumnsEqualWidth = true;&#xA;&#x9;mMoveAttributeTitle0.setLayoutManager(layoutMMoveAttributeTitle0);&#xA;&#xA;&#xA;&#xA;fFigureMoveAttributeNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveAttributeNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveAttributeNameFigure.setFont(FFIGUREMOVEATTRIBUTENAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigureMoveAttributeNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigureMoveAttributeNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureMoveAttributeNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureMoveAttributeNameFigure.horizontalIndent = 0;&#xA;constraintFFigureMoveAttributeNameFigure.horizontalSpan = 1;&#xA;constraintFFigureMoveAttributeNameFigure.verticalSpan = 1;&#xA;constraintFFigureMoveAttributeNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigureMoveAttributeNameFigure.grabExcessVerticalSpace = true;&#xA;mMoveAttributeTitle0.add(fFigureMoveAttributeNameFigure, constraintFFigureMoveAttributeNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mMoveAttributeContent0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mMoveAttributeContent0.setLineWidth(0);&#xA;&#x9;mMoveAttributeContent0.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#xA;this.add(mMoveAttributeContent0);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutMMoveAttributeContent0 = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutMMoveAttributeContent0.setStretchMinorAxis(false);&#xA;&#x9;layoutMMoveAttributeContent0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutMMoveAttributeContent0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutMMoveAttributeContent0.setMajorSpacing(5);&#xA;&#x9;layoutMMoveAttributeContent0.setMinorSpacing(5);&#xA;&#x9;layoutMMoveAttributeContent0.setHorizontal(true);&#xA;&#xA;&#x9;mMoveAttributeContent0.setLayoutManager(layoutMMoveAttributeContent0);&#xA;&#xA;&#xA;&#xA;fFigureMoveAttributeSourceClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveAttributeSourceClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveAttributeSourceClassNameFigure.setFont(FFIGUREMOVEATTRIBUTESOURCECLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mMoveAttributeContent0.add(fFigureMoveAttributeSourceClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureMoveAttributeTargetClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveAttributeTargetClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveAttributeTargetClassNameFigure.setFont(FFIGUREMOVEATTRIBUTETARGETCLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mMoveAttributeContent0.add(fFigureMoveAttributeTargetClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureMoveAttributeAttributeToBeMovedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveAttributeAttributeToBeMovedNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveAttributeAttributeToBeMovedNameFigure.setFont(FFIGUREMOVEATTRIBUTEATTRIBUTETOBEMOVEDNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mMoveAttributeContent0.add(fFigureMoveAttributeAttributeToBeMovedNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveAttributeNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveAttributeNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveAttributeSourceClassNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveAttributeSourceClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveAttributeTargetClassNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveAttributeTargetClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveAttributeAttributeToBeMovedNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveAttributeAttributeToBeMovedNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEATTRIBUTENAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 10, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEATTRIBUTESOURCECLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEATTRIBUTETARGETCLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEATTRIBUTEATTRIBUTETOBEMOVEDNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;">
         <attributes
             xsi:type="gmfgen:StyleAttributes"
             fixedForeground="true"
@@ -496,6 +496,130 @@
         </modelFacet>
       </labels>
     </childNodes>
+    <childNodes
+        visualID="3005"
+        editPartClassName="MoveMethodEditPart"
+        itemSemanticEditPolicyClassName="MoveMethodItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="MoveMethodCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="MoveMethodGraphicalNodeEditPolicy"
+        createCommandClassName="MoveMethodCreateCommand"
+        containers="//@diagram/@topLevelNodes.1">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="MoveMethodEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="TOOLBAR_LAYOUT"
+          className="MoveMethodFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class MoveMethodFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveMethodNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveMethodSourceClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveMethodTargetClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMoveMethodMethodToBeMovedNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public MoveMethodFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mMoveMethodTitle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mMoveMethodTitle0.setOutline(false);&#xA;mMoveMethodTitle0.setLineWidth(0);&#xA;&#xA;this.add(mMoveMethodTitle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutMMoveMethodTitle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutMMoveMethodTitle0.numColumns = 1;&#xA;&#x9;layoutMMoveMethodTitle0.makeColumnsEqualWidth = true;&#xA;&#x9;mMoveMethodTitle0.setLayoutManager(layoutMMoveMethodTitle0);&#xA;&#xA;&#xA;&#xA;fFigureMoveMethodNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveMethodNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveMethodNameFigure.setFont(FFIGUREMOVEMETHODNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigureMoveMethodNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigureMoveMethodNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureMoveMethodNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureMoveMethodNameFigure.horizontalIndent = 0;&#xA;constraintFFigureMoveMethodNameFigure.horizontalSpan = 1;&#xA;constraintFFigureMoveMethodNameFigure.verticalSpan = 1;&#xA;constraintFFigureMoveMethodNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigureMoveMethodNameFigure.grabExcessVerticalSpace = true;&#xA;mMoveMethodTitle0.add(fFigureMoveMethodNameFigure, constraintFFigureMoveMethodNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mMoveMethodContent0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mMoveMethodContent0.setLineWidth(0);&#xA;&#x9;mMoveMethodContent0.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#xA;this.add(mMoveMethodContent0);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutMMoveMethodContent0 = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutMMoveMethodContent0.setStretchMinorAxis(false);&#xA;&#x9;layoutMMoveMethodContent0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutMMoveMethodContent0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutMMoveMethodContent0.setMajorSpacing(5);&#xA;&#x9;layoutMMoveMethodContent0.setMinorSpacing(5);&#xA;&#x9;layoutMMoveMethodContent0.setHorizontal(true);&#xA;&#xA;&#x9;mMoveMethodContent0.setLayoutManager(layoutMMoveMethodContent0);&#xA;&#xA;&#xA;&#xA;fFigureMoveMethodSourceClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveMethodSourceClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveMethodSourceClassNameFigure.setFont(FFIGUREMOVEMETHODSOURCECLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mMoveMethodContent0.add(fFigureMoveMethodSourceClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureMoveMethodTargetClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveMethodTargetClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveMethodTargetClassNameFigure.setFont(FFIGUREMOVEMETHODTARGETCLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mMoveMethodContent0.add(fFigureMoveMethodTargetClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureMoveMethodMethodToBeMovedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMoveMethodMethodToBeMovedNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureMoveMethodMethodToBeMovedNameFigure.setFont(FFIGUREMOVEMETHODMETHODTOBEMOVEDNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mMoveMethodContent0.add(fFigureMoveMethodMethodToBeMovedNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveMethodNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveMethodNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveMethodSourceClassNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveMethodSourceClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveMethodTargetClassNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveMethodTargetClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMoveMethodMethodToBeMovedNameFigure() {&#xA;&#x9;&#x9;return fFigureMoveMethodMethodToBeMovedNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEMETHODNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 10, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEMETHODSOURCECLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEMETHODTARGETCLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREMOVEMETHODMETHODTOBEMOVEDNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+        <attributes
+            xsi:type="gmfgen:DefaultSizeAttributes"
+            width="30"
+            height="35"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="refactoring.genmodel#//refactoring/MoveMethod"/>
+        <containmentMetaFeature
+            href="refactoring.genmodel#//refactoring/MovingFeaturesBetweenObjects/allRefactorings"/>
+        <childMetaFeature
+            href="refactoring.genmodel#//refactoring/MovingFeaturesBetweenObjects/allRefactorings"/>
+      </modelFacet>
+      <labels
+          visualID="5018"
+          editPartClassName="MoveMethodNameEditPart"
+          itemSemanticEditPolicyClassName="MoveMethodNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureMoveMethodNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="Refactoring_MoveMethod: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/MovingFeaturesBetweenObjects/name"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5019"
+          editPartClassName="MoveMethodSourceClassNameEditPart"
+          itemSemanticEditPolicyClassName="MoveMethodSourceClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureMoveMethodSourceClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="sourceClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/MoveMethod/sourceClassName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5020"
+          editPartClassName="MoveMethodTargetClassNameEditPart"
+          itemSemanticEditPolicyClassName="MoveMethodTargetClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureMoveMethodTargetClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="targetClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/MoveMethod/targetClassName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5021"
+          editPartClassName="MoveMethodMethodToBeMovedNameEditPart"
+          itemSemanticEditPolicyClassName="MoveMethodMethodToBeMovedNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureMoveMethodMethodToBeMovedNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="methodToBeMoved: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/MoveMethod/methodToBeMovedName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
     <topLevelNodes
         visualID="2001"
         editPartClassName="RenameFeatureEditPart"
@@ -558,7 +682,7 @@
         editPartClassName="MovingFeaturesBetweenObjectsEditPart"
         itemSemanticEditPolicyClassName="MovingFeaturesBetweenObjectsItemSemanticEditPolicy"
         canonicalEditPolicyClassName="MovingFeaturesBetweenObjectsCanonicalEditPolicy"
-        childNodes="//@diagram/@childNodes.3"
+        childNodes="//@diagram/@childNodes.3 //@diagram/@childNodes.4"
         graphicalNodeEditPolicyClassName="MovingFeaturesBetweenObjectsGraphicalNodeEditPolicy"
         createCommandClassName="MovingFeaturesBetweenObjectsCreateCommand">
       <diagramRunTimeClass
@@ -664,6 +788,11 @@
             title="MoveAttribute"
             description="Create new Move Attribute"
             genNodes="//@diagram/@childNodes.3"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="MoveMethod"
+            description="Create new Move Method"
+            genNodes="//@diagram/@childNodes.4"/>
       </groups>
     </palette>
     <preferencePages
@@ -716,6 +845,9 @@
         parent="//@diagram/@topLevelNodes.1"
         child="//@diagram/@childNodes.3"/>
     <childReferences
+        parent="//@diagram/@topLevelNodes.1"
+        child="//@diagram/@childNodes.4"/>
+    <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.1"/>
   </navigator>
@@ -745,7 +877,7 @@
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet"/>
+        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">

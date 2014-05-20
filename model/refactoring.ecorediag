@@ -337,6 +337,18 @@
   <children xmi:type="notation:Node" xmi:id="_AD2wYdRNEeOCocmH5TWZBA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_AEC9oNRNEeOCocmH5TWZBA" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_AEJrUNRNEeOCocmH5TWZBA" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_4qC2YeAiEeOZhs4EmOMmuQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//MoveMethod/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_4qC2YuAiEeOZhs4EmOMmuQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_A0WlYOAjEeOZhs4EmOMmuQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//MoveMethod/targetClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_A0WlYeAjEeOZhs4EmOMmuQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_JxL9gOAjEeOZhs4EmOMmuQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//MoveMethod/methodToBeMovedName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_JxL9geAjEeOZhs4EmOMmuQ"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_AEJrUdRNEeOCocmH5TWZBA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_AEJrUtRNEeOCocmH5TWZBA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_AEJrU9RNEeOCocmH5TWZBA"/>
@@ -745,7 +757,7 @@
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_2BrY0NIzEeOZIPrm1V36QQ" type="3002" source="_AX8l4NIwEeOZIPrm1V36QQ" target="_TVcJUNEtEeOuBKn_35FwoQ">
     <children xmi:type="notation:Node" xmi:id="_2Br_4NIzEeOZIPrm1V36QQ" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_2Br_4dIzEeOZIPrm1V36QQ" x="-42" y="630"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2Br_4dIzEeOZIPrm1V36QQ" x="-77" y="609"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_2Br_4tIzEeOZIPrm1V36QQ" type="4012">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_2Br_49IzEeOZIPrm1V36QQ" x="-42" y="14"/>

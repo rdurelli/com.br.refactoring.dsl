@@ -27,6 +27,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl#getTargetClass <em>Target Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl#getMethodToBeMoved <em>Method To Be Moved</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl#getTargetClassName <em>Target Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl#getMethodToBeMovedName <em>Method To Be Moved Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +65,36 @@ public class MoveMethodImpl extends MovingFeaturesBetweenObjectsImpl implements 
 	 * @ordered
 	 */
 	protected Method methodToBeMoved;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getTargetClassName() <em>Target Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTargetClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TARGET_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getMethodToBeMovedName() <em>Method To Be Moved Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMethodToBeMovedName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String METHOD_TO_BE_MOVED_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,6 +232,34 @@ public class MoveMethodImpl extends MovingFeaturesBetweenObjectsImpl implements 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getTargetClassName() {
+		return targetClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getMethodToBeMovedName() {
+		return methodToBeMoved.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -213,6 +274,12 @@ public class MoveMethodImpl extends MovingFeaturesBetweenObjectsImpl implements 
 			case RefactoringPackage.MOVE_METHOD__METHOD_TO_BE_MOVED:
 				if (resolve) return getMethodToBeMoved();
 				return basicGetMethodToBeMoved();
+			case RefactoringPackage.MOVE_METHOD__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.MOVE_METHOD__TARGET_CLASS_NAME:
+				return getTargetClassName();
+			case RefactoringPackage.MOVE_METHOD__METHOD_TO_BE_MOVED_NAME:
+				return getMethodToBeMovedName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -273,6 +340,12 @@ public class MoveMethodImpl extends MovingFeaturesBetweenObjectsImpl implements 
 				return targetClass != null;
 			case RefactoringPackage.MOVE_METHOD__METHOD_TO_BE_MOVED:
 				return methodToBeMoved != null;
+			case RefactoringPackage.MOVE_METHOD__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.MOVE_METHOD__TARGET_CLASS_NAME:
+				return TARGET_CLASS_NAME_EDEFAULT == null ? getTargetClassName() != null : !TARGET_CLASS_NAME_EDEFAULT.equals(getTargetClassName());
+			case RefactoringPackage.MOVE_METHOD__METHOD_TO_BE_MOVED_NAME:
+				return METHOD_TO_BE_MOVED_NAME_EDEFAULT == null ? getMethodToBeMovedName() != null : !METHOD_TO_BE_MOVED_NAME_EDEFAULT.equals(getMethodToBeMovedName());
 		}
 		return super.eIsSet(featureID);
 	}

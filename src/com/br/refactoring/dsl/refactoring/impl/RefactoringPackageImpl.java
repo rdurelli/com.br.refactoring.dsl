@@ -775,6 +775,33 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getMoveMethod_SourceClassName() {
+		return (EAttribute)moveMethodEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMoveMethod_TargetClassName() {
+		return (EAttribute)moveMethodEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMoveMethod_MethodToBeMovedName() {
+		return (EAttribute)moveMethodEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getExtractClass() {
 		return extractClassEClass;
 	}
@@ -1085,6 +1112,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(moveMethodEClass, MOVE_METHOD__SOURCE_CLASS);
 		createEReference(moveMethodEClass, MOVE_METHOD__TARGET_CLASS);
 		createEReference(moveMethodEClass, MOVE_METHOD__METHOD_TO_BE_MOVED);
+		createEAttribute(moveMethodEClass, MOVE_METHOD__SOURCE_CLASS_NAME);
+		createEAttribute(moveMethodEClass, MOVE_METHOD__TARGET_CLASS_NAME);
+		createEAttribute(moveMethodEClass, MOVE_METHOD__METHOD_TO_BE_MOVED_NAME);
 
 		extractClassEClass = createEClass(EXTRACT_CLASS);
 		createEAttribute(extractClassEClass, EXTRACT_CLASS__NEW_NAME);
@@ -1237,6 +1267,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getMoveMethod_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMoveMethod_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMoveMethod_MethodToBeMoved(), this.getMethod(), null, "methodToBeMoved", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMoveMethod_SourceClassName(), ecorePackage.getEString(), "sourceClassName", null, 0, 1, MoveMethod.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMoveMethod_TargetClassName(), ecorePackage.getEString(), "targetClassName", null, 0, 1, MoveMethod.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMoveMethod_MethodToBeMovedName(), ecorePackage.getEString(), "methodToBeMovedName", null, 0, 1, MoveMethod.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(extractClassEClass, ExtractClass.class, "ExtractClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getExtractClass_NewName(), ecorePackage.getEString(), "newName", null, 0, 1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

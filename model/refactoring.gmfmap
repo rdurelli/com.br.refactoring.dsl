@@ -226,6 +226,51 @@
               href="refactoring.gmfgraph#MoveAttribute"/>
         </ownedChild>
       </children>
+      <children>
+        <containmentFeature
+            href="refactoring.ecore#//MovingFeaturesBetweenObjects/allRefactorings"/>
+        <ownedChild>
+          <domainMetaElement
+              href="refactoring.ecore#//MoveMethod"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="Refactoring_MoveMethod: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#MoveMethodName"/>
+            <features
+                href="refactoring.ecore#//MovingFeaturesBetweenObjects/name"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="sourceClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#MoveMethodSourceClass"/>
+            <features
+                href="refactoring.ecore#//MoveMethod/sourceClassName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="targetClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#MoveMethodTargetClass"/>
+            <features
+                href="refactoring.ecore#//MoveMethod/targetClassName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="methodToBeMoved: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#MoveMethodMethodToBeMoved"/>
+            <features
+                href="refactoring.ecore#//MoveMethod/methodToBeMovedName"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="refactoring.gmftool#//@palette/@tools.0/@tools.6"/>
+          <diagramNode
+              href="refactoring.gmfgraph#MoveMethod"/>
+        </ownedChild>
+      </children>
     </ownedChild>
   </nodes>
   <diagram>

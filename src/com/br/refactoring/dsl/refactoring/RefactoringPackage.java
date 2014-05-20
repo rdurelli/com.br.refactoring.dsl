@@ -810,13 +810,40 @@ public interface RefactoringPackage extends EPackage {
 	int MOVE_METHOD__METHOD_TO_BE_MOVED = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_METHOD__SOURCE_CLASS_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Target Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_METHOD__TARGET_CLASS_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Method To Be Moved Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_METHOD__METHOD_TO_BE_MOVED_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>Move Method</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MOVE_METHOD_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
+	int MOVE_METHOD_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 6;
 
 
 	/**
@@ -1789,6 +1816,39 @@ public interface RefactoringPackage extends EPackage {
 	EReference getMoveMethod_MethodToBeMoved();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.MoveMethod#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveMethod#getSourceClassName()
+	 * @see #getMoveMethod()
+	 * @generated
+	 */
+	EAttribute getMoveMethod_SourceClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.MoveMethod#getTargetClassName <em>Target Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Target Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveMethod#getTargetClassName()
+	 * @see #getMoveMethod()
+	 * @generated
+	 */
+	EAttribute getMoveMethod_TargetClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.MoveMethod#getMethodToBeMovedName <em>Method To Be Moved Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Method To Be Moved Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveMethod#getMethodToBeMovedName()
+	 * @see #getMoveMethod()
+	 * @generated
+	 */
+	EAttribute getMoveMethod_MethodToBeMovedName();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.ExtractClass <em>Extract Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2540,6 +2600,30 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MOVE_METHOD__METHOD_TO_BE_MOVED = eINSTANCE.getMoveMethod_MethodToBeMoved();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVE_METHOD__SOURCE_CLASS_NAME = eINSTANCE.getMoveMethod_SourceClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVE_METHOD__TARGET_CLASS_NAME = eINSTANCE.getMoveMethod_TargetClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Method To Be Moved Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVE_METHOD__METHOD_TO_BE_MOVED_NAME = eINSTANCE.getMoveMethod_MethodToBeMovedName();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl <em>Extract Class</em>}' class.
