@@ -27,6 +27,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl#getNewName <em>New Name</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl#getMethodToBeRename <em>Method To Be Rename</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl#getSourceClass <em>Source Class</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl#getMethodToBeRenamedName <em>Method To Be Renamed Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -72,6 +74,26 @@ public class RenameMethodImpl extends RenameFeatureImpl implements RenameMethod 
 	 * @ordered
 	 */
 	protected com.br.refactoring.dsl.refactoring.Class sourceClass;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getMethodToBeRenamedName() <em>Method To Be Renamed Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMethodToBeRenamedName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String METHOD_TO_BE_RENAMED_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -192,6 +214,25 @@ public class RenameMethodImpl extends RenameFeatureImpl implements RenameMethod 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getMethodToBeRenamedName() {
+
+		return methodToBeRename.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -205,6 +246,10 @@ public class RenameMethodImpl extends RenameFeatureImpl implements RenameMethod 
 			case RefactoringPackage.RENAME_METHOD__SOURCE_CLASS:
 				if (resolve) return getSourceClass();
 				return basicGetSourceClass();
+			case RefactoringPackage.RENAME_METHOD__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.RENAME_METHOD__METHOD_TO_BE_RENAMED_NAME:
+				return getMethodToBeRenamedName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -265,6 +310,10 @@ public class RenameMethodImpl extends RenameFeatureImpl implements RenameMethod 
 				return methodToBeRename != null;
 			case RefactoringPackage.RENAME_METHOD__SOURCE_CLASS:
 				return sourceClass != null;
+			case RefactoringPackage.RENAME_METHOD__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.RENAME_METHOD__METHOD_TO_BE_RENAMED_NAME:
+				return METHOD_TO_BE_RENAMED_NAME_EDEFAULT == null ? getMethodToBeRenamedName() != null : !METHOD_TO_BE_RENAMED_NAME_EDEFAULT.equals(getMethodToBeRenamedName());
 		}
 		return super.eIsSet(featureID);
 	}

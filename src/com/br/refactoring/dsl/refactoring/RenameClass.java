@@ -17,6 +17,7 @@ package com.br.refactoring.dsl.refactoring;
  * <ul>
  *   <li>{@link com.br.refactoring.dsl.refactoring.RenameClass#getNewName <em>New Name</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.RenameClass#getClassToBeRename <em>Class To Be Rename</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.RenameClass#getClassToBeRenamedName <em>Class To Be Renamed Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -76,5 +77,20 @@ public interface RenameClass extends RenameFeature {
 	 * @generated
 	 */
 	void setClassToBeRename(com.br.refactoring.dsl.refactoring.Class value);
+
+	/**
+	 * Returns the value of the '<em><b>Class To Be Renamed Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Class To Be Renamed Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Class To Be Renamed Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getRenameClass_ClassToBeRenamedName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getClassToBeRenamedName();
 
 } // RenameClass

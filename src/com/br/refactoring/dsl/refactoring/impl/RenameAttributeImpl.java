@@ -27,6 +27,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameAttributeImpl#getNewName <em>New Name</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameAttributeImpl#getAttributeToBeRename <em>Attribute To Be Rename</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameAttributeImpl#getSourceClass <em>Source Class</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameAttributeImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameAttributeImpl#getAttributeToBeRenamedName <em>Attribute To Be Renamed Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -72,6 +74,26 @@ public class RenameAttributeImpl extends RenameFeatureImpl implements RenameAttr
 	 * @ordered
 	 */
 	protected com.br.refactoring.dsl.refactoring.Class sourceClass;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getAttributeToBeRenamedName() <em>Attribute To Be Renamed Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttributeToBeRenamedName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ATTRIBUTE_TO_BE_RENAMED_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -192,6 +214,26 @@ public class RenameAttributeImpl extends RenameFeatureImpl implements RenameAttr
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getAttributeToBeRenamedName() {
+		
+		return attributeToBeRename.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -205,6 +247,10 @@ public class RenameAttributeImpl extends RenameFeatureImpl implements RenameAttr
 			case RefactoringPackage.RENAME_ATTRIBUTE__SOURCE_CLASS:
 				if (resolve) return getSourceClass();
 				return basicGetSourceClass();
+			case RefactoringPackage.RENAME_ATTRIBUTE__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.RENAME_ATTRIBUTE__ATTRIBUTE_TO_BE_RENAMED_NAME:
+				return getAttributeToBeRenamedName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -265,6 +311,10 @@ public class RenameAttributeImpl extends RenameFeatureImpl implements RenameAttr
 				return attributeToBeRename != null;
 			case RefactoringPackage.RENAME_ATTRIBUTE__SOURCE_CLASS:
 				return sourceClass != null;
+			case RefactoringPackage.RENAME_ATTRIBUTE__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.RENAME_ATTRIBUTE__ATTRIBUTE_TO_BE_RENAMED_NAME:
+				return ATTRIBUTE_TO_BE_RENAMED_NAME_EDEFAULT == null ? getAttributeToBeRenamedName() != null : !ATTRIBUTE_TO_BE_RENAMED_NAME_EDEFAULT.equals(getAttributeToBeRenamedName());
 		}
 		return super.eIsSet(featureID);
 	}

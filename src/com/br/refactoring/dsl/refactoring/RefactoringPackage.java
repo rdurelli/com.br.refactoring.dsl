@@ -273,13 +273,22 @@ public interface RefactoringPackage extends EPackage {
 	int RENAME_CLASS__CLASS_TO_BE_RENAME = RENAME_FEATURE_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Class To Be Renamed Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_CLASS__CLASS_TO_BE_RENAMED_NAME = RENAME_FEATURE_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Rename Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RENAME_CLASS_FEATURE_COUNT = RENAME_FEATURE_FEATURE_COUNT + 2;
+	int RENAME_CLASS_FEATURE_COUNT = RENAME_FEATURE_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.ImportImpl <em>Import</em>}' class.
@@ -507,13 +516,31 @@ public interface RefactoringPackage extends EPackage {
 	int RENAME_ATTRIBUTE__SOURCE_CLASS = RENAME_FEATURE_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_ATTRIBUTE__SOURCE_CLASS_NAME = RENAME_FEATURE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Be Renamed Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_ATTRIBUTE__ATTRIBUTE_TO_BE_RENAMED_NAME = RENAME_FEATURE_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Rename Attribute</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RENAME_ATTRIBUTE_FEATURE_COUNT = RENAME_FEATURE_FEATURE_COUNT + 3;
+	int RENAME_ATTRIBUTE_FEATURE_COUNT = RENAME_FEATURE_FEATURE_COUNT + 5;
 
 	/**
 	 * The meta object id for the '{@link com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl <em>Rename Method</em>}' class.
@@ -571,13 +598,31 @@ public interface RefactoringPackage extends EPackage {
 	int RENAME_METHOD__SOURCE_CLASS = RENAME_FEATURE_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_METHOD__SOURCE_CLASS_NAME = RENAME_FEATURE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Method To Be Renamed Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RENAME_METHOD__METHOD_TO_BE_RENAMED_NAME = RENAME_FEATURE_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Rename Method</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RENAME_METHOD_FEATURE_COUNT = RENAME_FEATURE_FEATURE_COUNT + 3;
+	int RENAME_METHOD_FEATURE_COUNT = RENAME_FEATURE_FEATURE_COUNT + 5;
 
 
 	/**
@@ -673,13 +718,40 @@ public interface RefactoringPackage extends EPackage {
 	int MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_ATTRIBUTE__SOURCE_CLASS_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Target Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_ATTRIBUTE__TARGET_CLASS_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Be Moved Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>Move Attribute</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MOVE_ATTRIBUTE_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
+	int MOVE_ATTRIBUTE_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 6;
 
 
 	/**
@@ -1299,6 +1371,17 @@ public interface RefactoringPackage extends EPackage {
 	EReference getRenameClass_ClassToBeRename();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.RenameClass#getClassToBeRenamedName <em>Class To Be Renamed Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Class To Be Renamed Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameClass#getClassToBeRenamedName()
+	 * @see #getRenameClass()
+	 * @generated
+	 */
+	EAttribute getRenameClass_ClassToBeRenamedName();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.Import <em>Import</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1468,6 +1551,28 @@ public interface RefactoringPackage extends EPackage {
 	EReference getRenameAttribute_SourceClass();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.RenameAttribute#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameAttribute#getSourceClassName()
+	 * @see #getRenameAttribute()
+	 * @generated
+	 */
+	EAttribute getRenameAttribute_SourceClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.RenameAttribute#getAttributeToBeRenamedName <em>Attribute To Be Renamed Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Attribute To Be Renamed Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameAttribute#getAttributeToBeRenamedName()
+	 * @see #getRenameAttribute()
+	 * @generated
+	 */
+	EAttribute getRenameAttribute_AttributeToBeRenamedName();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.RenameMethod <em>Rename Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1509,6 +1614,28 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getRenameMethod_SourceClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.RenameMethod#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameMethod#getSourceClassName()
+	 * @see #getRenameMethod()
+	 * @generated
+	 */
+	EAttribute getRenameMethod_SourceClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.RenameMethod#getMethodToBeRenamedName <em>Method To Be Renamed Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Method To Be Renamed Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.RenameMethod#getMethodToBeRenamedName()
+	 * @see #getRenameMethod()
+	 * @generated
+	 */
+	EAttribute getRenameMethod_MethodToBeRenamedName();
 
 	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects <em>Moving Features Between Objects</em>}'.
@@ -1584,6 +1711,39 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getMoveAttribute_AttributeToBeMoved();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveAttribute#getSourceClassName()
+	 * @see #getMoveAttribute()
+	 * @generated
+	 */
+	EAttribute getMoveAttribute_SourceClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getTargetClassName <em>Target Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Target Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveAttribute#getTargetClassName()
+	 * @see #getMoveAttribute()
+	 * @generated
+	 */
+	EAttribute getMoveAttribute_TargetClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getAttributeToBeMovedName <em>Attribute To Be Moved Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Attribute To Be Moved Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.MoveAttribute#getAttributeToBeMovedName()
+	 * @see #getMoveAttribute()
+	 * @generated
+	 */
+	EAttribute getMoveAttribute_AttributeToBeMovedName();
 
 	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.MoveMethod <em>Move Method</em>}'.
@@ -2048,6 +2208,14 @@ public interface RefactoringPackage extends EPackage {
 		EReference RENAME_CLASS__CLASS_TO_BE_RENAME = eINSTANCE.getRenameClass_ClassToBeRename();
 
 		/**
+		 * The meta object literal for the '<em><b>Class To Be Renamed Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENAME_CLASS__CLASS_TO_BE_RENAMED_NAME = eINSTANCE.getRenameClass_ClassToBeRenamedName();
+
+		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.ImportImpl <em>Import</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2190,6 +2358,22 @@ public interface RefactoringPackage extends EPackage {
 		EReference RENAME_ATTRIBUTE__SOURCE_CLASS = eINSTANCE.getRenameAttribute_SourceClass();
 
 		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENAME_ATTRIBUTE__SOURCE_CLASS_NAME = eINSTANCE.getRenameAttribute_SourceClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Be Renamed Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENAME_ATTRIBUTE__ATTRIBUTE_TO_BE_RENAMED_NAME = eINSTANCE.getRenameAttribute_AttributeToBeRenamedName();
+
+		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.RenameMethodImpl <em>Rename Method</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2222,6 +2406,22 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference RENAME_METHOD__SOURCE_CLASS = eINSTANCE.getRenameMethod_SourceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENAME_METHOD__SOURCE_CLASS_NAME = eINSTANCE.getRenameMethod_SourceClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Method To Be Renamed Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENAME_METHOD__METHOD_TO_BE_RENAMED_NAME = eINSTANCE.getRenameMethod_MethodToBeRenamedName();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.MovingFeaturesBetweenObjectsImpl <em>Moving Features Between Objects</em>}' class.
@@ -2282,6 +2482,30 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED = eINSTANCE.getMoveAttribute_AttributeToBeMoved();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVE_ATTRIBUTE__SOURCE_CLASS_NAME = eINSTANCE.getMoveAttribute_SourceClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVE_ATTRIBUTE__TARGET_CLASS_NAME = eINSTANCE.getMoveAttribute_TargetClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Be Moved Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED_NAME = eINSTANCE.getMoveAttribute_AttributeToBeMovedName();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.MoveMethodImpl <em>Move Method</em>}' class.

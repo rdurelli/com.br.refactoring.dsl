@@ -99,6 +99,10 @@
         <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//RenameClass/newName"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_NrOtMc84EeOWvO27RSbfXg"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_V7qAgdxYEeOLtvHa3XiD3g" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//RenameClass/classToBeRenamedName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_V7qAgtxYEeOLtvHa3XiD3g"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_MEGXUs84EeOWvO27RSbfXg"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_MEGXU884EeOWvO27RSbfXg"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_MEGXVM84EeOWvO27RSbfXg"/>
@@ -110,7 +114,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_MEFwQc84EeOWvO27RSbfXg" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="refactoring.ecore#//RenameClass"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MEFwQs84EeOWvO27RSbfXg" x="495" y="351"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MEFwQs84EeOWvO27RSbfXg" x="414" y="351" width="201" height="66"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_7HngsM86EeOWvO27RSbfXg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_7HoHwM86EeOWvO27RSbfXg" type="4001"/>
@@ -233,6 +237,14 @@
         <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//RenameAttribute/newName"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_bFh14dH7EeOZIPrm1V36QQ"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_B7E48d0aEeOksO_KXqRVww" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//RenameAttribute/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_B7E48t0aEeOksO_KXqRVww"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_fwGA4N0aEeOksO_KXqRVww" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//RenameAttribute/attributeToBeRenamedName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fwGA4d0aEeOksO_KXqRVww"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_ZPndIdH7EeOZIPrm1V36QQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_ZPndItH7EeOZIPrm1V36QQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_ZPndI9H7EeOZIPrm1V36QQ"/>
@@ -252,6 +264,14 @@
       <children xmi:type="notation:Node" xmi:id="_wTC8gNH7EeOZIPrm1V36QQ" type="2001">
         <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//RenameMethod/newName"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_wTC8gdH7EeOZIPrm1V36QQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_VSGWAN0wEeOksO_KXqRVww" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//RenameMethod/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_VSGWAd0wEeOksO_KXqRVww"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_fJRPcN0wEeOksO_KXqRVww" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//RenameMethod/methodToBeRenamedName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fJRPcd0wEeOksO_KXqRVww"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_vKVoAtH7EeOZIPrm1V36QQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_vKVoA9H7EeOZIPrm1V36QQ"/>
@@ -289,6 +309,18 @@
   <children xmi:type="notation:Node" xmi:id="_AX8l4NIwEeOZIPrm1V36QQ" type="1001">
     <children xmi:type="notation:Node" xmi:id="_AX9M8NIwEeOZIPrm1V36QQ" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_AX9M8dIwEeOZIPrm1V36QQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_6fud0N4uEeOQe_TrDKbnnA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//MoveAttribute/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6fud0d4uEeOQe_TrDKbnnA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_HMS3EN4vEeOQe_TrDKbnnA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//MoveAttribute/targetClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HMS3Ed4vEeOQe_TrDKbnnA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_VJX18N4vEeOQe_TrDKbnnA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//MoveAttribute/attributeToBeMovedName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_VJX18d4vEeOQe_TrDKbnnA"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_AX9M8tIwEeOZIPrm1V36QQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_AX9M89IwEeOZIPrm1V36QQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_AX9M9NIwEeOZIPrm1V36QQ"/>
@@ -493,7 +525,7 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_SpcTos84EeOWvO27RSbfXg" fontColor="4210752" fontName="Lucida Grande" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="refactoring.ecore#//RenameClass/classToBeRename"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SpcTo884EeOWvO27RSbfXg" points="[-1, 0, 38, 175]$[-46, 0, -7, 175]$[-46, -174, -7, 1]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Spf-AM84EeOWvO27RSbfXg" id="(0.01639344262295082,0.30612244897959184)"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Spf-AM84EeOWvO27RSbfXg" id="(0.22388059701492538,0.25757575757575757)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_demJoNE4EeOuBKn_35FwoQ" id="(0.8823529411764706,0.9795918367346939)"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_AD50gM87EeOWvO27RSbfXg" type="3002" source="_hQ4a8M80EeOWvO27RSbfXg" target="_7HngsM86EeOWvO27RSbfXg">

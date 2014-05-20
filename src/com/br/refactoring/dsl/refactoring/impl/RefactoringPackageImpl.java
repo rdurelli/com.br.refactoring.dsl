@@ -424,6 +424,15 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getRenameClass_ClassToBeRenamedName() {
+		return (EAttribute)renameClassEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getImport() {
 		return importEClass;
 	}
@@ -568,6 +577,24 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getRenameAttribute_SourceClassName() {
+		return (EAttribute)renameAttributeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getRenameAttribute_AttributeToBeRenamedName() {
+		return (EAttribute)renameAttributeEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getRenameMethod() {
 		return renameMethodEClass;
 	}
@@ -597,6 +624,24 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 */
 	public EReference getRenameMethod_SourceClass() {
 		return (EReference)renameMethodEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getRenameMethod_SourceClassName() {
+		return (EAttribute)renameMethodEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getRenameMethod_MethodToBeRenamedName() {
+		return (EAttribute)renameMethodEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -660,6 +705,33 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 */
 	public EReference getMoveAttribute_AttributeToBeMoved() {
 		return (EReference)moveAttributeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMoveAttribute_SourceClassName() {
+		return (EAttribute)moveAttributeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMoveAttribute_TargetClassName() {
+		return (EAttribute)moveAttributeEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMoveAttribute_AttributeToBeMovedName() {
+		return (EAttribute)moveAttributeEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -963,6 +1035,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		renameClassEClass = createEClass(RENAME_CLASS);
 		createEAttribute(renameClassEClass, RENAME_CLASS__NEW_NAME);
 		createEReference(renameClassEClass, RENAME_CLASS__CLASS_TO_BE_RENAME);
+		createEAttribute(renameClassEClass, RENAME_CLASS__CLASS_TO_BE_RENAMED_NAME);
 
 		importEClass = createEClass(IMPORT);
 		createEAttribute(importEClass, IMPORT__IMPORT_URI);
@@ -986,11 +1059,15 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEAttribute(renameAttributeEClass, RENAME_ATTRIBUTE__NEW_NAME);
 		createEReference(renameAttributeEClass, RENAME_ATTRIBUTE__ATTRIBUTE_TO_BE_RENAME);
 		createEReference(renameAttributeEClass, RENAME_ATTRIBUTE__SOURCE_CLASS);
+		createEAttribute(renameAttributeEClass, RENAME_ATTRIBUTE__SOURCE_CLASS_NAME);
+		createEAttribute(renameAttributeEClass, RENAME_ATTRIBUTE__ATTRIBUTE_TO_BE_RENAMED_NAME);
 
 		renameMethodEClass = createEClass(RENAME_METHOD);
 		createEAttribute(renameMethodEClass, RENAME_METHOD__NEW_NAME);
 		createEReference(renameMethodEClass, RENAME_METHOD__METHOD_TO_BE_RENAME);
 		createEReference(renameMethodEClass, RENAME_METHOD__SOURCE_CLASS);
+		createEAttribute(renameMethodEClass, RENAME_METHOD__SOURCE_CLASS_NAME);
+		createEAttribute(renameMethodEClass, RENAME_METHOD__METHOD_TO_BE_RENAMED_NAME);
 
 		movingFeaturesBetweenObjectsEClass = createEClass(MOVING_FEATURES_BETWEEN_OBJECTS);
 		createEAttribute(movingFeaturesBetweenObjectsEClass, MOVING_FEATURES_BETWEEN_OBJECTS__NAME);
@@ -1000,6 +1077,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(moveAttributeEClass, MOVE_ATTRIBUTE__SOURCE_CLASS);
 		createEReference(moveAttributeEClass, MOVE_ATTRIBUTE__TARGET_CLASS);
 		createEReference(moveAttributeEClass, MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED);
+		createEAttribute(moveAttributeEClass, MOVE_ATTRIBUTE__SOURCE_CLASS_NAME);
+		createEAttribute(moveAttributeEClass, MOVE_ATTRIBUTE__TARGET_CLASS_NAME);
+		createEAttribute(moveAttributeEClass, MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED_NAME);
 
 		moveMethodEClass = createEClass(MOVE_METHOD);
 		createEReference(moveMethodEClass, MOVE_METHOD__SOURCE_CLASS);
@@ -1107,6 +1187,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEClass(renameClassEClass, RenameClass.class, "RenameClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRenameClass_NewName(), ecorePackage.getEString(), "newName", null, 0, 1, RenameClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRenameClass_ClassToBeRename(), this.getClass_(), null, "classToBeRename", null, 0, 1, RenameClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRenameClass_ClassToBeRenamedName(), ecorePackage.getEString(), "classToBeRenamedName", null, 0, 1, RenameClass.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(importEClass, Import.class, "Import", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getImport_ImportURI(), ecorePackage.getEString(), "importURI", null, 0, 1, Import.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1130,11 +1211,15 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEAttribute(getRenameAttribute_NewName(), ecorePackage.getEString(), "newName", null, 0, 1, RenameAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRenameAttribute_AttributeToBeRename(), this.getAttribute(), null, "attributeToBeRename", null, 0, 1, RenameAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRenameAttribute_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, RenameAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRenameAttribute_SourceClassName(), ecorePackage.getEString(), "sourceClassName", null, 0, 1, RenameAttribute.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRenameAttribute_AttributeToBeRenamedName(), ecorePackage.getEString(), "attributeToBeRenamedName", null, 0, 1, RenameAttribute.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(renameMethodEClass, RenameMethod.class, "RenameMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRenameMethod_NewName(), ecorePackage.getEString(), "newName", null, 0, 1, RenameMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRenameMethod_MethodToBeRename(), this.getMethod(), null, "methodToBeRename", null, 0, 1, RenameMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRenameMethod_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, RenameMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRenameMethod_SourceClassName(), ecorePackage.getEString(), "sourceClassName", null, 0, 1, RenameMethod.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRenameMethod_MethodToBeRenamedName(), ecorePackage.getEString(), "methodToBeRenamedName", null, 0, 1, RenameMethod.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(movingFeaturesBetweenObjectsEClass, MovingFeaturesBetweenObjects.class, "MovingFeaturesBetweenObjects", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMovingFeaturesBetweenObjects_Name(), ecorePackage.getEString(), "name", null, 0, 1, MovingFeaturesBetweenObjects.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1144,6 +1229,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getMoveAttribute_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, MoveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMoveAttribute_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, MoveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMoveAttribute_AttributeToBeMoved(), this.getAttribute(), null, "attributeToBeMoved", null, 0, 1, MoveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMoveAttribute_SourceClassName(), ecorePackage.getEString(), "sourceClassName", null, 0, 1, MoveAttribute.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMoveAttribute_TargetClassName(), ecorePackage.getEString(), "targetClassName", null, 0, 1, MoveAttribute.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMoveAttribute_AttributeToBeMovedName(), ecorePackage.getEString(), "attributeToBeMovedName", null, 0, 1, MoveAttribute.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(moveMethodEClass, MoveMethod.class, "MoveMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMoveMethod_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, MoveMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

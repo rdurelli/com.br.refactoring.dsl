@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameClassImpl#getNewName <em>New Name</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameClassImpl#getClassToBeRename <em>Class To Be Rename</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.RenameClassImpl#getClassToBeRenamedName <em>Class To Be Renamed Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,6 +61,16 @@ public class RenameClassImpl extends RenameFeatureImpl implements RenameClass {
 	 * @ordered
 	 */
 	protected com.br.refactoring.dsl.refactoring.Class classToBeRename;
+
+	/**
+	 * The default value of the '{@link #getClassToBeRenamedName() <em>Class To Be Renamed Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClassToBeRenamedName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CLASS_TO_BE_RENAMED_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,6 +153,17 @@ public class RenameClassImpl extends RenameFeatureImpl implements RenameClass {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getClassToBeRenamedName() {
+		
+		return classToBeRename.getName();
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -152,6 +174,8 @@ public class RenameClassImpl extends RenameFeatureImpl implements RenameClass {
 			case RefactoringPackage.RENAME_CLASS__CLASS_TO_BE_RENAME:
 				if (resolve) return getClassToBeRename();
 				return basicGetClassToBeRename();
+			case RefactoringPackage.RENAME_CLASS__CLASS_TO_BE_RENAMED_NAME:
+				return getClassToBeRenamedName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -204,6 +228,8 @@ public class RenameClassImpl extends RenameFeatureImpl implements RenameClass {
 				return NEW_NAME_EDEFAULT == null ? newName != null : !NEW_NAME_EDEFAULT.equals(newName);
 			case RefactoringPackage.RENAME_CLASS__CLASS_TO_BE_RENAME:
 				return classToBeRename != null;
+			case RefactoringPackage.RENAME_CLASS__CLASS_TO_BE_RENAMED_NAME:
+				return CLASS_TO_BE_RENAMED_NAME_EDEFAULT == null ? getClassToBeRenamedName() != null : !CLASS_TO_BE_RENAMED_NAME_EDEFAULT.equals(getClassToBeRenamedName());
 		}
 		return super.eIsSet(featureID);
 	}

@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/com.br.refactoring.dsl/model/refactoring.genmodel
+gmf_dashboard/domainModel=platform\:/resource/com.br.refactoring.dsl/model/refactoring.ecore
+gmf_dashboard/generationModel=platform\:/resource/com.br.refactoring.dsl/model/refactoring.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/com.br.refactoring.dsl/model/refactoring.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/com.br.refactoring.dsl/model/refactoring.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/com.br.refactoring.dsl/model/refactoring.gmftool

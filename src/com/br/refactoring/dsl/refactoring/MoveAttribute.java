@@ -18,6 +18,9 @@ package com.br.refactoring.dsl.refactoring;
  *   <li>{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getTargetClass <em>Target Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getAttributeToBeMoved <em>Attribute To Be Moved</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getTargetClassName <em>Target Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.MoveAttribute#getAttributeToBeMovedName <em>Attribute To Be Moved Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -103,5 +106,50 @@ public interface MoveAttribute extends MovingFeaturesBetweenObjects {
 	 * @generated
 	 */
 	void setAttributeToBeMoved(Attribute value);
+
+	/**
+	 * Returns the value of the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Source Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getMoveAttribute_SourceClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getSourceClassName();
+
+	/**
+	 * Returns the value of the '<em><b>Target Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Target Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Target Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getMoveAttribute_TargetClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getTargetClassName();
+
+	/**
+	 * Returns the value of the '<em><b>Attribute To Be Moved Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Attribute To Be Moved Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Attribute To Be Moved Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getMoveAttribute_AttributeToBeMovedName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getAttributeToBeMovedName();
 
 } // MoveAttribute

@@ -18,6 +18,8 @@ package com.br.refactoring.dsl.refactoring;
  *   <li>{@link com.br.refactoring.dsl.refactoring.RenameMethod#getNewName <em>New Name</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.RenameMethod#getMethodToBeRename <em>Method To Be Rename</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.RenameMethod#getSourceClass <em>Source Class</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.RenameMethod#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.RenameMethod#getMethodToBeRenamedName <em>Method To Be Renamed Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -103,5 +105,35 @@ public interface RenameMethod extends RenameFeature {
 	 * @generated
 	 */
 	void setSourceClass(com.br.refactoring.dsl.refactoring.Class value);
+
+	/**
+	 * Returns the value of the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Source Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getRenameMethod_SourceClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getSourceClassName();
+
+	/**
+	 * Returns the value of the '<em><b>Method To Be Renamed Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Method To Be Renamed Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Method To Be Renamed Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getRenameMethod_MethodToBeRenamedName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getMethodToBeRenamedName();
 
 } // RenameMethod

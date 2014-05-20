@@ -27,6 +27,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl#getTargetClass <em>Target Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl#getAttributeToBeMoved <em>Attribute To Be Moved</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl#getTargetClassName <em>Target Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.MoveAttributeImpl#getAttributeToBeMovedName <em>Attribute To Be Moved Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +65,36 @@ public class MoveAttributeImpl extends MovingFeaturesBetweenObjectsImpl implemen
 	 * @ordered
 	 */
 	protected Attribute attributeToBeMoved;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getTargetClassName() <em>Target Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTargetClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TARGET_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getAttributeToBeMovedName() <em>Attribute To Be Moved Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttributeToBeMovedName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ATTRIBUTE_TO_BE_MOVED_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,6 +232,34 @@ public class MoveAttributeImpl extends MovingFeaturesBetweenObjectsImpl implemen
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getTargetClassName() {
+		return targetClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getAttributeToBeMovedName() {
+		return attributeToBeMoved.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -213,6 +274,12 @@ public class MoveAttributeImpl extends MovingFeaturesBetweenObjectsImpl implemen
 			case RefactoringPackage.MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED:
 				if (resolve) return getAttributeToBeMoved();
 				return basicGetAttributeToBeMoved();
+			case RefactoringPackage.MOVE_ATTRIBUTE__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.MOVE_ATTRIBUTE__TARGET_CLASS_NAME:
+				return getTargetClassName();
+			case RefactoringPackage.MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED_NAME:
+				return getAttributeToBeMovedName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -273,6 +340,12 @@ public class MoveAttributeImpl extends MovingFeaturesBetweenObjectsImpl implemen
 				return targetClass != null;
 			case RefactoringPackage.MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED:
 				return attributeToBeMoved != null;
+			case RefactoringPackage.MOVE_ATTRIBUTE__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.MOVE_ATTRIBUTE__TARGET_CLASS_NAME:
+				return TARGET_CLASS_NAME_EDEFAULT == null ? getTargetClassName() != null : !TARGET_CLASS_NAME_EDEFAULT.equals(getTargetClassName());
+			case RefactoringPackage.MOVE_ATTRIBUTE__ATTRIBUTE_TO_BE_MOVED_NAME:
+				return ATTRIBUTE_TO_BE_MOVED_NAME_EDEFAULT == null ? getAttributeToBeMovedName() != null : !ATTRIBUTE_TO_BE_MOVED_NAME_EDEFAULT.equals(getAttributeToBeMovedName());
 		}
 		return super.eIsSet(featureID);
 	}

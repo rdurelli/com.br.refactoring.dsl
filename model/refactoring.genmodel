@@ -26,6 +26,7 @@
     <genClasses ecoreClass="refactoring.ecore#//RenameClass">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameClass/newName"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameClass/classToBeRename"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameClass/classToBeRenamedName"/>
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//Import">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//Import/importURI"/>
@@ -48,11 +49,15 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameAttribute/newName"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameAttribute/attributeToBeRename"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameAttribute/sourceClass"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameAttribute/sourceClassName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameAttribute/attributeToBeRenamedName"/>
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//RenameMethod">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameMethod/newName"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameMethod/methodToBeRename"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//RenameMethod/sourceClass"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameMethod/sourceClassName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//RenameMethod/methodToBeRenamedName"/>
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//MovingFeaturesBetweenObjects">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//MovingFeaturesBetweenObjects/name"/>
@@ -62,6 +67,9 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//MoveAttribute/sourceClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//MoveAttribute/targetClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//MoveAttribute/attributeToBeMoved"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//MoveAttribute/sourceClassName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//MoveAttribute/targetClassName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//MoveAttribute/attributeToBeMovedName"/>
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//MoveMethod">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//MoveMethod/sourceClass"/>
