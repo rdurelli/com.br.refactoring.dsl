@@ -21,6 +21,7 @@ import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
 import com.br.refactoring.dsl.refactoring.PullUpAttribute;
+import com.br.refactoring.dsl.refactoring.PullUpMethod;
 import com.br.refactoring.dsl.refactoring.PushDownAttribute;
 import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.RefactoringFactory;
@@ -106,6 +107,7 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 			case RefactoringPackage.PUSH_DOWN_METHOD: return createPushDownMethod();
 			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE: return createPushDownAttribute();
 			case RefactoringPackage.PULL_UP_ATTRIBUTE: return createPullUpAttribute();
+			case RefactoringPackage.PULL_UP_METHOD: return createPullUpMethod();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -339,6 +341,16 @@ public class RefactoringFactoryImpl extends EFactoryImpl implements RefactoringF
 	public PullUpAttribute createPullUpAttribute() {
 		PullUpAttributeImpl pullUpAttribute = new PullUpAttributeImpl();
 		return pullUpAttribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PullUpMethod createPullUpMethod() {
+		PullUpMethodImpl pullUpMethod = new PullUpMethodImpl();
+		return pullUpMethod;
 	}
 
 	/**

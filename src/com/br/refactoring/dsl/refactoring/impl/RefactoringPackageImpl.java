@@ -22,6 +22,7 @@ import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
 import com.br.refactoring.dsl.refactoring.PullUpAttribute;
+import com.br.refactoring.dsl.refactoring.PullUpMethod;
 import com.br.refactoring.dsl.refactoring.PushDownAttribute;
 import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.Refactoring;
@@ -229,6 +230,13 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * @generated
 	 */
 	private EClass pullUpAttributeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pullUpMethodEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -1124,6 +1132,42 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getPullUpMethod() {
+		return pullUpMethodEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPullUpMethod_MethodToBePulled() {
+		return (EReference)pullUpMethodEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPullUpMethod_SourceClass() {
+		return (EReference)pullUpMethodEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPullUpMethod_TargetClass() {
+		return (EReference)pullUpMethodEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RefactoringFactory getRefactoringFactory() {
 		return (RefactoringFactory)getEFactoryInstance();
 	}
@@ -1264,6 +1308,11 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__ATTRIBUTE_TO_BE_PULLED);
 		createEReference(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__SOURCE_CLASS);
 		createEReference(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__TARGET_CLASS);
+
+		pullUpMethodEClass = createEClass(PULL_UP_METHOD);
+		createEReference(pullUpMethodEClass, PULL_UP_METHOD__METHOD_TO_BE_PULLED);
+		createEReference(pullUpMethodEClass, PULL_UP_METHOD__SOURCE_CLASS);
+		createEReference(pullUpMethodEClass, PULL_UP_METHOD__TARGET_CLASS);
 	}
 
 	/**
@@ -1314,6 +1363,7 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		pushDownMethodEClass.getESuperTypes().add(this.getDealingWithGeneralization());
 		pushDownAttributeEClass.getESuperTypes().add(this.getDealingWithGeneralization());
 		pullUpAttributeEClass.getESuperTypes().add(this.getDealingWithGeneralization());
+		pullUpMethodEClass.getESuperTypes().add(this.getDealingWithGeneralization());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1433,6 +1483,11 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getPullUpAttribute_AttributeToBePulled(), this.getAttribute(), null, "attributeToBePulled", null, 0, 1, PullUpAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPullUpAttribute_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, PullUpAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPullUpAttribute_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, PullUpAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(pullUpMethodEClass, PullUpMethod.class, "PullUpMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getPullUpMethod_MethodToBePulled(), this.getMethod(), null, "methodToBePulled", null, 0, 1, PullUpMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPullUpMethod_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, PullUpMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPullUpMethod_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, PullUpMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

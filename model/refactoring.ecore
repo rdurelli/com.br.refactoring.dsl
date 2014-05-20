@@ -149,4 +149,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//Class"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PullUpMethod" eSuperTypes="#//DealingWithGeneralization">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methodToBePulled" eType="#//Method"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//Class"/>
+  </eClassifiers>
 </ecore:EPackage>

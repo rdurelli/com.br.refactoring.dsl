@@ -22,6 +22,7 @@ import com.br.refactoring.dsl.refactoring.MoveMethod;
 import com.br.refactoring.dsl.refactoring.MovingFeaturesBetweenObjects;
 import com.br.refactoring.dsl.refactoring.OrganizingData;
 import com.br.refactoring.dsl.refactoring.PullUpAttribute;
+import com.br.refactoring.dsl.refactoring.PullUpMethod;
 import com.br.refactoring.dsl.refactoring.PushDownAttribute;
 import com.br.refactoring.dsl.refactoring.PushDownMethod;
 import com.br.refactoring.dsl.refactoring.Refactoring;
@@ -199,6 +200,10 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter casePullUpAttribute(PullUpAttribute object) {
 				return createPullUpAttributeAdapter();
+			}
+			@Override
+			public Adapter casePullUpMethod(PullUpMethod object) {
+				return createPullUpMethodAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -581,6 +586,20 @@ public class RefactoringAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPullUpAttributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.br.refactoring.dsl.refactoring.PullUpMethod <em>Pull Up Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.br.refactoring.dsl.refactoring.PullUpMethod
+	 * @generated
+	 */
+	public Adapter createPullUpMethodAdapter() {
 		return null;
 	}
 
