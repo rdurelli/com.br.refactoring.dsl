@@ -836,6 +836,62 @@
         </modelFacet>
       </labels>
     </topLevelNodes>
+    <topLevelNodes
+        visualID="2003"
+        editPartClassName="DealingWithGeneralizationEditPart"
+        itemSemanticEditPolicyClassName="DealingWithGeneralizationItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="DealingWithGeneralizationCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="DealingWithGeneralizationGraphicalNodeEditPolicy"
+        createCommandClassName="DealingWithGeneralizationCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="DealingWithGeneralizationEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="TOOLBAR_LAYOUT"
+          className="DealingWithGeneralizationFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DealingWithGeneralizationFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDealingWithGeneralizationNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fFigureDealingWithGeneralizationCompartment; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DealingWithGeneralizationFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure dealingWithGeneralizationTitle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;&#x9;dealingWithGeneralizationTitle0.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#xA;this.add(dealingWithGeneralizationTitle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutDealingWithGeneralizationTitle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutDealingWithGeneralizationTitle0.numColumns = 1;&#xA;&#x9;layoutDealingWithGeneralizationTitle0.makeColumnsEqualWidth = true;&#xA;&#x9;dealingWithGeneralizationTitle0.setLayoutManager(layoutDealingWithGeneralizationTitle0);&#xA;&#xA;&#xA;&#xA;fFigureDealingWithGeneralizationNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDealingWithGeneralizationNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureDealingWithGeneralizationNameFigure.setFont(FFIGUREDEALINGWITHGENERALIZATIONNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigureDealingWithGeneralizationNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigureDealingWithGeneralizationNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureDealingWithGeneralizationNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureDealingWithGeneralizationNameFigure.horizontalIndent = 0;&#xA;constraintFFigureDealingWithGeneralizationNameFigure.horizontalSpan = 1;&#xA;constraintFFigureDealingWithGeneralizationNameFigure.verticalSpan = 1;&#xA;constraintFFigureDealingWithGeneralizationNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigureDealingWithGeneralizationNameFigure.grabExcessVerticalSpace = true;&#xA;dealingWithGeneralizationTitle0.add(fFigureDealingWithGeneralizationNameFigure, constraintFFigureDealingWithGeneralizationNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;fFigureDealingWithGeneralizationCompartment = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;&#x9;fFigureDealingWithGeneralizationCompartment.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#xA;fFigureDealingWithGeneralizationCompartment.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(3)&#xA;, getMapMode().DPtoLP(3)&#xA;, getMapMode().DPtoLP(3)&#xA;, getMapMode().DPtoLP(3)&#xA;));&#xA;&#xA;this.add(fFigureDealingWithGeneralizationCompartment);&#xA;&#xA;&#x9;org.eclipse.draw2d.StackLayout layoutFFigureDealingWithGeneralizationCompartment = new org.eclipse.draw2d.StackLayout();&#xA;&#x9;fFigureDealingWithGeneralizationCompartment.setLayoutManager(layoutFFigureDealingWithGeneralizationCompartment);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDealingWithGeneralizationNameFigure() {&#xA;&#x9;&#x9;return fFigureDealingWithGeneralizationNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getFigureDealingWithGeneralizationCompartment() {&#xA;&#x9;&#x9;return fFigureDealingWithGeneralizationCompartment;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREDEALINGWITHGENERALIZATIONNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 11, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"/>
+        <attributes
+            xsi:type="gmfgen:DefaultSizeAttributes"
+            width="200"
+            height="300"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="refactoring.genmodel#//refactoring/DealingWithGeneralization"/>
+        <containmentMetaFeature
+            href="refactoring.genmodel#//refactoring/Model/contains"/>
+        <childMetaFeature
+            href="refactoring.genmodel#//refactoring/Model/contains"/>
+      </modelFacet>
+      <labels
+          visualID="5025"
+          editPartClassName="DealingWithGeneralizationNameEditPart"
+          itemSemanticEditPolicyClassName="DealingWithGeneralizationNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureDealingWithGeneralizationNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="DealingWithGeneralization: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/DealingWithGeneralization/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
     <compartments
         visualID="7001"
         editPartClassName="RenameFeatureRefactoringsRenameEditPart"
@@ -900,6 +956,11 @@
             title="InLine"
             description="Create new InLine"
             genNodes="//@diagram/@childNodes.5"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="DealingWithGeneralization"
+            description="Create new Dealing With Generalization"
+            genNodes="//@diagram/@topLevelNodes.2"/>
       </groups>
     </palette>
     <preferencePages
@@ -960,6 +1021,9 @@
     <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.1"/>
+    <childReferences
+        parent="//@diagram"
+        child="//@diagram/@topLevelNodes.2"/>
   </navigator>
   <diagramUpdater/>
   <propertySheet>
@@ -987,7 +1051,7 @@
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet"/>
+        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">

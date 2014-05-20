@@ -310,6 +310,27 @@
       </children>
     </ownedChild>
   </nodes>
+  <nodes>
+    <containmentFeature
+        href="refactoring.ecore#//Model/contains"/>
+    <ownedChild>
+      <domainMetaElement
+          href="refactoring.ecore#//DealingWithGeneralization"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping"
+          viewPattern="DealingWithGeneralization: {0}">
+        <diagramLabel
+            href="refactoring.gmfgraph#DealingWithGeneralizationName"/>
+        <features
+            href="refactoring.ecore#//DealingWithGeneralization/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="refactoring.gmftool#//@palette/@tools.0/@tools.8"/>
+      <diagramNode
+          href="refactoring.gmfgraph#DealingWithGeneralization"/>
+    </ownedChild>
+  </nodes>
   <diagram>
     <diagramCanvas
         href="refactoring.gmfgraph#refactoring"/>
