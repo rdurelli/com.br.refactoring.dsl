@@ -25,6 +25,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.InlineClassImpl#getClassToGetAllFeatures <em>Class To Get All Features</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.InlineClassImpl#getClassToRemove <em>Class To Remove</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.InlineClassImpl#getClassToGetAllFeaturesName <em>Class To Get All Features Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.InlineClassImpl#getClassToRemoveName <em>Class To Remove Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -50,6 +52,26 @@ public class InlineClassImpl extends MovingFeaturesBetweenObjectsImpl implements
 	 * @ordered
 	 */
 	protected com.br.refactoring.dsl.refactoring.Class classToRemove;
+
+	/**
+	 * The default value of the '{@link #getClassToGetAllFeaturesName() <em>Class To Get All Features Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClassToGetAllFeaturesName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CLASS_TO_GET_ALL_FEATURES_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getClassToRemoveName() <em>Class To Remove Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClassToRemoveName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CLASS_TO_REMOVE_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,6 +171,24 @@ public class InlineClassImpl extends MovingFeaturesBetweenObjectsImpl implements
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getClassToGetAllFeaturesName() {
+		return classToGetAllFeatures.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getClassToRemoveName() {
+		return classToRemove.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -160,6 +200,10 @@ public class InlineClassImpl extends MovingFeaturesBetweenObjectsImpl implements
 			case RefactoringPackage.INLINE_CLASS__CLASS_TO_REMOVE:
 				if (resolve) return getClassToRemove();
 				return basicGetClassToRemove();
+			case RefactoringPackage.INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES_NAME:
+				return getClassToGetAllFeaturesName();
+			case RefactoringPackage.INLINE_CLASS__CLASS_TO_REMOVE_NAME:
+				return getClassToRemoveName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -212,6 +256,10 @@ public class InlineClassImpl extends MovingFeaturesBetweenObjectsImpl implements
 				return classToGetAllFeatures != null;
 			case RefactoringPackage.INLINE_CLASS__CLASS_TO_REMOVE:
 				return classToRemove != null;
+			case RefactoringPackage.INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES_NAME:
+				return CLASS_TO_GET_ALL_FEATURES_NAME_EDEFAULT == null ? getClassToGetAllFeaturesName() != null : !CLASS_TO_GET_ALL_FEATURES_NAME_EDEFAULT.equals(getClassToGetAllFeaturesName());
+			case RefactoringPackage.INLINE_CLASS__CLASS_TO_REMOVE_NAME:
+				return CLASS_TO_REMOVE_NAME_EDEFAULT == null ? getClassToRemoveName() != null : !CLASS_TO_REMOVE_NAME_EDEFAULT.equals(getClassToRemoveName());
 		}
 		return super.eIsSet(featureID);
 	}

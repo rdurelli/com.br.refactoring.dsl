@@ -958,13 +958,31 @@ public interface RefactoringPackage extends EPackage {
 	int INLINE_CLASS__CLASS_TO_REMOVE = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Class To Get All Features Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Class To Remove Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INLINE_CLASS__CLASS_TO_REMOVE_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Inline Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INLINE_CLASS_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 2;
+	int INLINE_CLASS_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 4;
 
 
 	/**
@@ -1924,6 +1942,28 @@ public interface RefactoringPackage extends EPackage {
 	EReference getInlineClass_ClassToRemove();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.InlineClass#getClassToGetAllFeaturesName <em>Class To Get All Features Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Class To Get All Features Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.InlineClass#getClassToGetAllFeaturesName()
+	 * @see #getInlineClass()
+	 * @generated
+	 */
+	EAttribute getInlineClass_ClassToGetAllFeaturesName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.InlineClass#getClassToRemoveName <em>Class To Remove Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Class To Remove Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.InlineClass#getClassToRemoveName()
+	 * @see #getInlineClass()
+	 * @generated
+	 */
+	EAttribute getInlineClass_ClassToRemoveName();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.OrganizingData <em>Organizing Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2684,6 +2724,22 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference INLINE_CLASS__CLASS_TO_REMOVE = eINSTANCE.getInlineClass_ClassToRemove();
+
+		/**
+		 * The meta object literal for the '<em><b>Class To Get All Features Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES_NAME = eINSTANCE.getInlineClass_ClassToGetAllFeaturesName();
+
+		/**
+		 * The meta object literal for the '<em><b>Class To Remove Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INLINE_CLASS__CLASS_TO_REMOVE_NAME = eINSTANCE.getInlineClass_ClassToRemoveName();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.OrganizingDataImpl <em>Organizing Data</em>}' class.

@@ -865,6 +865,24 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getInlineClass_ClassToGetAllFeaturesName() {
+		return (EAttribute)inlineClassEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInlineClass_ClassToRemoveName() {
+		return (EAttribute)inlineClassEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getOrganizingData() {
 		return organizingDataEClass;
 	}
@@ -1124,6 +1142,8 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		inlineClassEClass = createEClass(INLINE_CLASS);
 		createEReference(inlineClassEClass, INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES);
 		createEReference(inlineClassEClass, INLINE_CLASS__CLASS_TO_REMOVE);
+		createEAttribute(inlineClassEClass, INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES_NAME);
+		createEAttribute(inlineClassEClass, INLINE_CLASS__CLASS_TO_REMOVE_NAME);
 
 		organizingDataEClass = createEClass(ORGANIZING_DATA);
 		createEAttribute(organizingDataEClass, ORGANIZING_DATA__NAME);
@@ -1279,6 +1299,8 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEClass(inlineClassEClass, InlineClass.class, "InlineClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInlineClass_ClassToGetAllFeatures(), this.getClass_(), null, "classToGetAllFeatures", null, 0, 1, InlineClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInlineClass_ClassToRemove(), this.getClass_(), null, "classToRemove", null, 0, 1, InlineClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInlineClass_ClassToGetAllFeaturesName(), ecorePackage.getEString(), "classToGetAllFeaturesName", null, 0, 1, InlineClass.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInlineClass_ClassToRemoveName(), ecorePackage.getEString(), "classToRemoveName", null, 0, 1, InlineClass.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(organizingDataEClass, OrganizingData.class, "OrganizingData", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrganizingData_Name(), ecorePackage.getEString(), "name", null, 0, 1, OrganizingData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
