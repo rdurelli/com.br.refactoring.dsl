@@ -96,4 +96,17 @@
         visualID="5021"
         queryText="true"/>
   </childNodeTraces>
+  <childNodeTraces
+      visualID="3006"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://refactoring/1.0' and _eClass_.name = 'InlineClass') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://refactoring/1.0' and _eClass_.name = 'MovingFeaturesBetweenObjects') and _containmentMF_.name = 'allRefactorings')">
+    <nodeLabelTraces
+        visualID="5022"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5023"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5024"
+        queryText="true"/>
+  </childNodeTraces>
 </trace:TraceModel>

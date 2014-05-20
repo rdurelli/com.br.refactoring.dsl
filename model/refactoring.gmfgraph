@@ -504,6 +504,75 @@
       <accessors
           figure="//@figures.0/@descriptors.6/@actualFigure/@children.1/@children.2"/>
     </descriptors>
+    <descriptors
+        name="InLineFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="InLineFigure">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"
+            vertical="true"
+            matchMinorSize="true"
+            forceSingleLine="true"
+            minorAlignment="CENTER"
+            majorSpacing="0"
+            minorSpacing="0"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="MInLineTitle"
+            outline="false"
+            lineWidth="0">
+          <layout
+              xsi:type="gmfgraph:GridLayout"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="InLineNameFigure">
+            <layoutData
+                xsi:type="gmfgraph:GridLayoutData"
+                grabExcessHorizontalSpace="true"
+                grabExcessVerticalSpace="true"/>
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                height="10"
+                style="BOLD"/>
+          </children>
+        </children>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="MInLineContent"
+            lineWidth="0">
+          <layout
+              xsi:type="gmfgraph:FlowLayout"/>
+          <foregroundColor
+              xsi:type="gmfgraph:ConstantColor"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="InLineClassToGetAllFeaturesNameFigure">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="InLineClassToRemoveNameFigure"
+              text="">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.7/@actualFigure/@children.0/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.7/@actualFigure/@children.1/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.7/@actualFigure/@children.1/@children.1"/>
+    </descriptors>
   </figures>
   <nodes
       name="RenameFeature"
@@ -538,6 +607,16 @@
   <nodes
       name="MoveMethod"
       figure="MoveMethodFigure">
+    <facets
+        xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize
+          dx="30"
+          dy="35"/>
+    </facets>
+  </nodes>
+  <nodes
+      name="InLine"
+      figure="InLineFigure">
     <facets
         xsi:type="gmfgraph:DefaultSizeFacet">
       <defaultSize
@@ -639,6 +718,21 @@
       figure="MoveMethodFigure"
       elementIcon="false"
       accessor="//@figures.0/@descriptors.6/@accessors.3"/>
+  <labels
+      name="InLineName"
+      figure="InLineFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.7/@accessors.0"/>
+  <labels
+      name="InLineClassToGetAllFeaturesName"
+      figure="InLineFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.7/@accessors.1"/>
+  <labels
+      name="InLineClassToRemoveName"
+      figure="InLineFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.7/@accessors.2"/>
   <labels
       name="RenameClassClassToBeRenameName"
       figure="RenameClassFigure"

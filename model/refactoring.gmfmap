@@ -271,6 +271,43 @@
               href="refactoring.gmfgraph#MoveMethod"/>
         </ownedChild>
       </children>
+      <children>
+        <containmentFeature
+            href="refactoring.ecore#//MovingFeaturesBetweenObjects/allRefactorings"/>
+        <ownedChild>
+          <domainMetaElement
+              href="refactoring.ecore#//InlineClass"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="Refactoring_InLine: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#InLineName"/>
+            <features
+                href="refactoring.ecore#//MovingFeaturesBetweenObjects/name"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="classToGetAllFeatures: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#InLineClassToGetAllFeaturesName"/>
+            <features
+                href="refactoring.ecore#//InlineClass/classToGetAllFeaturesName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="classToRemove: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#InLineClassToRemoveName"/>
+            <features
+                href="refactoring.ecore#//InlineClass/classToRemoveName"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="refactoring.gmftool#//@palette/@tools.0/@tools.7"/>
+          <diagramNode
+              href="refactoring.gmfgraph#InLine"/>
+        </ownedChild>
+      </children>
     </ownedChild>
   </nodes>
   <diagram>

@@ -620,6 +620,108 @@
         </modelFacet>
       </labels>
     </childNodes>
+    <childNodes
+        visualID="3006"
+        editPartClassName="InlineClassEditPart"
+        itemSemanticEditPolicyClassName="InlineClassItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="InlineClassCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="InlineClassGraphicalNodeEditPolicy"
+        createCommandClassName="InlineClassCreateCommand"
+        containers="//@diagram/@topLevelNodes.1">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="InlineClassEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="TOOLBAR_LAYOUT"
+          className="InLineFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class InLineFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInLineNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInLineClassToGetAllFeaturesNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureInLineClassToRemoveNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public InLineFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mInLineTitle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mInLineTitle0.setOutline(false);&#xA;mInLineTitle0.setLineWidth(0);&#xA;&#xA;this.add(mInLineTitle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutMInLineTitle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutMInLineTitle0.numColumns = 1;&#xA;&#x9;layoutMInLineTitle0.makeColumnsEqualWidth = true;&#xA;&#x9;mInLineTitle0.setLayoutManager(layoutMInLineTitle0);&#xA;&#xA;&#xA;&#xA;fFigureInLineNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInLineNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureInLineNameFigure.setFont(FFIGUREINLINENAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigureInLineNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigureInLineNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureInLineNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureInLineNameFigure.horizontalIndent = 0;&#xA;constraintFFigureInLineNameFigure.horizontalSpan = 1;&#xA;constraintFFigureInLineNameFigure.verticalSpan = 1;&#xA;constraintFFigureInLineNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigureInLineNameFigure.grabExcessVerticalSpace = true;&#xA;mInLineTitle0.add(fFigureInLineNameFigure, constraintFFigureInLineNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mInLineContent0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mInLineContent0.setLineWidth(0);&#xA;&#x9;mInLineContent0.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#xA;this.add(mInLineContent0);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutMInLineContent0 = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutMInLineContent0.setStretchMinorAxis(false);&#xA;&#x9;layoutMInLineContent0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutMInLineContent0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutMInLineContent0.setMajorSpacing(5);&#xA;&#x9;layoutMInLineContent0.setMinorSpacing(5);&#xA;&#x9;layoutMInLineContent0.setHorizontal(true);&#xA;&#xA;&#x9;mInLineContent0.setLayoutManager(layoutMInLineContent0);&#xA;&#xA;&#xA;&#xA;fFigureInLineClassToGetAllFeaturesNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInLineClassToGetAllFeaturesNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureInLineClassToGetAllFeaturesNameFigure.setFont(FFIGUREINLINECLASSTOGETALLFEATURESNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mInLineContent0.add(fFigureInLineClassToGetAllFeaturesNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureInLineClassToRemoveNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureInLineClassToRemoveNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureInLineClassToRemoveNameFigure.setFont(FFIGUREINLINECLASSTOREMOVENAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mInLineContent0.add(fFigureInLineClassToRemoveNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInLineNameFigure() {&#xA;&#x9;&#x9;return fFigureInLineNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInLineClassToGetAllFeaturesNameFigure() {&#xA;&#x9;&#x9;return fFigureInLineClassToGetAllFeaturesNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureInLineClassToRemoveNameFigure() {&#xA;&#x9;&#x9;return fFigureInLineClassToRemoveNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREINLINENAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 10, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREINLINECLASSTOGETALLFEATURESNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREINLINECLASSTOREMOVENAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+        <attributes
+            xsi:type="gmfgen:DefaultSizeAttributes"
+            width="30"
+            height="35"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="refactoring.genmodel#//refactoring/InlineClass"/>
+        <containmentMetaFeature
+            href="refactoring.genmodel#//refactoring/MovingFeaturesBetweenObjects/allRefactorings"/>
+        <childMetaFeature
+            href="refactoring.genmodel#//refactoring/MovingFeaturesBetweenObjects/allRefactorings"/>
+      </modelFacet>
+      <labels
+          visualID="5022"
+          editPartClassName="InlineClassNameEditPart"
+          itemSemanticEditPolicyClassName="InlineClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureInLineNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="Refactoring_InLine: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/MovingFeaturesBetweenObjects/name"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5023"
+          editPartClassName="InlineClassClassToGetAllFeaturesNaEditPart"
+          itemSemanticEditPolicyClassName="InlineClassClassToGetAllFeaturesNaItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureInLineClassToGetAllFeaturesNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="classToGetAllFeatures: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/InlineClass/classToGetAllFeaturesName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5024"
+          editPartClassName="InlineClassClassToRemoveNameEditPart"
+          itemSemanticEditPolicyClassName="InlineClassClassToRemoveNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureInLineClassToRemoveNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="classToRemove: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/InlineClass/classToRemoveName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
     <topLevelNodes
         visualID="2001"
         editPartClassName="RenameFeatureEditPart"
@@ -682,7 +784,7 @@
         editPartClassName="MovingFeaturesBetweenObjectsEditPart"
         itemSemanticEditPolicyClassName="MovingFeaturesBetweenObjectsItemSemanticEditPolicy"
         canonicalEditPolicyClassName="MovingFeaturesBetweenObjectsCanonicalEditPolicy"
-        childNodes="//@diagram/@childNodes.3 //@diagram/@childNodes.4"
+        childNodes="//@diagram/@childNodes.3 //@diagram/@childNodes.4 //@diagram/@childNodes.5"
         graphicalNodeEditPolicyClassName="MovingFeaturesBetweenObjectsGraphicalNodeEditPolicy"
         createCommandClassName="MovingFeaturesBetweenObjectsCreateCommand">
       <diagramRunTimeClass
@@ -793,6 +895,11 @@
             title="MoveMethod"
             description="Create new Move Method"
             genNodes="//@diagram/@childNodes.4"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="InLine"
+            description="Create new InLine"
+            genNodes="//@diagram/@childNodes.5"/>
       </groups>
     </palette>
     <preferencePages
@@ -848,6 +955,9 @@
         parent="//@diagram/@topLevelNodes.1"
         child="//@diagram/@childNodes.4"/>
     <childReferences
+        parent="//@diagram/@topLevelNodes.1"
+        child="//@diagram/@childNodes.5"/>
+    <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.1"/>
   </navigator>
@@ -877,7 +987,7 @@
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet"/>
+        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">
