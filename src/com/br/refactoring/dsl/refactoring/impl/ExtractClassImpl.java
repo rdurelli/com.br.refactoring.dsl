@@ -33,6 +33,8 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl#getNewName <em>New Name</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl#getAttributesToBeMoved <em>Attributes To Be Moved</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl#getAttributesToBeMovedName <em>Attributes To Be Moved Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ExtractClassImpl#getSourceClassName <em>Source Class Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -78,6 +80,26 @@ public class ExtractClassImpl extends MovingFeaturesBetweenObjectsImpl implement
 	 * @ordered
 	 */
 	protected EList<Attribute> attributesToBeMoved;
+
+	/**
+	 * The default value of the '{@link #getAttributesToBeMovedName() <em>Attributes To Be Moved Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttributesToBeMovedName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ATTRIBUTES_TO_BE_MOVED_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,6 +194,45 @@ public class ExtractClassImpl extends MovingFeaturesBetweenObjectsImpl implement
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getAttributesToBeMovedName() {
+		String attibutesToBeMovedName = "{";
+		
+		if (this.attributesToBeMoved.size() > 3) {
+			
+			attibutesToBeMovedName += this.attributesToBeMoved.get(0).getName()
+					+ ", " + this.attributesToBeMoved.get(1).getName() + ", "
+					+ this.attributesToBeMoved.get(2).getName() + "..."; 
+			
+		} else if (this.attributesToBeMoved.size() == 2) {
+			
+			attibutesToBeMovedName += this.attributesToBeMoved.get(0).getName()
+					+ ", " + this.attributesToBeMoved.get(1).getName(); 
+			
+		} else if (this.attributesToBeMoved.size() == 3) {
+			attibutesToBeMovedName += this.attributesToBeMoved.get(0).getName()
+					+ ", " + this.attributesToBeMoved.get(1).getName() + ", "
+					+ this.attributesToBeMoved.get(2).getName(); 
+		} else if (this.attributesToBeMoved.size() == 1) {
+			attibutesToBeMovedName += this.attributesToBeMoved.get(0).getName(); 
+		}
+		
+		return attibutesToBeMovedName.concat("}");
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -184,6 +245,10 @@ public class ExtractClassImpl extends MovingFeaturesBetweenObjectsImpl implement
 				return basicGetSourceClass();
 			case RefactoringPackage.EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED:
 				return getAttributesToBeMoved();
+			case RefactoringPackage.EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED_NAME:
+				return getAttributesToBeMovedName();
+			case RefactoringPackage.EXTRACT_CLASS__SOURCE_CLASS_NAME:
+				return getSourceClassName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -246,6 +311,10 @@ public class ExtractClassImpl extends MovingFeaturesBetweenObjectsImpl implement
 				return sourceClass != null;
 			case RefactoringPackage.EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED:
 				return attributesToBeMoved != null && !attributesToBeMoved.isEmpty();
+			case RefactoringPackage.EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED_NAME:
+				return ATTRIBUTES_TO_BE_MOVED_NAME_EDEFAULT == null ? getAttributesToBeMovedName() != null : !ATTRIBUTES_TO_BE_MOVED_NAME_EDEFAULT.equals(getAttributesToBeMovedName());
+			case RefactoringPackage.EXTRACT_CLASS__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
 		}
 		return super.eIsSet(featureID);
 	}

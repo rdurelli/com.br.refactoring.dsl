@@ -97,10 +97,16 @@
         changeable="false" volatile="true" transient="true" derived="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ExtractClass" eSuperTypes="#//MovingFeaturesBetweenObjects">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributesToBeMoved" upperBound="-1"
         eType="#//Attribute"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributesToBeMovedName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InlineClass" eSuperTypes="#//MovingFeaturesBetweenObjects">
     <eStructuralFeatures xsi:type="ecore:EReference" name="classToGetAllFeatures"
@@ -123,6 +129,13 @@
         eType="#//Attribute"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="newAttributes" upperBound="-1"
         eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeToReplaceDataWithObjectName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"
+        volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newAttributesName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EncapsulateField" eSuperTypes="#//OrganizingData">
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceClass" eType="#//Class"/>

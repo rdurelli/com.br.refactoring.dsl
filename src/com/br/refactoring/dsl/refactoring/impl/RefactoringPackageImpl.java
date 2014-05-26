@@ -862,6 +862,24 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getExtractClass_AttributesToBeMovedName() {
+		return (EAttribute)extractClassEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getExtractClass_SourceClassName() {
+		return (EAttribute)extractClassEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getInlineClass() {
 		return inlineClassEClass;
 	}
@@ -963,6 +981,33 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 */
 	public EReference getReplaceDataValueWithObject_NewAttributes() {
 		return (EReference)replaceDataValueWithObjectEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getReplaceDataValueWithObject_SourceClassName() {
+		return (EAttribute)replaceDataValueWithObjectEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getReplaceDataValueWithObject_AttributeToReplaceDataWithObjectName() {
+		return (EAttribute)replaceDataValueWithObjectEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getReplaceDataValueWithObject_NewAttributesName() {
+		return (EAttribute)replaceDataValueWithObjectEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -1270,6 +1315,8 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEAttribute(extractClassEClass, EXTRACT_CLASS__NEW_NAME);
 		createEReference(extractClassEClass, EXTRACT_CLASS__SOURCE_CLASS);
 		createEReference(extractClassEClass, EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED);
+		createEAttribute(extractClassEClass, EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED_NAME);
+		createEAttribute(extractClassEClass, EXTRACT_CLASS__SOURCE_CLASS_NAME);
 
 		inlineClassEClass = createEClass(INLINE_CLASS);
 		createEReference(inlineClassEClass, INLINE_CLASS__CLASS_TO_GET_ALL_FEATURES);
@@ -1285,6 +1332,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS);
 		createEReference(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT);
 		createEReference(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES);
+		createEAttribute(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS_NAME);
+		createEAttribute(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT_NAME);
+		createEAttribute(replaceDataValueWithObjectEClass, REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES_NAME);
 
 		encapsulateFieldEClass = createEClass(ENCAPSULATE_FIELD);
 		createEReference(encapsulateFieldEClass, ENCAPSULATE_FIELD__SOURCE_CLASS);
@@ -1442,9 +1492,11 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEAttribute(getMoveMethod_MethodToBeMovedName(), ecorePackage.getEString(), "methodToBeMovedName", null, 0, 1, MoveMethod.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(extractClassEClass, ExtractClass.class, "ExtractClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getExtractClass_NewName(), ecorePackage.getEString(), "newName", null, 0, 1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getExtractClass_NewName(), ecorePackage.getEString(), "newName", null, 0, 1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getExtractClass_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getExtractClass_AttributesToBeMoved(), this.getAttribute(), null, "attributesToBeMoved", null, 0, -1, ExtractClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getExtractClass_AttributesToBeMovedName(), ecorePackage.getEString(), "attributesToBeMovedName", null, 0, 1, ExtractClass.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getExtractClass_SourceClassName(), ecorePackage.getEString(), "sourceClassName", null, 0, 1, ExtractClass.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(inlineClassEClass, InlineClass.class, "InlineClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInlineClass_ClassToGetAllFeatures(), this.getClass_(), null, "classToGetAllFeatures", null, 0, 1, InlineClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1460,6 +1512,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getReplaceDataValueWithObject_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, ReplaceDataValueWithObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReplaceDataValueWithObject_AttributeToReplaceDataWithObject(), this.getAttribute(), null, "attributeToReplaceDataWithObject", null, 0, 1, ReplaceDataValueWithObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReplaceDataValueWithObject_NewAttributes(), this.getAttribute(), null, "newAttributes", null, 0, -1, ReplaceDataValueWithObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReplaceDataValueWithObject_SourceClassName(), ecorePackage.getEString(), "sourceClassName", null, 0, 1, ReplaceDataValueWithObject.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReplaceDataValueWithObject_AttributeToReplaceDataWithObjectName(), ecorePackage.getEString(), "attributeToReplaceDataWithObjectName", null, 0, 1, ReplaceDataValueWithObject.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReplaceDataValueWithObject_NewAttributesName(), ecorePackage.getEString(), "newAttributesName", null, 0, 1, ReplaceDataValueWithObject.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(encapsulateFieldEClass, EncapsulateField.class, "EncapsulateField", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEncapsulateField_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, EncapsulateField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

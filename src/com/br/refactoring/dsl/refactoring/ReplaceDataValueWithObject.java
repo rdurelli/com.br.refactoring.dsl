@@ -19,6 +19,9 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getAttributeToReplaceDataWithObject <em>Attribute To Replace Data With Object</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getNewAttributes <em>New Attributes</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getAttributeToReplaceDataWithObjectName <em>Attribute To Replace Data With Object Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getNewAttributesName <em>New Attributes Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -94,5 +97,50 @@ public interface ReplaceDataValueWithObject extends OrganizingData {
 	 * @generated
 	 */
 	EList<Attribute> getNewAttributes();
+
+	/**
+	 * Returns the value of the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Source Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getReplaceDataValueWithObject_SourceClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getSourceClassName();
+
+	/**
+	 * Returns the value of the '<em><b>Attribute To Replace Data With Object Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Attribute To Replace Data With Object Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Attribute To Replace Data With Object Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getReplaceDataValueWithObject_AttributeToReplaceDataWithObjectName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getAttributeToReplaceDataWithObjectName();
+
+	/**
+	 * Returns the value of the '<em><b>New Attributes Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>New Attributes Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>New Attributes Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getReplaceDataValueWithObject_NewAttributesName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getNewAttributesName();
 
 } // ReplaceDataValueWithObject

@@ -369,6 +369,14 @@
         <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//ExtractClass/newName"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_FwFrsdRTEeOY8OCIL9pvQg"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_2CbS8eHaEeOXwbZ5yAEZmA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//ExtractClass/attributesToBeMovedName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_2CbS8uHaEeOXwbZ5yAEZmA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_ZxN_wOHdEeOXwbZ5yAEZmA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//ExtractClass/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZxN_weHdEeOXwbZ5yAEZmA"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="__8ac4dRSEeOY8OCIL9pvQg"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="__8ac4tRSEeOY8OCIL9pvQg"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="__8ac49RSEeOY8OCIL9pvQg"/>
@@ -429,6 +437,18 @@
   <children xmi:type="notation:Node" xmi:id="_oMiEMNRzEeOY8OCIL9pvQg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_oMkgcNRzEeOY8OCIL9pvQg" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_oMlHgNRzEeOY8OCIL9pvQg" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_idj30OTdEeOcNM0Sgga9Mw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//ReplaceDataValueWithObject/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_idj30eTdEeOcNM0Sgga9Mw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_ssSVoOTdEeOcNM0Sgga9Mw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//ReplaceDataValueWithObject/attributeToReplaceDataWithObjectName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ssSVoeTdEeOcNM0Sgga9Mw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_-CtO4OTdEeOcNM0Sgga9Mw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//ReplaceDataValueWithObject/newAttributesName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-CtO4eTdEeOcNM0Sgga9Mw"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_oMlHgdRzEeOY8OCIL9pvQg"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_oMlHgtRzEeOY8OCIL9pvQg"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_oMlHg9RzEeOY8OCIL9pvQg"/>
@@ -993,7 +1013,7 @@
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_kMJB0NR8EeOY8OCIL9pvQg" type="3002" source="_oMiEMNRzEeOY8OCIL9pvQg" target="_TVcJUNEtEeOuBKn_35FwoQ">
     <children xmi:type="notation:Node" xmi:id="_kMKP8NR8EeOY8OCIL9pvQg" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_kMKP8dR8EeOY8OCIL9pvQg" x="-105" y="1158"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_kMKP8dR8EeOY8OCIL9pvQg" x="-113" y="1195"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_kMKP8tR8EeOY8OCIL9pvQg" type="4012">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_kMKP89R8EeOY8OCIL9pvQg" x="-105" y="8"/>

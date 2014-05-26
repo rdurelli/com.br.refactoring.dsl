@@ -83,6 +83,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//ExtractClass/newName"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ExtractClass/sourceClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ExtractClass/attributesToBeMoved"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//ExtractClass/attributesToBeMovedName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//ExtractClass/sourceClassName"/>
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//InlineClass">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//InlineClass/classToGetAllFeatures"/>
@@ -98,6 +100,9 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ReplaceDataValueWithObject/sourceClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//ReplaceDataValueWithObject/attributeToReplaceDataWithObject"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference refactoring.ecore#//ReplaceDataValueWithObject/newAttributes"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//ReplaceDataValueWithObject/sourceClassName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//ReplaceDataValueWithObject/attributeToReplaceDataWithObjectName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//ReplaceDataValueWithObject/newAttributesName"/>
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//EncapsulateField">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//EncapsulateField/sourceClass"/>

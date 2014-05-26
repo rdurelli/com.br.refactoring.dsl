@@ -276,6 +276,51 @@
             href="refactoring.ecore#//MovingFeaturesBetweenObjects/allRefactorings"/>
         <ownedChild>
           <domainMetaElement
+              href="refactoring.ecore#//ExtractClass"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="Refactoring_ExtractClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#ExtractClassName"/>
+            <features
+                href="refactoring.ecore#//MovingFeaturesBetweenObjects/name"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="sourceClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#ExtractClassSourceClass"/>
+            <features
+                href="refactoring.ecore#//ExtractClass/sourceClassName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="attribute(s)ToBeMoved: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#ExtractClassAttributesToBeMoved"/>
+            <features
+                href="refactoring.ecore#//ExtractClass/attributesToBeMovedName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="nameToTheNewClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#ExtractClassNameToTheNewClass"/>
+            <features
+                href="refactoring.ecore#//ExtractClass/newName"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="refactoring.gmftool#//@palette/@tools.0/@tools.9"/>
+          <diagramNode
+              href="refactoring.gmfgraph#ExtractClass"/>
+        </ownedChild>
+      </children>
+      <children>
+        <containmentFeature
+            href="refactoring.ecore#//MovingFeaturesBetweenObjects/allRefactorings"/>
+        <ownedChild>
+          <domainMetaElement
               href="refactoring.ecore#//InlineClass"/>
           <labelMappings
               xsi:type="gmfmap:FeatureLabelMapping"
@@ -329,6 +374,27 @@
           href="refactoring.gmftool#//@palette/@tools.0/@tools.8"/>
       <diagramNode
           href="refactoring.gmfgraph#DealingWithGeneralization"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="refactoring.ecore#//Model/contains"/>
+    <ownedChild>
+      <domainMetaElement
+          href="refactoring.ecore#//OrganizingData"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping"
+          viewPattern="OrganizingData: {0}">
+        <diagramLabel
+            href="refactoring.gmfgraph#OrganizingDataName"/>
+        <features
+            href="refactoring.ecore#//OrganizingData/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="refactoring.gmftool#//@palette/@tools.0/@tools.10"/>
+      <diagramNode
+          href="refactoring.gmfgraph#OrganizingData"/>
     </ownedChild>
   </nodes>
   <diagram>

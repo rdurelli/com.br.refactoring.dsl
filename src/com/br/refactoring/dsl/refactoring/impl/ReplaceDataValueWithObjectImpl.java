@@ -35,6 +35,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl#getAttributeToReplaceDataWithObject <em>Attribute To Replace Data With Object</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl#getNewAttributes <em>New Attributes</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl#getAttributeToReplaceDataWithObjectName <em>Attribute To Replace Data With Object Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.ReplaceDataValueWithObjectImpl#getNewAttributesName <em>New Attributes Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,6 +73,36 @@ public class ReplaceDataValueWithObjectImpl extends OrganizingDataImpl implement
 	 * @ordered
 	 */
 	protected EList<Attribute> newAttributes;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getAttributeToReplaceDataWithObjectName() <em>Attribute To Replace Data With Object Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttributeToReplaceDataWithObjectName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getNewAttributesName() <em>New Attributes Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNewAttributesName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NEW_ATTRIBUTES_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -181,6 +214,57 @@ public class ReplaceDataValueWithObjectImpl extends OrganizingDataImpl implement
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getAttributeToReplaceDataWithObjectName() {
+
+		return attributeToReplaceDataWithObject.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getNewAttributesName() {
+		
+		String attributesNames = "{";
+		
+		if (this.newAttributes.size() > 3) {
+			
+			attributesNames += this.newAttributes.get(0).getName()
+					+ ", " + this.newAttributes.get(1).getName() + ", "
+					+ this.newAttributes.get(2).getName() + "..."; 
+			
+		} else if (this.newAttributes.size() == 2) {
+			
+			attributesNames += this.newAttributes.get(0).getName()
+					+ ", " + this.newAttributes.get(1).getName(); 
+			
+		} else if (this.newAttributes.size() == 3) {
+			attributesNames += this.newAttributes.get(0).getName()
+					+ ", " + this.newAttributes.get(1).getName() + ", "
+					+ this.newAttributes.get(2).getName(); 
+		} else if (this.newAttributes.size() == 1) {
+			attributesNames += this.newAttributes.get(0).getName(); 
+		}
+		
+		return attributesNames.concat("}");
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -208,6 +292,12 @@ public class ReplaceDataValueWithObjectImpl extends OrganizingDataImpl implement
 				return basicGetAttributeToReplaceDataWithObject();
 			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES:
 				return getNewAttributes();
+			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT_NAME:
+				return getAttributeToReplaceDataWithObjectName();
+			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES_NAME:
+				return getNewAttributesName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -270,6 +360,12 @@ public class ReplaceDataValueWithObjectImpl extends OrganizingDataImpl implement
 				return attributeToReplaceDataWithObject != null;
 			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES:
 				return newAttributes != null && !newAttributes.isEmpty();
+			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT_NAME:
+				return ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT_NAME_EDEFAULT == null ? getAttributeToReplaceDataWithObjectName() != null : !ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT_NAME_EDEFAULT.equals(getAttributeToReplaceDataWithObjectName());
+			case RefactoringPackage.REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES_NAME:
+				return NEW_ATTRIBUTES_NAME_EDEFAULT == null ? getNewAttributesName() != null : !NEW_ATTRIBUTES_NAME_EDEFAULT.equals(getNewAttributesName());
 		}
 		return super.eIsSet(featureID);
 	}

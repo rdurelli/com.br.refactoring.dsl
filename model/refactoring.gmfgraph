@@ -22,6 +22,11 @@
         <foregroundColor
             xsi:type="gmfgraph:ConstantColor"
             value="black"/>
+        <insets
+            top="3"
+            left="3"
+            bottom="3"
+            right="3"/>
         <children
             xsi:type="gmfgraph:Rectangle"
             name="RenameFeatureTitle">
@@ -33,7 +38,7 @@
           <children
               xsi:type="gmfgraph:Label"
               name="RenameFeatureNameFigure"
-              text="&lt;...>">
+              text="">
             <layoutData
                 xsi:type="gmfgraph:GridLayoutData"
                 grabExcessHorizontalSpace="true"
@@ -46,18 +51,16 @@
         </children>
         <children
             xsi:type="gmfgraph:Rectangle"
-            name="RenameFeatureCompartment">
+            name="RenameFeatureCompartment"
+            outline="false"
+            lineWidth="0">
           <layout
               xsi:type="gmfgraph:CustomLayout"
-              qualifiedClassName="org.eclipse.draw2d.StackLayout"/>
-          <foregroundColor
-              xsi:type="gmfgraph:ConstantColor"
-              value="black"/>
-          <insets
-              top="3"
-              left="3"
-              bottom="3"
-              right="3"/>
+              qualifiedClassName="org.eclipse.draw2d.StackLayout">
+            <attributes
+                name="observeVisibility"
+                value="true"/>
+          </layout>
         </children>
       </actualFigure>
       <accessors
@@ -308,6 +311,11 @@
         <foregroundColor
             xsi:type="gmfgraph:ConstantColor"
             value="black"/>
+        <insets
+            top="3"
+            left="3"
+            bottom="3"
+            right="3"/>
         <children
             xsi:type="gmfgraph:Rectangle"
             name="MovingFeaturesBetweenObjectsTitle">
@@ -331,15 +339,20 @@
         </children>
         <children
             xsi:type="gmfgraph:Rectangle"
-            name="MovingFeaturesBetweenObjectsCompartment">
+            name="MovingFeaturesBetweenObjectsCompartment"
+            outline="false">
           <layout
               xsi:type="gmfgraph:CustomLayout"
-              qualifiedClassName="org.eclipse.draw2d.StackLayout"/>
+              qualifiedClassName="org.eclipse.draw2d.StackLayout">
+            <attributes
+                name="observeVisibility"
+                value="true"/>
+          </layout>
           <foregroundColor
               xsi:type="gmfgraph:ConstantColor"
               value="black"/>
           <insets
-              top="1"
+              top="3"
               left="3"
               bottom="3"
               right="3"/>
@@ -364,7 +377,8 @@
             majorSpacing="0"
             minorSpacing="0"/>
         <foregroundColor
-            xsi:type="gmfgraph:ConstantColor"/>
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
         <backgroundColor
             xsi:type="gmfgraph:ConstantColor"/>
         <children
@@ -390,11 +404,13 @@
         <children
             xsi:type="gmfgraph:Rectangle"
             name="MMoveAttributeContent"
+            outline="false"
             lineWidth="0">
           <layout
               xsi:type="gmfgraph:FlowLayout"/>
           <foregroundColor
-              xsi:type="gmfgraph:ConstantColor"/>
+              xsi:type="gmfgraph:ConstantColor"
+              value="black"/>
           <children
               xsi:type="gmfgraph:Label"
               name="MoveAttributeSourceClassNameFigure">
@@ -574,6 +590,148 @@
           figure="//@figures.0/@descriptors.7/@actualFigure/@children.1/@children.1"/>
     </descriptors>
     <descriptors
+        name="ExtractClassFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="ExtractClassFigure">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"
+            vertical="true"
+            matchMinorSize="true"
+            forceSingleLine="true"
+            minorAlignment="CENTER"
+            majorSpacing="0"
+            minorSpacing="0"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="MExtractClassTitle"
+            outline="false"
+            lineWidth="0">
+          <layout
+              xsi:type="gmfgraph:GridLayout"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="ExtractClassNameFigure">
+            <layoutData
+                xsi:type="gmfgraph:GridLayoutData"
+                grabExcessHorizontalSpace="true"
+                grabExcessVerticalSpace="true"/>
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                height="10"
+                style="BOLD"/>
+          </children>
+        </children>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="MExtractClassContent"
+            lineWidth="0">
+          <layout
+              xsi:type="gmfgraph:FlowLayout"/>
+          <foregroundColor
+              xsi:type="gmfgraph:ConstantColor"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="ExtractClassSourceClassNameFigure">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="ExtractClassAttributesToBeMovedNameFigure">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="ExtractClassNameToTheNewClassFigure">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.0/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.1/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.1/@children.1"/>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.1/@children.2"/>
+    </descriptors>
+    <descriptors
+        name="OrganizingDataFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="OrganizingData"
+          lineWidth="2">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"
+            vertical="true"
+            matchMinorSize="true"
+            forceSingleLine="true"
+            minorAlignment="CENTER"
+            majorSpacing="0"
+            minorSpacing="0"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
+        <insets
+            top="3"
+            left="3"
+            bottom="3"
+            right="3"/>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="OrganizingDataTitle">
+          <layout
+              xsi:type="gmfgraph:GridLayout"/>
+          <foregroundColor
+              xsi:type="gmfgraph:ConstantColor"
+              value="black"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="OrganizingDataNameFigure">
+            <layoutData
+                xsi:type="gmfgraph:GridLayoutData"
+                grabExcessHorizontalSpace="true"
+                grabExcessVerticalSpace="true"/>
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                height="11"
+                style="BOLD"/>
+          </children>
+        </children>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="OrganizingDataCompartment"
+            outline="false">
+          <layout
+              xsi:type="gmfgraph:CustomLayout"
+              qualifiedClassName="org.eclipse.draw2d.StackLayout"/>
+          <foregroundColor
+              xsi:type="gmfgraph:ConstantColor"
+              value="black"/>
+          <insets
+              top="3"
+              left="3"
+              bottom="3"
+              right="3"/>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.0/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors
         name="DealingWithGeneralizationFigure">
       <actualFigure
           xsi:type="gmfgraph:Rectangle"
@@ -590,6 +748,11 @@
         <foregroundColor
             xsi:type="gmfgraph:ConstantColor"
             value="black"/>
+        <insets
+            top="3"
+            left="3"
+            bottom="3"
+            right="3"/>
         <children
             xsi:type="gmfgraph:Rectangle"
             name="DealingWithGeneralizationTitle">
@@ -613,7 +776,8 @@
         </children>
         <children
             xsi:type="gmfgraph:Rectangle"
-            name="DealingWithGeneralizationCompartment">
+            name="DealingWithGeneralizationCompartment"
+            outline="false">
           <layout
               xsi:type="gmfgraph:CustomLayout"
               qualifiedClassName="org.eclipse.draw2d.StackLayout"/>
@@ -628,9 +792,9 @@
         </children>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.0/@children.0"/>
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.0/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.1"/>
     </descriptors>
   </figures>
   <nodes
@@ -666,6 +830,16 @@
   <nodes
       name="MoveMethod"
       figure="MoveMethodFigure">
+    <facets
+        xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize
+          dx="30"
+          dy="35"/>
+    </facets>
+  </nodes>
+  <nodes
+      name="ExtractClass"
+      figure="ExtractClassFigure">
     <facets
         xsi:type="gmfgraph:DefaultSizeFacet">
       <defaultSize
@@ -723,6 +897,16 @@
           dy="300"/>
     </facets>
   </nodes>
+  <nodes
+      name="OrganizingData"
+      figure="OrganizingDataFigure">
+    <facets
+        xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize
+          dx="200"
+          dy="300"/>
+    </facets>
+  </nodes>
   <compartments
       name="refactoringsRename"
       figure="RenameFeatureFigure"
@@ -740,7 +924,14 @@
   <compartments
       name="refactoringsDealingWithGeneralization"
       figure="DealingWithGeneralizationFigure"
-      accessor="//@figures.0/@descriptors.8/@accessors.1">
+      accessor="//@figures.0/@descriptors.10/@accessors.1">
+    <facets
+        xsi:type="gmfgraph:AlignmentFacet"/>
+  </compartments>
+  <compartments
+      name="refactoringsOrganizingData"
+      figure="OrganizingDataFigure"
+      accessor="//@figures.0/@descriptors.9/@accessors.1">
     <facets
         xsi:type="gmfgraph:AlignmentFacet"/>
   </compartments>
@@ -794,6 +985,26 @@
       figure="MoveMethodFigure"
       elementIcon="false"
       accessor="//@figures.0/@descriptors.6/@accessors.3"/>
+  <labels
+      name="ExtractClassName"
+      figure="ExtractClassFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels
+      name="ExtractClassSourceClass"
+      figure="ExtractClassFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.8/@accessors.1"/>
+  <labels
+      name="ExtractClassAttributesToBeMoved"
+      figure="ExtractClassFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.8/@accessors.2"/>
+  <labels
+      name="ExtractClassNameToTheNewClass"
+      figure="ExtractClassFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.8/@accessors.3"/>
   <labels
       name="InLineName"
       figure="InLineFigure"
@@ -868,5 +1079,10 @@
       name="DealingWithGeneralizationName"
       figure="DealingWithGeneralizationFigure"
       elementIcon="false"
-      accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+  <labels
+      name="OrganizingDataName"
+      figure="OrganizingDataFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.9/@accessors.0"/>
 </gmfgraph:Canvas>

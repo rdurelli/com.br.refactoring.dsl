@@ -19,6 +19,8 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link com.br.refactoring.dsl.refactoring.ExtractClass#getNewName <em>New Name</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.ExtractClass#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.ExtractClass#getAttributesToBeMoved <em>Attributes To Be Moved</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.ExtractClass#getAttributesToBeMovedName <em>Attributes To Be Moved Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.ExtractClass#getSourceClassName <em>Source Class Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -38,7 +40,7 @@ public interface ExtractClass extends MovingFeaturesBetweenObjects {
 	 * @return the value of the '<em>New Name</em>' attribute.
 	 * @see #setNewName(String)
 	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getExtractClass_NewName()
-	 * @model
+	 * @model derived="true"
 	 * @generated
 	 */
 	String getNewName();
@@ -94,5 +96,35 @@ public interface ExtractClass extends MovingFeaturesBetweenObjects {
 	 * @generated
 	 */
 	EList<Attribute> getAttributesToBeMoved();
+
+	/**
+	 * Returns the value of the '<em><b>Attributes To Be Moved Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Attributes To Be Moved Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Attributes To Be Moved Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getExtractClass_AttributesToBeMovedName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getAttributesToBeMovedName();
+
+	/**
+	 * Returns the value of the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Source Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getExtractClass_SourceClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getSourceClassName();
 
 } // ExtractClass

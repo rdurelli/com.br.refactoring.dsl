@@ -902,13 +902,31 @@ public interface RefactoringPackage extends EPackage {
 	int EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Attributes To Be Moved Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRACT_CLASS__SOURCE_CLASS_NAME = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Extract Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRACT_CLASS_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 3;
+	int EXTRACT_CLASS_FEATURE_COUNT = MOVING_FEATURES_BETWEEN_OBJECTS_FEATURE_COUNT + 5;
 
 
 	/**
@@ -1078,13 +1096,40 @@ public interface RefactoringPackage extends EPackage {
 	int REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES = ORGANIZING_DATA_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS_NAME = ORGANIZING_DATA_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Replace Data With Object Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT_NAME = ORGANIZING_DATA_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>New Attributes Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES_NAME = ORGANIZING_DATA_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>Replace Data Value With Object</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REPLACE_DATA_VALUE_WITH_OBJECT_FEATURE_COUNT = ORGANIZING_DATA_FEATURE_COUNT + 3;
+	int REPLACE_DATA_VALUE_WITH_OBJECT_FEATURE_COUNT = ORGANIZING_DATA_FEATURE_COUNT + 6;
 
 
 	/**
@@ -2105,6 +2150,28 @@ public interface RefactoringPackage extends EPackage {
 	EReference getExtractClass_AttributesToBeMoved();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.ExtractClass#getAttributesToBeMovedName <em>Attributes To Be Moved Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Attributes To Be Moved Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ExtractClass#getAttributesToBeMovedName()
+	 * @see #getExtractClass()
+	 * @generated
+	 */
+	EAttribute getExtractClass_AttributesToBeMovedName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.ExtractClass#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ExtractClass#getSourceClassName()
+	 * @see #getExtractClass()
+	 * @generated
+	 */
+	EAttribute getExtractClass_SourceClassName();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.InlineClass <em>Inline Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2232,6 +2299,39 @@ public interface RefactoringPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getReplaceDataValueWithObject_NewAttributes();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getSourceClassName()
+	 * @see #getReplaceDataValueWithObject()
+	 * @generated
+	 */
+	EAttribute getReplaceDataValueWithObject_SourceClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getAttributeToReplaceDataWithObjectName <em>Attribute To Replace Data With Object Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Attribute To Replace Data With Object Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getAttributeToReplaceDataWithObjectName()
+	 * @see #getReplaceDataValueWithObject()
+	 * @generated
+	 */
+	EAttribute getReplaceDataValueWithObject_AttributeToReplaceDataWithObjectName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getNewAttributesName <em>New Attributes Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>New Attributes Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.ReplaceDataValueWithObject#getNewAttributesName()
+	 * @see #getReplaceDataValueWithObject()
+	 * @generated
+	 */
+	EAttribute getReplaceDataValueWithObject_NewAttributesName();
 
 	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.EncapsulateField <em>Encapsulate Field</em>}'.
@@ -3024,6 +3124,22 @@ public interface RefactoringPackage extends EPackage {
 		EReference EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED = eINSTANCE.getExtractClass_AttributesToBeMoved();
 
 		/**
+		 * The meta object literal for the '<em><b>Attributes To Be Moved Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTRACT_CLASS__ATTRIBUTES_TO_BE_MOVED_NAME = eINSTANCE.getExtractClass_AttributesToBeMovedName();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTRACT_CLASS__SOURCE_CLASS_NAME = eINSTANCE.getExtractClass_SourceClassName();
+
+		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.InlineClassImpl <em>Inline Class</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3124,6 +3240,30 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES = eINSTANCE.getReplaceDataValueWithObject_NewAttributes();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REPLACE_DATA_VALUE_WITH_OBJECT__SOURCE_CLASS_NAME = eINSTANCE.getReplaceDataValueWithObject_SourceClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Replace Data With Object Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REPLACE_DATA_VALUE_WITH_OBJECT__ATTRIBUTE_TO_REPLACE_DATA_WITH_OBJECT_NAME = eINSTANCE.getReplaceDataValueWithObject_AttributeToReplaceDataWithObjectName();
+
+		/**
+		 * The meta object literal for the '<em><b>New Attributes Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REPLACE_DATA_VALUE_WITH_OBJECT__NEW_ATTRIBUTES_NAME = eINSTANCE.getReplaceDataValueWithObject_NewAttributesName();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.EncapsulateFieldImpl <em>Encapsulate Field</em>}' class.
