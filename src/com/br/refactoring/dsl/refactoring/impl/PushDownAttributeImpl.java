@@ -27,6 +27,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl#getAttributeToBePushed <em>Attribute To Be Pushed</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl#getTargetClass <em>Target Class</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl#getTargetClassName <em>Target Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl#getAttributeToBePushedName <em>Attribute To Be Pushed Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +65,36 @@ public class PushDownAttributeImpl extends DealingWithGeneralizationImpl impleme
 	 * @ordered
 	 */
 	protected com.br.refactoring.dsl.refactoring.Class targetClass;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getTargetClassName() <em>Target Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTargetClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TARGET_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getAttributeToBePushedName() <em>Attribute To Be Pushed Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttributeToBePushedName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ATTRIBUTE_TO_BE_PUSHED_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,6 +232,33 @@ public class PushDownAttributeImpl extends DealingWithGeneralizationImpl impleme
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getTargetClassName() {
+		return targetClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getAttributeToBePushedName() {
+		return attributeToBePushed.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -213,6 +273,12 @@ public class PushDownAttributeImpl extends DealingWithGeneralizationImpl impleme
 			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE__TARGET_CLASS:
 				if (resolve) return getTargetClass();
 				return basicGetTargetClass();
+			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE__TARGET_CLASS_NAME:
+				return getTargetClassName();
+			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE__ATTRIBUTE_TO_BE_PUSHED_NAME:
+				return getAttributeToBePushedName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -273,6 +339,12 @@ public class PushDownAttributeImpl extends DealingWithGeneralizationImpl impleme
 				return sourceClass != null;
 			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE__TARGET_CLASS:
 				return targetClass != null;
+			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE__TARGET_CLASS_NAME:
+				return TARGET_CLASS_NAME_EDEFAULT == null ? getTargetClassName() != null : !TARGET_CLASS_NAME_EDEFAULT.equals(getTargetClassName());
+			case RefactoringPackage.PUSH_DOWN_ATTRIBUTE__ATTRIBUTE_TO_BE_PUSHED_NAME:
+				return ATTRIBUTE_TO_BE_PUSHED_NAME_EDEFAULT == null ? getAttributeToBePushedName() != null : !ATTRIBUTE_TO_BE_PUSHED_NAME_EDEFAULT.equals(getAttributeToBePushedName());
 		}
 		return super.eIsSet(featureID);
 	}

@@ -847,6 +847,255 @@
       </labels>
     </childNodes>
     <childNodes
+        visualID="3010"
+        editPartClassName="PushDownMethodEditPart"
+        itemSemanticEditPolicyClassName="PushDownMethodItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="PushDownMethodCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="PushDownMethodGraphicalNodeEditPolicy"
+        createCommandClassName="PushDownMethodCreateCommand"
+        containers="//@diagram/@topLevelNodes.2">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="PushDownMethodEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="TOOLBAR_LAYOUT"
+          className="PushDownMethodFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PushDownMethodFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePushDownMethodNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePushDownMethodSourceClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePushDownMethodMethodToPushDownNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePushDownMethodTargetClassNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PushDownMethodFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mPushDownMethodTitle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mPushDownMethodTitle0.setOutline(false);&#xA;mPushDownMethodTitle0.setLineWidth(0);&#xA;&#xA;this.add(mPushDownMethodTitle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutMPushDownMethodTitle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutMPushDownMethodTitle0.numColumns = 1;&#xA;&#x9;layoutMPushDownMethodTitle0.makeColumnsEqualWidth = true;&#xA;&#x9;mPushDownMethodTitle0.setLayoutManager(layoutMPushDownMethodTitle0);&#xA;&#xA;&#xA;&#xA;fFigurePushDownMethodNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePushDownMethodNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePushDownMethodNameFigure.setFont(FFIGUREPUSHDOWNMETHODNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigurePushDownMethodNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigurePushDownMethodNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigurePushDownMethodNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigurePushDownMethodNameFigure.horizontalIndent = 0;&#xA;constraintFFigurePushDownMethodNameFigure.horizontalSpan = 1;&#xA;constraintFFigurePushDownMethodNameFigure.verticalSpan = 1;&#xA;constraintFFigurePushDownMethodNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigurePushDownMethodNameFigure.grabExcessVerticalSpace = true;&#xA;mPushDownMethodTitle0.add(fFigurePushDownMethodNameFigure, constraintFFigurePushDownMethodNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mPushDownMethodContent0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mPushDownMethodContent0.setLineWidth(0);&#xA;&#x9;mPushDownMethodContent0.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#xA;this.add(mPushDownMethodContent0);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutMPushDownMethodContent0 = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutMPushDownMethodContent0.setStretchMinorAxis(false);&#xA;&#x9;layoutMPushDownMethodContent0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutMPushDownMethodContent0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutMPushDownMethodContent0.setMajorSpacing(5);&#xA;&#x9;layoutMPushDownMethodContent0.setMinorSpacing(5);&#xA;&#x9;layoutMPushDownMethodContent0.setHorizontal(true);&#xA;&#xA;&#x9;mPushDownMethodContent0.setLayoutManager(layoutMPushDownMethodContent0);&#xA;&#xA;&#xA;&#xA;fFigurePushDownMethodSourceClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePushDownMethodSourceClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePushDownMethodSourceClassNameFigure.setFont(FFIGUREPUSHDOWNMETHODSOURCECLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mPushDownMethodContent0.add(fFigurePushDownMethodSourceClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigurePushDownMethodMethodToPushDownNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePushDownMethodMethodToPushDownNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePushDownMethodMethodToPushDownNameFigure.setFont(FFIGUREPUSHDOWNMETHODMETHODTOPUSHDOWNNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mPushDownMethodContent0.add(fFigurePushDownMethodMethodToPushDownNameFigure);&#xA;&#xA;&#xA;&#xA;fFigurePushDownMethodTargetClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePushDownMethodTargetClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePushDownMethodTargetClassNameFigure.setFont(FFIGUREPUSHDOWNMETHODTARGETCLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mPushDownMethodContent0.add(fFigurePushDownMethodTargetClassNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePushDownMethodNameFigure() {&#xA;&#x9;&#x9;return fFigurePushDownMethodNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePushDownMethodSourceClassNameFigure() {&#xA;&#x9;&#x9;return fFigurePushDownMethodSourceClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePushDownMethodMethodToPushDownNameFigure() {&#xA;&#x9;&#x9;return fFigurePushDownMethodMethodToPushDownNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePushDownMethodTargetClassNameFigure() {&#xA;&#x9;&#x9;return fFigurePushDownMethodTargetClassNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPUSHDOWNMETHODNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 10, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPUSHDOWNMETHODSOURCECLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPUSHDOWNMETHODMETHODTOPUSHDOWNNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPUSHDOWNMETHODTARGETCLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+        <attributes
+            xsi:type="gmfgen:DefaultSizeAttributes"
+            width="30"
+            height="35"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="refactoring.genmodel#//refactoring/PushDownMethod"/>
+        <containmentMetaFeature
+            href="refactoring.genmodel#//refactoring/DealingWithGeneralization/allRefactorings"/>
+        <childMetaFeature
+            href="refactoring.genmodel#//refactoring/DealingWithGeneralization/allRefactorings"/>
+      </modelFacet>
+      <labels
+          visualID="5038"
+          editPartClassName="PushDownMethodNameEditPart"
+          itemSemanticEditPolicyClassName="PushDownMethodNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePushDownMethodNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="Refactoring_PushDownMethod: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/DealingWithGeneralization/name"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5039"
+          editPartClassName="PushDownMethodSourceClassNameEditPart"
+          itemSemanticEditPolicyClassName="PushDownMethodSourceClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePushDownMethodSourceClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="sourceClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/PushDownMethod/sourceClassName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5040"
+          editPartClassName="PushDownMethodMethodToBePushedNameEditPart"
+          itemSemanticEditPolicyClassName="PushDownMethodMethodToBePushedNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePushDownMethodMethodToPushDownNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="methodToPushDown: {0}"
+            editPattern="">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/PushDownMethod/methodToBePushedName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5041"
+          editPartClassName="PushDownMethodTargetClassNameEditPart"
+          itemSemanticEditPolicyClassName="PushDownMethodTargetClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePushDownMethodTargetClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="targetClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/PushDownMethod/targetClassName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes
+        visualID="3011"
+        editPartClassName="PushDownAttributeEditPart"
+        itemSemanticEditPolicyClassName="PushDownAttributeItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="PushDownAttributeCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="PushDownAttributeGraphicalNodeEditPolicy"
+        createCommandClassName="PushDownAttributeCreateCommand"
+        containers="//@diagram/@topLevelNodes.2">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="PushDownAttributeEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="TOOLBAR_LAYOUT"
+          className="PushDownAttributeFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PushDownAttributeFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePushDownAttributeNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePushDownAttributeSourceClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePushDownAttributeAttributeToPushDownNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePushDownAttributeTargetClassNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PushDownAttributeFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mPushDownAttributeTitle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mPushDownAttributeTitle0.setOutline(false);&#xA;mPushDownAttributeTitle0.setLineWidth(0);&#xA;&#xA;this.add(mPushDownAttributeTitle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutMPushDownAttributeTitle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutMPushDownAttributeTitle0.numColumns = 1;&#xA;&#x9;layoutMPushDownAttributeTitle0.makeColumnsEqualWidth = true;&#xA;&#x9;mPushDownAttributeTitle0.setLayoutManager(layoutMPushDownAttributeTitle0);&#xA;&#xA;&#xA;&#xA;fFigurePushDownAttributeNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePushDownAttributeNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePushDownAttributeNameFigure.setFont(FFIGUREPUSHDOWNATTRIBUTENAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigurePushDownAttributeNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigurePushDownAttributeNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigurePushDownAttributeNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigurePushDownAttributeNameFigure.horizontalIndent = 0;&#xA;constraintFFigurePushDownAttributeNameFigure.horizontalSpan = 1;&#xA;constraintFFigurePushDownAttributeNameFigure.verticalSpan = 1;&#xA;constraintFFigurePushDownAttributeNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigurePushDownAttributeNameFigure.grabExcessVerticalSpace = true;&#xA;mPushDownAttributeTitle0.add(fFigurePushDownAttributeNameFigure, constraintFFigurePushDownAttributeNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mPushDownAttributeContent0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mPushDownAttributeContent0.setLineWidth(0);&#xA;&#x9;mPushDownAttributeContent0.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#xA;this.add(mPushDownAttributeContent0);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutMPushDownAttributeContent0 = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutMPushDownAttributeContent0.setStretchMinorAxis(false);&#xA;&#x9;layoutMPushDownAttributeContent0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutMPushDownAttributeContent0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutMPushDownAttributeContent0.setMajorSpacing(5);&#xA;&#x9;layoutMPushDownAttributeContent0.setMinorSpacing(5);&#xA;&#x9;layoutMPushDownAttributeContent0.setHorizontal(true);&#xA;&#xA;&#x9;mPushDownAttributeContent0.setLayoutManager(layoutMPushDownAttributeContent0);&#xA;&#xA;&#xA;&#xA;fFigurePushDownAttributeSourceClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePushDownAttributeSourceClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePushDownAttributeSourceClassNameFigure.setFont(FFIGUREPUSHDOWNATTRIBUTESOURCECLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mPushDownAttributeContent0.add(fFigurePushDownAttributeSourceClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigurePushDownAttributeAttributeToPushDownNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePushDownAttributeAttributeToPushDownNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePushDownAttributeAttributeToPushDownNameFigure.setFont(FFIGUREPUSHDOWNATTRIBUTEATTRIBUTETOPUSHDOWNNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mPushDownAttributeContent0.add(fFigurePushDownAttributeAttributeToPushDownNameFigure);&#xA;&#xA;&#xA;&#xA;fFigurePushDownAttributeTargetClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePushDownAttributeTargetClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePushDownAttributeTargetClassNameFigure.setFont(FFIGUREPUSHDOWNATTRIBUTETARGETCLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mPushDownAttributeContent0.add(fFigurePushDownAttributeTargetClassNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePushDownAttributeNameFigure() {&#xA;&#x9;&#x9;return fFigurePushDownAttributeNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePushDownAttributeSourceClassNameFigure() {&#xA;&#x9;&#x9;return fFigurePushDownAttributeSourceClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePushDownAttributeAttributeToPushDownNameFigure() {&#xA;&#x9;&#x9;return fFigurePushDownAttributeAttributeToPushDownNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePushDownAttributeTargetClassNameFigure() {&#xA;&#x9;&#x9;return fFigurePushDownAttributeTargetClassNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPUSHDOWNATTRIBUTENAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 10, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPUSHDOWNATTRIBUTESOURCECLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPUSHDOWNATTRIBUTEATTRIBUTETOPUSHDOWNNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPUSHDOWNATTRIBUTETARGETCLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+        <attributes
+            xsi:type="gmfgen:DefaultSizeAttributes"
+            width="30"
+            height="35"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="refactoring.genmodel#//refactoring/PushDownAttribute"/>
+        <containmentMetaFeature
+            href="refactoring.genmodel#//refactoring/DealingWithGeneralization/allRefactorings"/>
+        <childMetaFeature
+            href="refactoring.genmodel#//refactoring/DealingWithGeneralization/allRefactorings"/>
+      </modelFacet>
+      <labels
+          visualID="5042"
+          editPartClassName="PushDownAttributeNameEditPart"
+          itemSemanticEditPolicyClassName="PushDownAttributeNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePushDownAttributeNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="Refactoring_PushDownAttribute: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/DealingWithGeneralization/name"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5043"
+          editPartClassName="PushDownAttributeSourceClassNameEditPart"
+          itemSemanticEditPolicyClassName="PushDownAttributeSourceClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePushDownAttributeSourceClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="sourceClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/PushDownAttribute/sourceClassName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5044"
+          editPartClassName="PushDownAttributeAttributeToBePushedNameEditPart"
+          itemSemanticEditPolicyClassName="PushDownAttributeAttributeToBePushedNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePushDownAttributeAttributeToPushDownNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="attributeToPushDown: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/PushDownAttribute/attributeToBePushedName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5045"
+          editPartClassName="PushDownAttributeTargetClassNameEditPart"
+          itemSemanticEditPolicyClassName="PushDownAttributeTargetClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePushDownAttributeTargetClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="targetClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/PushDownAttribute/targetClassName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes
         visualID="3008"
         editPartClassName="ReplaceDataValueWithObjectEditPart"
         itemSemanticEditPolicyClassName="ReplaceDataValueWithObjectItemSemanticEditPolicy"
@@ -1191,6 +1440,7 @@
         editPartClassName="DealingWithGeneralizationEditPart"
         itemSemanticEditPolicyClassName="DealingWithGeneralizationItemSemanticEditPolicy"
         canonicalEditPolicyClassName="DealingWithGeneralizationCanonicalEditPolicy"
+        childNodes="//@diagram/@childNodes.7 //@diagram/@childNodes.8"
         graphicalNodeEditPolicyClassName="DealingWithGeneralizationGraphicalNodeEditPolicy"
         createCommandClassName="DealingWithGeneralizationCreateCommand">
       <diagramRunTimeClass
@@ -1247,7 +1497,7 @@
         editPartClassName="OrganizingDataEditPart"
         itemSemanticEditPolicyClassName="OrganizingDataItemSemanticEditPolicy"
         canonicalEditPolicyClassName="OrganizingDataCanonicalEditPolicy"
-        childNodes="//@diagram/@childNodes.7 //@diagram/@childNodes.8"
+        childNodes="//@diagram/@childNodes.9 //@diagram/@childNodes.10"
         graphicalNodeEditPolicyClassName="OrganizingDataGraphicalNodeEditPolicy"
         createCommandClassName="OrganizingDataCreateCommand">
       <diagramRunTimeClass
@@ -1378,11 +1628,21 @@
             xsi:type="gmfgen:ToolEntry"
             title="ReplaceDataValueWithObject"
             description="Create new Replace Data Value With Object"
-            genNodes="//@diagram/@childNodes.7"/>
+            genNodes="//@diagram/@childNodes.9"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="EncapsulateField"
             description="Create new Encapsulate Field"
+            genNodes="//@diagram/@childNodes.10"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="PushDownMethod"
+            description="Create new Push Down Method"
+            genNodes="//@diagram/@childNodes.7"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="PushDownAttribute"
+            description="Create new Push Down Attribute"
             genNodes="//@diagram/@childNodes.8"/>
       </groups>
     </palette>
@@ -1448,14 +1708,20 @@
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.1"/>
     <childReferences
+        parent="//@diagram/@topLevelNodes.2"
+        child="//@diagram/@childNodes.7"/>
+    <childReferences
+        parent="//@diagram/@topLevelNodes.2"
+        child="//@diagram/@childNodes.8"/>
+    <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.2"/>
     <childReferences
         parent="//@diagram/@topLevelNodes.3"
-        child="//@diagram/@childNodes.7"/>
+        child="//@diagram/@childNodes.9"/>
     <childReferences
         parent="//@diagram/@topLevelNodes.3"
-        child="//@diagram/@childNodes.8"/>
+        child="//@diagram/@childNodes.10"/>
     <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.3"/>
@@ -1486,7 +1752,7 @@
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@childNodes.5/@labels.3/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.1/@modelFacet //@diagram/@childNodes.6/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.1/@modelFacet //@diagram/@childNodes.7/@labels.2/@modelFacet //@diagram/@childNodes.7/@labels.3/@modelFacet //@diagram/@childNodes.8/@labels.0/@modelFacet //@diagram/@childNodes.8/@labels.1/@modelFacet //@diagram/@childNodes.8/@labels.2/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
+        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@childNodes.5/@labels.3/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.1/@modelFacet //@diagram/@childNodes.6/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.1/@modelFacet //@diagram/@childNodes.7/@labels.2/@modelFacet //@diagram/@childNodes.7/@labels.3/@modelFacet //@diagram/@childNodes.8/@labels.0/@modelFacet //@diagram/@childNodes.8/@labels.1/@modelFacet //@diagram/@childNodes.8/@labels.2/@modelFacet //@diagram/@childNodes.8/@labels.3/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.9/@labels.0/@modelFacet //@diagram/@childNodes.9/@labels.1/@modelFacet //@diagram/@childNodes.9/@labels.2/@modelFacet //@diagram/@childNodes.9/@labels.3/@modelFacet //@diagram/@childNodes.10/@labels.0/@modelFacet //@diagram/@childNodes.10/@labels.1/@modelFacet //@diagram/@childNodes.10/@labels.2/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">

@@ -1391,13 +1391,40 @@ public interface RefactoringPackage extends EPackage {
 	int PUSH_DOWN_ATTRIBUTE__TARGET_CLASS = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_ATTRIBUTE__SOURCE_CLASS_NAME = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Target Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_ATTRIBUTE__TARGET_CLASS_NAME = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Be Pushed Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_ATTRIBUTE__ATTRIBUTE_TO_BE_PUSHED_NAME = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>Push Down Attribute</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PUSH_DOWN_ATTRIBUTE_FEATURE_COUNT = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 3;
+	int PUSH_DOWN_ATTRIBUTE_FEATURE_COUNT = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 6;
 
 
 	/**
@@ -2584,6 +2611,39 @@ public interface RefactoringPackage extends EPackage {
 	EReference getPushDownAttribute_TargetClass();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.PushDownAttribute#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownAttribute#getSourceClassName()
+	 * @see #getPushDownAttribute()
+	 * @generated
+	 */
+	EAttribute getPushDownAttribute_SourceClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.PushDownAttribute#getTargetClassName <em>Target Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Target Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownAttribute#getTargetClassName()
+	 * @see #getPushDownAttribute()
+	 * @generated
+	 */
+	EAttribute getPushDownAttribute_TargetClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.PushDownAttribute#getAttributeToBePushedName <em>Attribute To Be Pushed Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Attribute To Be Pushed Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownAttribute#getAttributeToBePushedName()
+	 * @see #getPushDownAttribute()
+	 * @generated
+	 */
+	EAttribute getPushDownAttribute_AttributeToBePushedName();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.PullUpAttribute <em>Pull Up Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3524,6 +3584,30 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PUSH_DOWN_ATTRIBUTE__TARGET_CLASS = eINSTANCE.getPushDownAttribute_TargetClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUSH_DOWN_ATTRIBUTE__SOURCE_CLASS_NAME = eINSTANCE.getPushDownAttribute_SourceClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUSH_DOWN_ATTRIBUTE__TARGET_CLASS_NAME = eINSTANCE.getPushDownAttribute_TargetClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Be Pushed Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUSH_DOWN_ATTRIBUTE__ATTRIBUTE_TO_BE_PUSHED_NAME = eINSTANCE.getPushDownAttribute_AttributeToBePushedName();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.PullUpAttributeImpl <em>Pull Up Attribute</em>}' class.

@@ -374,6 +374,97 @@
           href="refactoring.gmftool#//@palette/@tools.0/@tools.8"/>
       <diagramNode
           href="refactoring.gmfgraph#DealingWithGeneralization"/>
+      <children>
+        <containmentFeature
+            href="refactoring.ecore#//DealingWithGeneralization/allRefactorings"/>
+        <ownedChild>
+          <domainMetaElement
+              href="refactoring.ecore#//PushDownMethod"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="Refactoring_PushDownMethod: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PushDownMethodName"/>
+            <features
+                href="refactoring.ecore#//DealingWithGeneralization/name"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="sourceClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PushDownMethodSourceClass"/>
+            <features
+                href="refactoring.ecore#//PushDownMethod/sourceClassName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="methodToPushDown: {0}"
+              editPattern="">
+            <diagramLabel
+                href="refactoring.gmfgraph#PushDownMethodMethodToPushDown"/>
+            <features
+                href="refactoring.ecore#//PushDownMethod/methodToBePushedName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="targetClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PushDownMethodTargetClass"/>
+            <features
+                href="refactoring.ecore#//PushDownMethod/targetClassName"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="refactoring.gmftool#//@palette/@tools.0/@tools.13"/>
+          <diagramNode
+              href="refactoring.gmfgraph#PushDownMethod"/>
+        </ownedChild>
+      </children>
+      <children>
+        <containmentFeature
+            href="refactoring.ecore#//DealingWithGeneralization/allRefactorings"/>
+        <ownedChild>
+          <domainMetaElement
+              href="refactoring.ecore#//PushDownAttribute"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="Refactoring_PushDownAttribute: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PushDownAttributeName"/>
+            <features
+                href="refactoring.ecore#//DealingWithGeneralization/name"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="sourceClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PushDownAttributeSourceClass"/>
+            <features
+                href="refactoring.ecore#//PushDownAttribute/sourceClassName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="attributeToPushDown: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PushDownAttributeAttributeToPushDown"/>
+            <features
+                href="refactoring.ecore#//PushDownAttribute/attributeToBePushedName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="targetClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PushDownAttributeTargetClass"/>
+            <features
+                href="refactoring.ecore#//PushDownAttribute/targetClassName"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="refactoring.gmftool#//@palette/@tools.0/@tools.14"/>
+          <diagramNode
+              href="refactoring.gmfgraph#PushDownAttribute"/>
+        </ownedChild>
+      </children>
     </ownedChild>
   </nodes>
   <nodes>
