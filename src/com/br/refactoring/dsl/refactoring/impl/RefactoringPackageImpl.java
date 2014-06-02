@@ -1042,6 +1042,24 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getEncapsulateField_SourceClassName() {
+		return (EAttribute)encapsulateFieldEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getEncapsulateField_AttributeToEncapsulateName() {
+		return (EAttribute)encapsulateFieldEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getDealingWithGeneralization() {
 		return dealingWithGeneralizationEClass;
 	}
@@ -1339,6 +1357,8 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		encapsulateFieldEClass = createEClass(ENCAPSULATE_FIELD);
 		createEReference(encapsulateFieldEClass, ENCAPSULATE_FIELD__SOURCE_CLASS);
 		createEReference(encapsulateFieldEClass, ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE);
+		createEAttribute(encapsulateFieldEClass, ENCAPSULATE_FIELD__SOURCE_CLASS_NAME);
+		createEAttribute(encapsulateFieldEClass, ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE_NAME);
 
 		dealingWithGeneralizationEClass = createEClass(DEALING_WITH_GENERALIZATION);
 		createEReference(dealingWithGeneralizationEClass, DEALING_WITH_GENERALIZATION__ALL_REFACTORINGS);
@@ -1519,6 +1539,8 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEClass(encapsulateFieldEClass, EncapsulateField.class, "EncapsulateField", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEncapsulateField_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, EncapsulateField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEncapsulateField_AttributeToEncapsulate(), this.getAttribute(), null, "attributeToEncapsulate", null, 0, 1, EncapsulateField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEncapsulateField_SourceClassName(), ecorePackage.getEString(), "sourceClassName", null, 0, 1, EncapsulateField.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEncapsulateField_AttributeToEncapsulateName(), ecorePackage.getEString(), "attributeToEncapsulateName", "", 0, 1, EncapsulateField.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(dealingWithGeneralizationEClass, DealingWithGeneralization.class, "DealingWithGeneralization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDealingWithGeneralization_AllRefactorings(), this.getDealingWithGeneralization(), null, "allRefactorings", null, 0, -1, DealingWithGeneralization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

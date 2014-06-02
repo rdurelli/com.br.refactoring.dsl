@@ -139,4 +139,20 @@
         visualID="5029"
         queryText="true"/>
   </childNodeTraces>
+  <childNodeTraces
+      visualID="3008"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://refactoring/1.0' and _eClass_.name = 'ReplaceDataValueWithObject') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://refactoring/1.0' and _eClass_.name = 'OrganizingData') and _containmentMF_.name = 'allRefactorings')">
+    <nodeLabelTraces
+        visualID="5031"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5032"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5033"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5034"
+        queryText="true"/>
+  </childNodeTraces>
 </trace:TraceModel>

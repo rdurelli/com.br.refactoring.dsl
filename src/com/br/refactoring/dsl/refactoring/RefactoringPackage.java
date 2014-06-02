@@ -1179,13 +1179,31 @@ public interface RefactoringPackage extends EPackage {
 	int ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE = ORGANIZING_DATA_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCAPSULATE_FIELD__SOURCE_CLASS_NAME = ORGANIZING_DATA_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Encapsulate Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE_NAME = ORGANIZING_DATA_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Encapsulate Field</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENCAPSULATE_FIELD_FEATURE_COUNT = ORGANIZING_DATA_FEATURE_COUNT + 2;
+	int ENCAPSULATE_FIELD_FEATURE_COUNT = ORGANIZING_DATA_FEATURE_COUNT + 4;
 
 
 	/**
@@ -2366,6 +2384,28 @@ public interface RefactoringPackage extends EPackage {
 	EReference getEncapsulateField_AttributeToEncapsulate();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.EncapsulateField#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.EncapsulateField#getSourceClassName()
+	 * @see #getEncapsulateField()
+	 * @generated
+	 */
+	EAttribute getEncapsulateField_SourceClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.EncapsulateField#getAttributeToEncapsulateName <em>Attribute To Encapsulate Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Attribute To Encapsulate Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.EncapsulateField#getAttributeToEncapsulateName()
+	 * @see #getEncapsulateField()
+	 * @generated
+	 */
+	EAttribute getEncapsulateField_AttributeToEncapsulateName();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.DealingWithGeneralization <em>Dealing With Generalization</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3290,6 +3330,22 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE = eINSTANCE.getEncapsulateField_AttributeToEncapsulate();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ENCAPSULATE_FIELD__SOURCE_CLASS_NAME = eINSTANCE.getEncapsulateField_SourceClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Encapsulate Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE_NAME = eINSTANCE.getEncapsulateField_AttributeToEncapsulateName();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.DealingWithGeneralizationImpl <em>Dealing With Generalization</em>}' class.

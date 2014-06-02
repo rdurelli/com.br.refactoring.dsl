@@ -846,6 +846,130 @@
         </modelFacet>
       </labels>
     </childNodes>
+    <childNodes
+        visualID="3008"
+        editPartClassName="ReplaceDataValueWithObjectEditPart"
+        itemSemanticEditPolicyClassName="ReplaceDataValueWithObjectItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="ReplaceDataValueWithObjectCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="ReplaceDataValueWithObjectGraphicalNodeEditPolicy"
+        createCommandClassName="ReplaceDataValueWithObjectCreateCommand"
+        containers="//@diagram/@topLevelNodes.3">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="ReplaceDataValueWithObjectEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="TOOLBAR_LAYOUT"
+          className="ReplaceDataValueWithObjectFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ReplaceDataValueWithObjectFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureReplaceDataValueWithObjectNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureReplaceDataValueWithObjectSourceClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureReplaceDataValueWithObjectAttributeToReplaceDataWithObjectNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureReplaceDataValueWithObjectNewAttributesNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ReplaceDataValueWithObjectFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mReplaceDataValueWithObjectTitle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mReplaceDataValueWithObjectTitle0.setOutline(false);&#xA;mReplaceDataValueWithObjectTitle0.setLineWidth(0);&#xA;&#xA;this.add(mReplaceDataValueWithObjectTitle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutMReplaceDataValueWithObjectTitle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutMReplaceDataValueWithObjectTitle0.numColumns = 1;&#xA;&#x9;layoutMReplaceDataValueWithObjectTitle0.makeColumnsEqualWidth = true;&#xA;&#x9;mReplaceDataValueWithObjectTitle0.setLayoutManager(layoutMReplaceDataValueWithObjectTitle0);&#xA;&#xA;&#xA;&#xA;fFigureReplaceDataValueWithObjectNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureReplaceDataValueWithObjectNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureReplaceDataValueWithObjectNameFigure.setFont(FFIGUREREPLACEDATAVALUEWITHOBJECTNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigureReplaceDataValueWithObjectNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigureReplaceDataValueWithObjectNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureReplaceDataValueWithObjectNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureReplaceDataValueWithObjectNameFigure.horizontalIndent = 0;&#xA;constraintFFigureReplaceDataValueWithObjectNameFigure.horizontalSpan = 1;&#xA;constraintFFigureReplaceDataValueWithObjectNameFigure.verticalSpan = 1;&#xA;constraintFFigureReplaceDataValueWithObjectNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigureReplaceDataValueWithObjectNameFigure.grabExcessVerticalSpace = true;&#xA;mReplaceDataValueWithObjectTitle0.add(fFigureReplaceDataValueWithObjectNameFigure, constraintFFigureReplaceDataValueWithObjectNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mReplaceDataValueWithObjectContent0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mReplaceDataValueWithObjectContent0.setLineWidth(0);&#xA;&#x9;mReplaceDataValueWithObjectContent0.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#xA;this.add(mReplaceDataValueWithObjectContent0);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutMReplaceDataValueWithObjectContent0 = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutMReplaceDataValueWithObjectContent0.setStretchMinorAxis(false);&#xA;&#x9;layoutMReplaceDataValueWithObjectContent0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutMReplaceDataValueWithObjectContent0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutMReplaceDataValueWithObjectContent0.setMajorSpacing(5);&#xA;&#x9;layoutMReplaceDataValueWithObjectContent0.setMinorSpacing(5);&#xA;&#x9;layoutMReplaceDataValueWithObjectContent0.setHorizontal(true);&#xA;&#xA;&#x9;mReplaceDataValueWithObjectContent0.setLayoutManager(layoutMReplaceDataValueWithObjectContent0);&#xA;&#xA;&#xA;&#xA;fFigureReplaceDataValueWithObjectSourceClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureReplaceDataValueWithObjectSourceClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureReplaceDataValueWithObjectSourceClassNameFigure.setFont(FFIGUREREPLACEDATAVALUEWITHOBJECTSOURCECLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mReplaceDataValueWithObjectContent0.add(fFigureReplaceDataValueWithObjectSourceClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureReplaceDataValueWithObjectAttributeToReplaceDataWithObjectNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureReplaceDataValueWithObjectAttributeToReplaceDataWithObjectNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureReplaceDataValueWithObjectAttributeToReplaceDataWithObjectNameFigure.setFont(FFIGUREREPLACEDATAVALUEWITHOBJECTATTRIBUTETOREPLACEDATAWITHOBJECTNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mReplaceDataValueWithObjectContent0.add(fFigureReplaceDataValueWithObjectAttributeToReplaceDataWithObjectNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureReplaceDataValueWithObjectNewAttributesNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureReplaceDataValueWithObjectNewAttributesNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureReplaceDataValueWithObjectNewAttributesNameFigure.setFont(FFIGUREREPLACEDATAVALUEWITHOBJECTNEWATTRIBUTESNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mReplaceDataValueWithObjectContent0.add(fFigureReplaceDataValueWithObjectNewAttributesNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureReplaceDataValueWithObjectNameFigure() {&#xA;&#x9;&#x9;return fFigureReplaceDataValueWithObjectNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureReplaceDataValueWithObjectSourceClassNameFigure() {&#xA;&#x9;&#x9;return fFigureReplaceDataValueWithObjectSourceClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureReplaceDataValueWithObjectAttributeToReplaceDataWithObjectNameFigure() {&#xA;&#x9;&#x9;return fFigureReplaceDataValueWithObjectAttributeToReplaceDataWithObjectNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureReplaceDataValueWithObjectNewAttributesNameFigure() {&#xA;&#x9;&#x9;return fFigureReplaceDataValueWithObjectNewAttributesNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREREPLACEDATAVALUEWITHOBJECTNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 10, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREREPLACEDATAVALUEWITHOBJECTSOURCECLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREREPLACEDATAVALUEWITHOBJECTATTRIBUTETOREPLACEDATAWITHOBJECTNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREREPLACEDATAVALUEWITHOBJECTNEWATTRIBUTESNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+        <attributes
+            xsi:type="gmfgen:DefaultSizeAttributes"
+            width="30"
+            height="35"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="refactoring.genmodel#//refactoring/ReplaceDataValueWithObject"/>
+        <containmentMetaFeature
+            href="refactoring.genmodel#//refactoring/OrganizingData/allRefactorings"/>
+        <childMetaFeature
+            href="refactoring.genmodel#//refactoring/OrganizingData/allRefactorings"/>
+      </modelFacet>
+      <labels
+          visualID="5031"
+          editPartClassName="ReplaceDataValueWithObjectNameEditPart"
+          itemSemanticEditPolicyClassName="ReplaceDataValueWithObjectNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureReplaceDataValueWithObjectNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="Refactoring_ReplaceDataValueWIthObject: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/OrganizingData/name"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5032"
+          editPartClassName="ReplaceDataValueWithObjectSourceClassNameEditPart"
+          itemSemanticEditPolicyClassName="ReplaceDataValueWithObjectSourceClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureReplaceDataValueWithObjectSourceClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="sourceClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/ReplaceDataValueWithObject/sourceClassName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5033"
+          editPartClassName="ReplaceDataValueWithObjectAttributeToReplaceDataWEditPart"
+          itemSemanticEditPolicyClassName="ReplaceDataValueWithObjectAttributeToReplaceDataWItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureReplaceDataValueWithObjectAttributeToReplaceDataWithObjectNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="attributeToReplaceDataWithObject: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/ReplaceDataValueWithObject/attributeToReplaceDataWithObjectName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5034"
+          editPartClassName="ReplaceDataValueWithObjectNewAttributesNameEditPart"
+          itemSemanticEditPolicyClassName="ReplaceDataValueWithObjectNewAttributesNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureReplaceDataValueWithObjectNewAttributesNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="newAttribute(s): {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/ReplaceDataValueWithObject/newAttributesName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
     <topLevelNodes
         visualID="2001"
         editPartClassName="RenameFeatureEditPart"
@@ -1021,6 +1145,7 @@
         editPartClassName="OrganizingDataEditPart"
         itemSemanticEditPolicyClassName="OrganizingDataItemSemanticEditPolicy"
         canonicalEditPolicyClassName="OrganizingDataCanonicalEditPolicy"
+        childNodes="//@diagram/@childNodes.7"
         graphicalNodeEditPolicyClassName="OrganizingDataGraphicalNodeEditPolicy"
         createCommandClassName="OrganizingDataCreateCommand">
       <diagramRunTimeClass
@@ -1147,6 +1272,11 @@
             title="OrganizingData"
             description="Create new Organizing Data"
             genNodes="//@diagram/@topLevelNodes.3"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="ReplaceDataValueWithObject"
+            description="Create new Replace Data Value With Object"
+            genNodes="//@diagram/@childNodes.7"/>
       </groups>
     </palette>
     <preferencePages
@@ -1214,6 +1344,9 @@
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.2"/>
     <childReferences
+        parent="//@diagram/@topLevelNodes.3"
+        child="//@diagram/@childNodes.7"/>
+    <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.3"/>
   </navigator>
@@ -1243,7 +1376,7 @@
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@childNodes.5/@labels.3/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.1/@modelFacet //@diagram/@childNodes.6/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
+        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@childNodes.5/@labels.3/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.1/@modelFacet //@diagram/@childNodes.6/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.1/@modelFacet //@diagram/@childNodes.7/@labels.2/@modelFacet //@diagram/@childNodes.7/@labels.3/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">

@@ -395,6 +395,51 @@
           href="refactoring.gmftool#//@palette/@tools.0/@tools.10"/>
       <diagramNode
           href="refactoring.gmfgraph#OrganizingData"/>
+      <children>
+        <containmentFeature
+            href="refactoring.ecore#//OrganizingData/allRefactorings"/>
+        <ownedChild>
+          <domainMetaElement
+              href="refactoring.ecore#//ReplaceDataValueWithObject"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="Refactoring_ReplaceDataValueWIthObject: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#ReplaceDataValueWithObjectName"/>
+            <features
+                href="refactoring.ecore#//OrganizingData/name"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="sourceClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#ReplaceDataValueWithObjectSourceClass"/>
+            <features
+                href="refactoring.ecore#//ReplaceDataValueWithObject/sourceClassName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="attributeToReplaceDataWithObject: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#ReplaceDataValueWithObjectAttributeToReplaceDataWithObject"/>
+            <features
+                href="refactoring.ecore#//ReplaceDataValueWithObject/attributeToReplaceDataWithObjectName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="newAttribute(s): {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#ReplaceDataValueWithObjectNewAttributes"/>
+            <features
+                href="refactoring.ecore#//ReplaceDataValueWithObject/newAttributesName"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="refactoring.gmftool#//@palette/@tools.0/@tools.11"/>
+          <diagramNode
+              href="refactoring.gmfgraph#ReplaceDataValueWithObject"/>
+        </ownedChild>
+      </children>
     </ownedChild>
   </nodes>
   <diagram>

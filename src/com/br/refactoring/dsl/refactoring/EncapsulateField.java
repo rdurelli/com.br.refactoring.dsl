@@ -17,6 +17,8 @@ package com.br.refactoring.dsl.refactoring;
  * <ul>
  *   <li>{@link com.br.refactoring.dsl.refactoring.EncapsulateField#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.EncapsulateField#getAttributeToEncapsulate <em>Attribute To Encapsulate</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.EncapsulateField#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.EncapsulateField#getAttributeToEncapsulateName <em>Attribute To Encapsulate Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -76,5 +78,36 @@ public interface EncapsulateField extends OrganizingData {
 	 * @generated
 	 */
 	void setAttributeToEncapsulate(Attribute value);
+
+	/**
+	 * Returns the value of the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Source Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getEncapsulateField_SourceClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getSourceClassName();
+
+	/**
+	 * Returns the value of the '<em><b>Attribute To Encapsulate Name</b></em>' attribute.
+	 * The default value is <code>""</code>.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Attribute To Encapsulate Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Attribute To Encapsulate Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getEncapsulateField_AttributeToEncapsulateName()
+	 * @model default="" transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getAttributeToEncapsulateName();
 
 } // EncapsulateField

@@ -26,6 +26,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.EncapsulateFieldImpl#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.EncapsulateFieldImpl#getAttributeToEncapsulate <em>Attribute To Encapsulate</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.EncapsulateFieldImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.EncapsulateFieldImpl#getAttributeToEncapsulateName <em>Attribute To Encapsulate Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -51,6 +53,26 @@ public class EncapsulateFieldImpl extends OrganizingDataImpl implements Encapsul
 	 * @ordered
 	 */
 	protected Attribute attributeToEncapsulate;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getAttributeToEncapsulateName() <em>Attribute To Encapsulate Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttributeToEncapsulateName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ATTRIBUTE_TO_ENCAPSULATE_NAME_EDEFAULT = "";
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,6 +172,24 @@ public class EncapsulateFieldImpl extends OrganizingDataImpl implements Encapsul
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getAttributeToEncapsulateName() {
+		return attributeToEncapsulate.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -161,6 +201,10 @@ public class EncapsulateFieldImpl extends OrganizingDataImpl implements Encapsul
 			case RefactoringPackage.ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE:
 				if (resolve) return getAttributeToEncapsulate();
 				return basicGetAttributeToEncapsulate();
+			case RefactoringPackage.ENCAPSULATE_FIELD__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE_NAME:
+				return getAttributeToEncapsulateName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -213,6 +257,10 @@ public class EncapsulateFieldImpl extends OrganizingDataImpl implements Encapsul
 				return sourceClass != null;
 			case RefactoringPackage.ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE:
 				return attributeToEncapsulate != null;
+			case RefactoringPackage.ENCAPSULATE_FIELD__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.ENCAPSULATE_FIELD__ATTRIBUTE_TO_ENCAPSULATE_NAME:
+				return ATTRIBUTE_TO_ENCAPSULATE_NAME_EDEFAULT == null ? getAttributeToEncapsulateName() != null : !ATTRIBUTE_TO_ENCAPSULATE_NAME_EDEFAULT.equals(getAttributeToEncapsulateName());
 		}
 		return super.eIsSet(featureID);
 	}

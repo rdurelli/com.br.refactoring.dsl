@@ -465,6 +465,14 @@
   <children xmi:type="notation:Node" xmi:id="_90OIcdnQEeOj1oWwo-8ncw" type="1001">
     <children xmi:type="notation:Node" xmi:id="_90aVsNnQEeOj1oWwo-8ncw" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_90hDYNnQEeOj1oWwo-8ncw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_QeoHoOpwEeOe-4pAGgy7xw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//EncapsulateField/attributeToEncapsulateName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_QeoHoepwEeOe-4pAGgy7xw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_H6DegOpwEeOe-4pAGgy7xw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//EncapsulateField/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_H6DegepwEeOe-4pAGgy7xw"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_90hDYdnQEeOj1oWwo-8ncw"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_90hDYtnQEeOj1oWwo-8ncw"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_90hDY9nQEeOj1oWwo-8ncw"/>
