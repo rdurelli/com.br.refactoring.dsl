@@ -732,6 +732,74 @@
           figure="//@figures.0/@descriptors.9/@actualFigure/@children.1"/>
     </descriptors>
     <descriptors
+        name="EncapsulateFieldFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="EncapsulateFieldFigure">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"
+            vertical="true"
+            matchMinorSize="true"
+            forceSingleLine="true"
+            minorAlignment="CENTER"
+            majorSpacing="0"
+            minorSpacing="0"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="MEncapsulateFieldTitle"
+            outline="false"
+            lineWidth="0">
+          <layout
+              xsi:type="gmfgraph:GridLayout"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="EncapsulateFieldNameFigure">
+            <layoutData
+                xsi:type="gmfgraph:GridLayoutData"
+                grabExcessHorizontalSpace="true"
+                grabExcessVerticalSpace="true"/>
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                height="10"
+                style="BOLD"/>
+          </children>
+        </children>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="MEncapsulateFieldContent"
+            lineWidth="0">
+          <layout
+              xsi:type="gmfgraph:FlowLayout"/>
+          <foregroundColor
+              xsi:type="gmfgraph:ConstantColor"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="EncapsulateFieldSourceClassNameFigure">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="EncapsulateFieldAttributeToEncapsulateNameFigure">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.0/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.1/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.1/@children.1"/>
+    </descriptors>
+    <descriptors
         name="ReplaceDataValueWithObjectFigure">
       <actualFigure
           xsi:type="gmfgraph:Rectangle"
@@ -800,13 +868,13 @@
         </children>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.10/@actualFigure/@children.0/@children.0"/>
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.0/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.10/@actualFigure/@children.1/@children.0"/>
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.1/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.10/@actualFigure/@children.1/@children.1"/>
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.1/@children.1"/>
       <accessors
-          figure="//@figures.0/@descriptors.10/@actualFigure/@children.1/@children.2"/>
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.1/@children.2"/>
     </descriptors>
     <descriptors
         name="DealingWithGeneralizationFigure">
@@ -869,9 +937,9 @@
         </children>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.11/@actualFigure/@children.0/@children.0"/>
+          figure="//@figures.0/@descriptors.12/@actualFigure/@children.0/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.11/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.12/@actualFigure/@children.1"/>
     </descriptors>
   </figures>
   <nodes
@@ -994,6 +1062,16 @@
           dy="35"/>
     </facets>
   </nodes>
+  <nodes
+      name="EncapsulateField"
+      figure="EncapsulateFieldFigure">
+    <facets
+        xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize
+          dx="30"
+          dy="35"/>
+    </facets>
+  </nodes>
   <compartments
       name="refactoringsRename"
       figure="RenameFeatureFigure"
@@ -1011,7 +1089,7 @@
   <compartments
       name="refactoringsDealingWithGeneralization"
       figure="DealingWithGeneralizationFigure"
-      accessor="//@figures.0/@descriptors.11/@accessors.1">
+      accessor="//@figures.0/@descriptors.12/@accessors.1">
     <facets
         xsi:type="gmfgraph:AlignmentFacet"/>
   </compartments>
@@ -1166,30 +1244,45 @@
       name="DealingWithGeneralizationName"
       figure="DealingWithGeneralizationFigure"
       elementIcon="false"
-      accessor="//@figures.0/@descriptors.11/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.12/@accessors.0"/>
   <labels
       name="OrganizingDataName"
       figure="OrganizingDataFigure"
       elementIcon="false"
       accessor="//@figures.0/@descriptors.9/@accessors.0"/>
   <labels
+      name="EncapsulateFieldName"
+      figure="EncapsulateFieldFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+  <labels
+      name="EncapsulateFieldSourceClass"
+      figure="EncapsulateFieldFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.10/@accessors.1"/>
+  <labels
+      name="EncapsulateFieldAttributeToEncapsulate"
+      figure="EncapsulateFieldFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.10/@accessors.2"/>
+  <labels
       name="ReplaceDataValueWithObjectName"
       figure="ReplaceDataValueWithObjectFigure"
       elementIcon="false"
-      accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.11/@accessors.0"/>
   <labels
       name="ReplaceDataValueWithObjectSourceClass"
       figure="ReplaceDataValueWithObjectFigure"
       elementIcon="false"
-      accessor="//@figures.0/@descriptors.10/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.11/@accessors.1"/>
   <labels
       name="ReplaceDataValueWithObjectAttributeToReplaceDataWithObject"
       figure="ReplaceDataValueWithObjectFigure"
       elementIcon="false"
-      accessor="//@figures.0/@descriptors.10/@accessors.2"/>
+      accessor="//@figures.0/@descriptors.11/@accessors.2"/>
   <labels
       name="ReplaceDataValueWithObjectNewAttributes"
       figure="ReplaceDataValueWithObjectFigure"
       elementIcon="false"
-      accessor="//@figures.0/@descriptors.10/@accessors.3"/>
+      accessor="//@figures.0/@descriptors.11/@accessors.3"/>
 </gmfgraph:Canvas>

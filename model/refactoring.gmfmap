@@ -440,6 +440,43 @@
               href="refactoring.gmfgraph#ReplaceDataValueWithObject"/>
         </ownedChild>
       </children>
+      <children>
+        <containmentFeature
+            href="refactoring.ecore#//OrganizingData/allRefactorings"/>
+        <ownedChild>
+          <domainMetaElement
+              href="refactoring.ecore#//EncapsulateField"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="Refactoring_EncapsulateField: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#EncapsulateFieldName"/>
+            <features
+                href="refactoring.ecore#//OrganizingData/name"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="sourceClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#EncapsulateFieldSourceClass"/>
+            <features
+                href="refactoring.ecore#//EncapsulateField/sourceClassName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="attributeToEncapsulate: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#EncapsulateFieldAttributeToEncapsulate"/>
+            <features
+                href="refactoring.ecore#//EncapsulateField/attributeToEncapsulateName"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="refactoring.gmftool#//@palette/@tools.0/@tools.12"/>
+          <diagramNode
+              href="refactoring.gmfgraph#EncapsulateField"/>
+        </ownedChild>
+      </children>
     </ownedChild>
   </nodes>
   <diagram>

@@ -970,6 +970,108 @@
         </modelFacet>
       </labels>
     </childNodes>
+    <childNodes
+        visualID="3009"
+        editPartClassName="EncapsulateFieldEditPart"
+        itemSemanticEditPolicyClassName="EncapsulateFieldItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="EncapsulateFieldCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="EncapsulateFieldGraphicalNodeEditPolicy"
+        createCommandClassName="EncapsulateFieldCreateCommand"
+        containers="//@diagram/@topLevelNodes.3">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="EncapsulateFieldEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="TOOLBAR_LAYOUT"
+          className="EncapsulateFieldFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class EncapsulateFieldFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureEncapsulateFieldNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureEncapsulateFieldSourceClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureEncapsulateFieldAttributeToEncapsulateNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public EncapsulateFieldFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mEncapsulateFieldTitle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mEncapsulateFieldTitle0.setOutline(false);&#xA;mEncapsulateFieldTitle0.setLineWidth(0);&#xA;&#xA;this.add(mEncapsulateFieldTitle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutMEncapsulateFieldTitle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutMEncapsulateFieldTitle0.numColumns = 1;&#xA;&#x9;layoutMEncapsulateFieldTitle0.makeColumnsEqualWidth = true;&#xA;&#x9;mEncapsulateFieldTitle0.setLayoutManager(layoutMEncapsulateFieldTitle0);&#xA;&#xA;&#xA;&#xA;fFigureEncapsulateFieldNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureEncapsulateFieldNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureEncapsulateFieldNameFigure.setFont(FFIGUREENCAPSULATEFIELDNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigureEncapsulateFieldNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigureEncapsulateFieldNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureEncapsulateFieldNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigureEncapsulateFieldNameFigure.horizontalIndent = 0;&#xA;constraintFFigureEncapsulateFieldNameFigure.horizontalSpan = 1;&#xA;constraintFFigureEncapsulateFieldNameFigure.verticalSpan = 1;&#xA;constraintFFigureEncapsulateFieldNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigureEncapsulateFieldNameFigure.grabExcessVerticalSpace = true;&#xA;mEncapsulateFieldTitle0.add(fFigureEncapsulateFieldNameFigure, constraintFFigureEncapsulateFieldNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mEncapsulateFieldContent0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mEncapsulateFieldContent0.setLineWidth(0);&#xA;&#x9;mEncapsulateFieldContent0.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#xA;this.add(mEncapsulateFieldContent0);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutMEncapsulateFieldContent0 = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutMEncapsulateFieldContent0.setStretchMinorAxis(false);&#xA;&#x9;layoutMEncapsulateFieldContent0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutMEncapsulateFieldContent0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutMEncapsulateFieldContent0.setMajorSpacing(5);&#xA;&#x9;layoutMEncapsulateFieldContent0.setMinorSpacing(5);&#xA;&#x9;layoutMEncapsulateFieldContent0.setHorizontal(true);&#xA;&#xA;&#x9;mEncapsulateFieldContent0.setLayoutManager(layoutMEncapsulateFieldContent0);&#xA;&#xA;&#xA;&#xA;fFigureEncapsulateFieldSourceClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureEncapsulateFieldSourceClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureEncapsulateFieldSourceClassNameFigure.setFont(FFIGUREENCAPSULATEFIELDSOURCECLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mEncapsulateFieldContent0.add(fFigureEncapsulateFieldSourceClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureEncapsulateFieldAttributeToEncapsulateNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureEncapsulateFieldAttributeToEncapsulateNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigureEncapsulateFieldAttributeToEncapsulateNameFigure.setFont(FFIGUREENCAPSULATEFIELDATTRIBUTETOENCAPSULATENAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mEncapsulateFieldContent0.add(fFigureEncapsulateFieldAttributeToEncapsulateNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureEncapsulateFieldNameFigure() {&#xA;&#x9;&#x9;return fFigureEncapsulateFieldNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureEncapsulateFieldSourceClassNameFigure() {&#xA;&#x9;&#x9;return fFigureEncapsulateFieldSourceClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureEncapsulateFieldAttributeToEncapsulateNameFigure() {&#xA;&#x9;&#x9;return fFigureEncapsulateFieldAttributeToEncapsulateNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREENCAPSULATEFIELDNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 10, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREENCAPSULATEFIELDSOURCECLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREENCAPSULATEFIELDATTRIBUTETOENCAPSULATENAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+        <attributes
+            xsi:type="gmfgen:DefaultSizeAttributes"
+            width="30"
+            height="35"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="refactoring.genmodel#//refactoring/EncapsulateField"/>
+        <containmentMetaFeature
+            href="refactoring.genmodel#//refactoring/OrganizingData/allRefactorings"/>
+        <childMetaFeature
+            href="refactoring.genmodel#//refactoring/OrganizingData/allRefactorings"/>
+      </modelFacet>
+      <labels
+          visualID="5035"
+          editPartClassName="EncapsulateFieldNameEditPart"
+          itemSemanticEditPolicyClassName="EncapsulateFieldNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureEncapsulateFieldNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="Refactoring_EncapsulateField: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/OrganizingData/name"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5036"
+          editPartClassName="EncapsulateFieldSourceClassNameEditPart"
+          itemSemanticEditPolicyClassName="EncapsulateFieldSourceClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureEncapsulateFieldSourceClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="sourceClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/EncapsulateField/sourceClassName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5037"
+          editPartClassName="EncapsulateFieldAttributeToEncapsulateNEditPart"
+          itemSemanticEditPolicyClassName="EncapsulateFieldAttributeToEncapsulateNItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureEncapsulateFieldAttributeToEncapsulateNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="attributeToEncapsulate: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/EncapsulateField/attributeToEncapsulateName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
     <topLevelNodes
         visualID="2001"
         editPartClassName="RenameFeatureEditPart"
@@ -1145,7 +1247,7 @@
         editPartClassName="OrganizingDataEditPart"
         itemSemanticEditPolicyClassName="OrganizingDataItemSemanticEditPolicy"
         canonicalEditPolicyClassName="OrganizingDataCanonicalEditPolicy"
-        childNodes="//@diagram/@childNodes.7"
+        childNodes="//@diagram/@childNodes.7 //@diagram/@childNodes.8"
         graphicalNodeEditPolicyClassName="OrganizingDataGraphicalNodeEditPolicy"
         createCommandClassName="OrganizingDataCreateCommand">
       <diagramRunTimeClass
@@ -1277,6 +1379,11 @@
             title="ReplaceDataValueWithObject"
             description="Create new Replace Data Value With Object"
             genNodes="//@diagram/@childNodes.7"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="EncapsulateField"
+            description="Create new Encapsulate Field"
+            genNodes="//@diagram/@childNodes.8"/>
       </groups>
     </palette>
     <preferencePages
@@ -1347,6 +1454,9 @@
         parent="//@diagram/@topLevelNodes.3"
         child="//@diagram/@childNodes.7"/>
     <childReferences
+        parent="//@diagram/@topLevelNodes.3"
+        child="//@diagram/@childNodes.8"/>
+    <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.3"/>
   </navigator>
@@ -1376,7 +1486,7 @@
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@childNodes.5/@labels.3/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.1/@modelFacet //@diagram/@childNodes.6/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.1/@modelFacet //@diagram/@childNodes.7/@labels.2/@modelFacet //@diagram/@childNodes.7/@labels.3/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
+        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@childNodes.5/@labels.3/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.1/@modelFacet //@diagram/@childNodes.6/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.1/@modelFacet //@diagram/@childNodes.7/@labels.2/@modelFacet //@diagram/@childNodes.7/@labels.3/@modelFacet //@diagram/@childNodes.8/@labels.0/@modelFacet //@diagram/@childNodes.8/@labels.1/@modelFacet //@diagram/@childNodes.8/@labels.2/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">
