@@ -118,6 +118,9 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PushDownMethod/methodToBePushed"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PushDownMethod/sourceClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PushDownMethod/targetClass"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//PushDownMethod/sourceClassName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//PushDownMethod/targetClassName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute refactoring.ecore#//PushDownMethod/methodToBePushedName"/>
     </genClasses>
     <genClasses ecoreClass="refactoring.ecore#//PushDownAttribute">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference refactoring.ecore#//PushDownAttribute/attributeToBePushed"/>

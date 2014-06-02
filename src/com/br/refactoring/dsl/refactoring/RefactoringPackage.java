@@ -1299,13 +1299,40 @@ public interface RefactoringPackage extends EPackage {
 	int PUSH_DOWN_METHOD__TARGET_CLASS = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_METHOD__SOURCE_CLASS_NAME = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Target Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_METHOD__TARGET_CLASS_NAME = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Method To Be Pushed Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED_NAME = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>Push Down Method</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PUSH_DOWN_METHOD_FEATURE_COUNT = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 3;
+	int PUSH_DOWN_METHOD_FEATURE_COUNT = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 6;
 
 
 	/**
@@ -2481,6 +2508,39 @@ public interface RefactoringPackage extends EPackage {
 	EReference getPushDownMethod_TargetClass();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.PushDownMethod#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownMethod#getSourceClassName()
+	 * @see #getPushDownMethod()
+	 * @generated
+	 */
+	EAttribute getPushDownMethod_SourceClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.PushDownMethod#getTargetClassName <em>Target Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Target Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownMethod#getTargetClassName()
+	 * @see #getPushDownMethod()
+	 * @generated
+	 */
+	EAttribute getPushDownMethod_TargetClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.PushDownMethod#getMethodToBePushedName <em>Method To Be Pushed Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Method To Be Pushed Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PushDownMethod#getMethodToBePushedName()
+	 * @see #getPushDownMethod()
+	 * @generated
+	 */
+	EAttribute getPushDownMethod_MethodToBePushedName();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.PushDownAttribute <em>Push Down Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3406,6 +3466,30 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PUSH_DOWN_METHOD__TARGET_CLASS = eINSTANCE.getPushDownMethod_TargetClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUSH_DOWN_METHOD__SOURCE_CLASS_NAME = eINSTANCE.getPushDownMethod_SourceClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUSH_DOWN_METHOD__TARGET_CLASS_NAME = eINSTANCE.getPushDownMethod_TargetClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Method To Be Pushed Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED_NAME = eINSTANCE.getPushDownMethod_MethodToBePushedName();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.PushDownAttributeImpl <em>Push Down Attribute</em>}' class.

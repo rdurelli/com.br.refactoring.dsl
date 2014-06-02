@@ -27,6 +27,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl#getMethodToBePushed <em>Method To Be Pushed</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl#getTargetClass <em>Target Class</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl#getTargetClassName <em>Target Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PushDownMethodImpl#getMethodToBePushedName <em>Method To Be Pushed Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +65,36 @@ public class PushDownMethodImpl extends DealingWithGeneralizationImpl implements
 	 * @ordered
 	 */
 	protected com.br.refactoring.dsl.refactoring.Class targetClass;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getTargetClassName() <em>Target Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTargetClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TARGET_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getMethodToBePushedName() <em>Method To Be Pushed Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMethodToBePushedName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String METHOD_TO_BE_PUSHED_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,6 +232,33 @@ public class PushDownMethodImpl extends DealingWithGeneralizationImpl implements
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getTargetClassName() {
+		return targetClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getMethodToBePushedName() {
+		return methodToBePushed.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -213,6 +273,12 @@ public class PushDownMethodImpl extends DealingWithGeneralizationImpl implements
 			case RefactoringPackage.PUSH_DOWN_METHOD__TARGET_CLASS:
 				if (resolve) return getTargetClass();
 				return basicGetTargetClass();
+			case RefactoringPackage.PUSH_DOWN_METHOD__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.PUSH_DOWN_METHOD__TARGET_CLASS_NAME:
+				return getTargetClassName();
+			case RefactoringPackage.PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED_NAME:
+				return getMethodToBePushedName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -273,6 +339,12 @@ public class PushDownMethodImpl extends DealingWithGeneralizationImpl implements
 				return sourceClass != null;
 			case RefactoringPackage.PUSH_DOWN_METHOD__TARGET_CLASS:
 				return targetClass != null;
+			case RefactoringPackage.PUSH_DOWN_METHOD__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.PUSH_DOWN_METHOD__TARGET_CLASS_NAME:
+				return TARGET_CLASS_NAME_EDEFAULT == null ? getTargetClassName() != null : !TARGET_CLASS_NAME_EDEFAULT.equals(getTargetClassName());
+			case RefactoringPackage.PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED_NAME:
+				return METHOD_TO_BE_PUSHED_NAME_EDEFAULT == null ? getMethodToBePushedName() != null : !METHOD_TO_BE_PUSHED_NAME_EDEFAULT.equals(getMethodToBePushedName());
 		}
 		return super.eIsSet(featureID);
 	}

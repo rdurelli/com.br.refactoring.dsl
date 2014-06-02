@@ -1123,6 +1123,33 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getPushDownMethod_SourceClassName() {
+		return (EAttribute)pushDownMethodEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPushDownMethod_TargetClassName() {
+		return (EAttribute)pushDownMethodEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPushDownMethod_MethodToBePushedName() {
+		return (EAttribute)pushDownMethodEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPushDownAttribute() {
 		return pushDownAttributeEClass;
 	}
@@ -1368,6 +1395,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(pushDownMethodEClass, PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED);
 		createEReference(pushDownMethodEClass, PUSH_DOWN_METHOD__SOURCE_CLASS);
 		createEReference(pushDownMethodEClass, PUSH_DOWN_METHOD__TARGET_CLASS);
+		createEAttribute(pushDownMethodEClass, PUSH_DOWN_METHOD__SOURCE_CLASS_NAME);
+		createEAttribute(pushDownMethodEClass, PUSH_DOWN_METHOD__TARGET_CLASS_NAME);
+		createEAttribute(pushDownMethodEClass, PUSH_DOWN_METHOD__METHOD_TO_BE_PUSHED_NAME);
 
 		pushDownAttributeEClass = createEClass(PUSH_DOWN_ATTRIBUTE);
 		createEReference(pushDownAttributeEClass, PUSH_DOWN_ATTRIBUTE__ATTRIBUTE_TO_BE_PUSHED);
@@ -1550,6 +1580,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getPushDownMethod_MethodToBePushed(), this.getMethod(), null, "methodToBePushed", null, 0, 1, PushDownMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPushDownMethod_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, PushDownMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPushDownMethod_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, PushDownMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPushDownMethod_SourceClassName(), ecorePackage.getEString(), "sourceClassName", null, 0, 1, PushDownMethod.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPushDownMethod_TargetClassName(), ecorePackage.getEString(), "targetClassName", null, 0, 1, PushDownMethod.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPushDownMethod_MethodToBePushedName(), ecorePackage.getEString(), "methodToBePushedName", null, 0, 1, PushDownMethod.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(pushDownAttributeEClass, PushDownAttribute.class, "PushDownAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPushDownAttribute_AttributeToBePushed(), this.getAttribute(), null, "attributeToBePushed", null, 0, 1, PushDownAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

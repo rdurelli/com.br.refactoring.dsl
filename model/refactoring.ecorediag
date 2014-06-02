@@ -509,6 +509,18 @@
   <children xmi:type="notation:Node" xmi:id="_SP8hsNrBEeObbpaqT3HUQQ" type="1001">
     <children xmi:type="notation:Node" xmi:id="_SP9IwNrBEeObbpaqT3HUQQ" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_SP9v0NrBEeObbpaqT3HUQQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_DY2x8Op1EeOe-4pAGgy7xw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//PushDownMethod/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DY2x8ep1EeOe-4pAGgy7xw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_QCYeQOp1EeOe-4pAGgy7xw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//PushDownMethod/targetClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_QCYeQep1EeOe-4pAGgy7xw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_kjzT4Op1EeOe-4pAGgy7xw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//PushDownMethod/methodToBePushedName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_kjzT4ep1EeOe-4pAGgy7xw"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_SP9v0drBEeObbpaqT3HUQQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_SP9v0trBEeObbpaqT3HUQQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_SP9v09rBEeObbpaqT3HUQQ"/>
@@ -520,7 +532,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_SP8hsdrBEeObbpaqT3HUQQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="refactoring.ecore#//PushDownMethod"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SP8hstrBEeObbpaqT3HUQQ" x="1602" y="351"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SP8hstrBEeObbpaqT3HUQQ" x="1719" y="351"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_YXVaoOA7EeOZhs4EmOMmuQ" type="1001">
     <children xmi:type="notation:Node" xmi:id="_YXqx0OA7EeOZhs4EmOMmuQ" type="4001"/>
@@ -536,7 +548,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_YXVaoeA7EeOZhs4EmOMmuQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="refactoring.ecore#//PushDownAttribute"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YXVaouA7EeOZhs4EmOMmuQ" x="1719" y="351"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YXVaouA7EeOZhs4EmOMmuQ" x="1953" y="351"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_LDiQAOBAEeOZhs4EmOMmuQ" type="1001">
     <children xmi:type="notation:Node" xmi:id="_LDi3EOBAEeOZhs4EmOMmuQ" type="4001"/>
@@ -552,7 +564,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_LDiQAeBAEeOZhs4EmOMmuQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="refactoring.ecore#//PullUpAttribute"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LDiQAuBAEeOZhs4EmOMmuQ" x="1836" y="351"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LDiQAuBAEeOZhs4EmOMmuQ" x="2070" y="351"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_GHNRMOBGEeOZhs4EmOMmuQ" type="1001">
     <children xmi:type="notation:Node" xmi:id="_GHN4QOBGEeOZhs4EmOMmuQ" type="4001"/>
@@ -568,7 +580,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_GHNRMeBGEeOZhs4EmOMmuQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="refactoring.ecore#//PullUpMethod"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GHNRMuBGEeOZhs4EmOMmuQ" x="1944" y="351"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GHNRMuBGEeOZhs4EmOMmuQ" x="2178" y="351"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_XtL3IM80EeOWvO27RSbfXg"/>
   <element xmi:type="ecore:EPackage" href="refactoring.ecore#/"/>
@@ -1095,7 +1107,7 @@
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_h9cVUNrBEeObbpaqT3HUQQ" type="3002" source="_SP8hsNrBEeObbpaqT3HUQQ" target="_t0xH0NEtEeOuBKn_35FwoQ">
     <children xmi:type="notation:Node" xmi:id="_h9c8YNrBEeObbpaqT3HUQQ" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_h9c8YdrBEeObbpaqT3HUQQ" x="-164" y="1262"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_h9c8YdrBEeObbpaqT3HUQQ" x="1" y="-47"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_h9djcNrBEeObbpaqT3HUQQ" type="4012">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_h9djcdrBEeObbpaqT3HUQQ" x="-164" y="8"/>
@@ -1156,7 +1168,7 @@
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_phyUcOA7EeOZhs4EmOMmuQ" type="3002" source="_YXVaoOA7EeOZhs4EmOMmuQ" target="_sCEFkM80EeOWvO27RSbfXg">
     <children xmi:type="notation:Node" xmi:id="_phyUdOA7EeOZhs4EmOMmuQ" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_phyUdeA7EeOZhs4EmOMmuQ" x="-255" y="1320"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_phyUdeA7EeOZhs4EmOMmuQ" x="-268" y="1313"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_phy7gOA7EeOZhs4EmOMmuQ" type="4012">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_phy7geA7EeOZhs4EmOMmuQ" x="10" y="10"/>
@@ -1168,7 +1180,7 @@
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_zBl2wOA7EeOZhs4EmOMmuQ" type="3002" source="_YXVaoOA7EeOZhs4EmOMmuQ" target="_sCEFkM80EeOWvO27RSbfXg">
     <children xmi:type="notation:Node" xmi:id="_zBmd0OA7EeOZhs4EmOMmuQ" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_zBmd0eA7EeOZhs4EmOMmuQ" x="-258" y="1345"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zBmd0eA7EeOZhs4EmOMmuQ" x="-108" y="650"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_zBmd0uA7EeOZhs4EmOMmuQ" type="4012">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_zBmd0-A7EeOZhs4EmOMmuQ" x="10" y="10"/>
