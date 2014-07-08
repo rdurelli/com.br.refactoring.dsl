@@ -1249,6 +1249,33 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getPullUpAttribute_SourceClassName() {
+		return (EAttribute)pullUpAttributeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPullUpAttribute_TargetClassName() {
+		return (EAttribute)pullUpAttributeEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPullUpAttribute_AttributeToBePulledName() {
+		return (EAttribute)pullUpAttributeEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPullUpMethod() {
 		return pullUpMethodEClass;
 	}
@@ -1438,6 +1465,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		createEReference(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__ATTRIBUTE_TO_BE_PULLED);
 		createEReference(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__SOURCE_CLASS);
 		createEReference(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__TARGET_CLASS);
+		createEAttribute(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__SOURCE_CLASS_NAME);
+		createEAttribute(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__TARGET_CLASS_NAME);
+		createEAttribute(pullUpAttributeEClass, PULL_UP_ATTRIBUTE__ATTRIBUTE_TO_BE_PULLED_NAME);
 
 		pullUpMethodEClass = createEClass(PULL_UP_METHOD);
 		createEReference(pullUpMethodEClass, PULL_UP_METHOD__METHOD_TO_BE_PULLED);
@@ -1626,6 +1656,9 @@ public class RefactoringPackageImpl extends EPackageImpl implements RefactoringP
 		initEReference(getPullUpAttribute_AttributeToBePulled(), this.getAttribute(), null, "attributeToBePulled", null, 0, 1, PullUpAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPullUpAttribute_SourceClass(), this.getClass_(), null, "sourceClass", null, 0, 1, PullUpAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPullUpAttribute_TargetClass(), this.getClass_(), null, "targetClass", null, 0, 1, PullUpAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPullUpAttribute_SourceClassName(), ecorePackage.getEString(), "sourceClassName", null, 0, 1, PullUpAttribute.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPullUpAttribute_TargetClassName(), ecorePackage.getEString(), "targetClassName", null, 0, 1, PullUpAttribute.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPullUpAttribute_AttributeToBePulledName(), ecorePackage.getEString(), "attributeToBePulledName", null, 0, 1, PullUpAttribute.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(pullUpMethodEClass, PullUpMethod.class, "PullUpMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPullUpMethod_MethodToBePulled(), this.getMethod(), null, "methodToBePulled", null, 0, 1, PullUpMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

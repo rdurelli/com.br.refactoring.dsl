@@ -1483,13 +1483,40 @@ public interface RefactoringPackage extends EPackage {
 	int PULL_UP_ATTRIBUTE__TARGET_CLASS = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PULL_UP_ATTRIBUTE__SOURCE_CLASS_NAME = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Target Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PULL_UP_ATTRIBUTE__TARGET_CLASS_NAME = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Attribute To Be Pulled Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PULL_UP_ATTRIBUTE__ATTRIBUTE_TO_BE_PULLED_NAME = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>Pull Up Attribute</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PULL_UP_ATTRIBUTE_FEATURE_COUNT = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 3;
+	int PULL_UP_ATTRIBUTE_FEATURE_COUNT = DEALING_WITH_GENERALIZATION_FEATURE_COUNT + 6;
 
 
 	/**
@@ -2687,6 +2714,39 @@ public interface RefactoringPackage extends EPackage {
 	EReference getPullUpAttribute_TargetClass();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.PullUpAttribute#getSourceClassName <em>Source Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PullUpAttribute#getSourceClassName()
+	 * @see #getPullUpAttribute()
+	 * @generated
+	 */
+	EAttribute getPullUpAttribute_SourceClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.PullUpAttribute#getTargetClassName <em>Target Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Target Class Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PullUpAttribute#getTargetClassName()
+	 * @see #getPullUpAttribute()
+	 * @generated
+	 */
+	EAttribute getPullUpAttribute_TargetClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.br.refactoring.dsl.refactoring.PullUpAttribute#getAttributeToBePulledName <em>Attribute To Be Pulled Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Attribute To Be Pulled Name</em>'.
+	 * @see com.br.refactoring.dsl.refactoring.PullUpAttribute#getAttributeToBePulledName()
+	 * @see #getPullUpAttribute()
+	 * @generated
+	 */
+	EAttribute getPullUpAttribute_AttributeToBePulledName();
+
+	/**
 	 * Returns the meta object for class '{@link com.br.refactoring.dsl.refactoring.PullUpMethod <em>Pull Up Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3642,6 +3702,30 @@ public interface RefactoringPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PULL_UP_ATTRIBUTE__TARGET_CLASS = eINSTANCE.getPullUpAttribute_TargetClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PULL_UP_ATTRIBUTE__SOURCE_CLASS_NAME = eINSTANCE.getPullUpAttribute_SourceClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PULL_UP_ATTRIBUTE__TARGET_CLASS_NAME = eINSTANCE.getPullUpAttribute_TargetClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute To Be Pulled Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PULL_UP_ATTRIBUTE__ATTRIBUTE_TO_BE_PULLED_NAME = eINSTANCE.getPullUpAttribute_AttributeToBePulledName();
 
 		/**
 		 * The meta object literal for the '{@link com.br.refactoring.dsl.refactoring.impl.PullUpMethodImpl <em>Pull Up Method</em>}' class.

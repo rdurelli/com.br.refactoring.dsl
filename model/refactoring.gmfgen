@@ -1096,6 +1096,130 @@
       </labels>
     </childNodes>
     <childNodes
+        visualID="3012"
+        editPartClassName="PullUpAttributeEditPart"
+        itemSemanticEditPolicyClassName="PullUpAttributeItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="PullUpAttributeCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="PullUpAttributeGraphicalNodeEditPolicy"
+        createCommandClassName="PullUpAttributeCreateCommand"
+        containers="//@diagram/@topLevelNodes.2">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="PullUpAttributeEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="TOOLBAR_LAYOUT"
+          className="PullUpAttributeFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PullUpAttributeFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePullUpAttributeNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePullUpAttributeSourceClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePullUpAttributeAttributeToPullUpNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePullUpAttributeTargetClassNameFigure; &#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PullUpAttributeFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.ToolbarLayout layoutThis = new org.eclipse.draw2d.ToolbarLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(true);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.ToolbarLayout.ALIGN_CENTER&#xA;);&#xA;&#xA;&#x9;layoutThis.setSpacing(0);&#xA;&#x9;layoutThis.setVertical(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mPullUpAttributeTittle0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mPullUpAttributeTittle0.setOutline(false);&#xA;mPullUpAttributeTittle0.setLineWidth(0);&#xA;&#xA;this.add(mPullUpAttributeTittle0);&#xA;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutMPullUpAttributeTittle0 = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutMPullUpAttributeTittle0.numColumns = 1;&#xA;&#x9;layoutMPullUpAttributeTittle0.makeColumnsEqualWidth = true;&#xA;&#x9;mPullUpAttributeTittle0.setLayoutManager(layoutMPullUpAttributeTittle0);&#xA;&#xA;&#xA;&#xA;fFigurePullUpAttributeNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePullUpAttributeNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePullUpAttributeNameFigure.setFont(FFIGUREPULLUPATTRIBUTENAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigurePullUpAttributeNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigurePullUpAttributeNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigurePullUpAttributeNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.CENTER;&#xA;constraintFFigurePullUpAttributeNameFigure.horizontalIndent = 0;&#xA;constraintFFigurePullUpAttributeNameFigure.horizontalSpan = 1;&#xA;constraintFFigurePullUpAttributeNameFigure.verticalSpan = 1;&#xA;constraintFFigurePullUpAttributeNameFigure.grabExcessHorizontalSpace = true;&#xA;constraintFFigurePullUpAttributeNameFigure.grabExcessVerticalSpace = true;&#xA;mPullUpAttributeTittle0.add(fFigurePullUpAttributeNameFigure, constraintFFigurePullUpAttributeNameFigure);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;org.eclipse.draw2d.RectangleFigure mPullUpAttributeContent0 = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;mPullUpAttributeContent0.setLineWidth(0);&#xA;&#x9;mPullUpAttributeContent0.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#xA;this.add(mPullUpAttributeContent0);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutMPullUpAttributeContent0 = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutMPullUpAttributeContent0.setStretchMinorAxis(false);&#xA;&#x9;layoutMPullUpAttributeContent0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutMPullUpAttributeContent0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutMPullUpAttributeContent0.setMajorSpacing(5);&#xA;&#x9;layoutMPullUpAttributeContent0.setMinorSpacing(5);&#xA;&#x9;layoutMPullUpAttributeContent0.setHorizontal(true);&#xA;&#xA;&#x9;mPullUpAttributeContent0.setLayoutManager(layoutMPullUpAttributeContent0);&#xA;&#xA;&#xA;&#xA;fFigurePullUpAttributeSourceClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePullUpAttributeSourceClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePullUpAttributeSourceClassNameFigure.setFont(FFIGUREPULLUPATTRIBUTESOURCECLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mPullUpAttributeContent0.add(fFigurePullUpAttributeSourceClassNameFigure);&#xA;&#xA;&#xA;&#xA;fFigurePullUpAttributeAttributeToPullUpNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePullUpAttributeAttributeToPullUpNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePullUpAttributeAttributeToPullUpNameFigure.setFont(FFIGUREPULLUPATTRIBUTEATTRIBUTETOPULLUPNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mPullUpAttributeContent0.add(fFigurePullUpAttributeAttributeToPullUpNameFigure);&#xA;&#xA;&#xA;&#xA;fFigurePullUpAttributeTargetClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePullUpAttributeTargetClassNameFigure.setText(&quot;&quot;);&#xA;&#xA;fFigurePullUpAttributeTargetClassNameFigure.setFont(FFIGUREPULLUPATTRIBUTETARGETCLASSNAMEFIGURE_FONT);&#xA;&#xA;&#xA;&#xA;mPullUpAttributeContent0.add(fFigurePullUpAttributeTargetClassNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePullUpAttributeNameFigure() {&#xA;&#x9;&#x9;return fFigurePullUpAttributeNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePullUpAttributeSourceClassNameFigure() {&#xA;&#x9;&#x9;return fFigurePullUpAttributeSourceClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePullUpAttributeAttributeToPullUpNameFigure() {&#xA;&#x9;&#x9;return fFigurePullUpAttributeAttributeToPullUpNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePullUpAttributeTargetClassNameFigure() {&#xA;&#x9;&#x9;return fFigurePullUpAttributeTargetClassNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPULLUPATTRIBUTENAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 10, org.eclipse.swt.SWT.BOLD);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPULLUPATTRIBUTESOURCECLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPULLUPATTRIBUTEATTRIBUTETOPULLUPNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font FFIGUREPULLUPATTRIBUTETARGETCLASSNAMEFIGURE_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), org.eclipse.swt.widgets.Display.getDefault().getSystemFont().getFontData()[0].getName(), 9, org.eclipse.swt.SWT.ITALIC);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+        <attributes
+            xsi:type="gmfgen:DefaultSizeAttributes"
+            width="30"
+            height="35"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="refactoring.genmodel#//refactoring/PullUpAttribute"/>
+        <containmentMetaFeature
+            href="refactoring.genmodel#//refactoring/DealingWithGeneralization/allRefactorings"/>
+        <childMetaFeature
+            href="refactoring.genmodel#//refactoring/DealingWithGeneralization/allRefactorings"/>
+      </modelFacet>
+      <labels
+          visualID="5046"
+          editPartClassName="PullUpAttributeNameEditPart"
+          itemSemanticEditPolicyClassName="PullUpAttributeNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePullUpAttributeNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="Refactoring_PullUpAttribute: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/DealingWithGeneralization/name"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5047"
+          editPartClassName="PullUpAttributeSourceClassNameEditPart"
+          itemSemanticEditPolicyClassName="PullUpAttributeSourceClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePullUpAttributeSourceClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="sourceClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/PullUpAttribute/sourceClassName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5048"
+          editPartClassName="PullUpAttributeAttributeToBePulledNameEditPart"
+          itemSemanticEditPolicyClassName="PullUpAttributeAttributeToBePulledNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePullUpAttributeAttributeToPullUpNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="attributeToPullUp: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/PullUpAttribute/attributeToBePulledName"/>
+        </modelFacet>
+      </labels>
+      <labels
+          visualID="5049"
+          editPartClassName="PullUpAttributeTargetClassNameEditPart"
+          itemSemanticEditPolicyClassName="PullUpAttributeTargetClassNameItemSemanticEditPolicy">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigurePullUpAttributeTargetClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:StyleAttributes"
+              fixedFont="true"/>
+        </viewmap>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0"
+            viewPattern="targetClass: {0}">
+          <metaFeatures
+              href="refactoring.genmodel#//refactoring/PullUpAttribute/targetClassName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes
         visualID="3008"
         editPartClassName="ReplaceDataValueWithObjectEditPart"
         itemSemanticEditPolicyClassName="ReplaceDataValueWithObjectItemSemanticEditPolicy"
@@ -1440,7 +1564,7 @@
         editPartClassName="DealingWithGeneralizationEditPart"
         itemSemanticEditPolicyClassName="DealingWithGeneralizationItemSemanticEditPolicy"
         canonicalEditPolicyClassName="DealingWithGeneralizationCanonicalEditPolicy"
-        childNodes="//@diagram/@childNodes.7 //@diagram/@childNodes.8"
+        childNodes="//@diagram/@childNodes.7 //@diagram/@childNodes.8 //@diagram/@childNodes.9"
         graphicalNodeEditPolicyClassName="DealingWithGeneralizationGraphicalNodeEditPolicy"
         createCommandClassName="DealingWithGeneralizationCreateCommand">
       <diagramRunTimeClass
@@ -1497,7 +1621,7 @@
         editPartClassName="OrganizingDataEditPart"
         itemSemanticEditPolicyClassName="OrganizingDataItemSemanticEditPolicy"
         canonicalEditPolicyClassName="OrganizingDataCanonicalEditPolicy"
-        childNodes="//@diagram/@childNodes.9 //@diagram/@childNodes.10"
+        childNodes="//@diagram/@childNodes.10 //@diagram/@childNodes.11"
         graphicalNodeEditPolicyClassName="OrganizingDataGraphicalNodeEditPolicy"
         createCommandClassName="OrganizingDataCreateCommand">
       <diagramRunTimeClass
@@ -1628,12 +1752,12 @@
             xsi:type="gmfgen:ToolEntry"
             title="ReplaceDataValueWithObject"
             description="Create new Replace Data Value With Object"
-            genNodes="//@diagram/@childNodes.9"/>
+            genNodes="//@diagram/@childNodes.10"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="EncapsulateField"
             description="Create new Encapsulate Field"
-            genNodes="//@diagram/@childNodes.10"/>
+            genNodes="//@diagram/@childNodes.11"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="PushDownMethod"
@@ -1644,6 +1768,11 @@
             title="PushDownAttribute"
             description="Create new Push Down Attribute"
             genNodes="//@diagram/@childNodes.8"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="PullUpAttribute"
+            description="Create new Pull Up Attribute"
+            genNodes="//@diagram/@childNodes.9"/>
       </groups>
     </palette>
     <preferencePages
@@ -1714,14 +1843,17 @@
         parent="//@diagram/@topLevelNodes.2"
         child="//@diagram/@childNodes.8"/>
     <childReferences
+        parent="//@diagram/@topLevelNodes.2"
+        child="//@diagram/@childNodes.9"/>
+    <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.2"/>
     <childReferences
         parent="//@diagram/@topLevelNodes.3"
-        child="//@diagram/@childNodes.9"/>
+        child="//@diagram/@childNodes.10"/>
     <childReferences
         parent="//@diagram/@topLevelNodes.3"
-        child="//@diagram/@childNodes.10"/>
+        child="//@diagram/@childNodes.11"/>
     <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.3"/>
@@ -1752,7 +1884,7 @@
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@childNodes.5/@labels.3/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.1/@modelFacet //@diagram/@childNodes.6/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.1/@modelFacet //@diagram/@childNodes.7/@labels.2/@modelFacet //@diagram/@childNodes.7/@labels.3/@modelFacet //@diagram/@childNodes.8/@labels.0/@modelFacet //@diagram/@childNodes.8/@labels.1/@modelFacet //@diagram/@childNodes.8/@labels.2/@modelFacet //@diagram/@childNodes.8/@labels.3/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.9/@labels.0/@modelFacet //@diagram/@childNodes.9/@labels.1/@modelFacet //@diagram/@childNodes.9/@labels.2/@modelFacet //@diagram/@childNodes.9/@labels.3/@modelFacet //@diagram/@childNodes.10/@labels.0/@modelFacet //@diagram/@childNodes.10/@labels.1/@modelFacet //@diagram/@childNodes.10/@labels.2/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
+        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.1/@modelFacet //@diagram/@childNodes.1/@labels.2/@modelFacet //@diagram/@childNodes.1/@labels.3/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.1/@modelFacet //@diagram/@childNodes.2/@labels.2/@modelFacet //@diagram/@childNodes.2/@labels.3/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.1/@modelFacet //@diagram/@childNodes.3/@labels.2/@modelFacet //@diagram/@childNodes.3/@labels.3/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.1/@modelFacet //@diagram/@childNodes.4/@labels.2/@modelFacet //@diagram/@childNodes.4/@labels.3/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.1/@modelFacet //@diagram/@childNodes.5/@labels.2/@modelFacet //@diagram/@childNodes.5/@labels.3/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.1/@modelFacet //@diagram/@childNodes.6/@labels.2/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.1/@modelFacet //@diagram/@childNodes.7/@labels.2/@modelFacet //@diagram/@childNodes.7/@labels.3/@modelFacet //@diagram/@childNodes.8/@labels.0/@modelFacet //@diagram/@childNodes.8/@labels.1/@modelFacet //@diagram/@childNodes.8/@labels.2/@modelFacet //@diagram/@childNodes.8/@labels.3/@modelFacet //@diagram/@childNodes.9/@labels.0/@modelFacet //@diagram/@childNodes.9/@labels.1/@modelFacet //@diagram/@childNodes.9/@labels.2/@modelFacet //@diagram/@childNodes.9/@labels.3/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.10/@labels.0/@modelFacet //@diagram/@childNodes.10/@labels.1/@modelFacet //@diagram/@childNodes.10/@labels.2/@modelFacet //@diagram/@childNodes.10/@labels.3/@modelFacet //@diagram/@childNodes.11/@labels.0/@modelFacet //@diagram/@childNodes.11/@labels.1/@modelFacet //@diagram/@childNodes.11/@labels.2/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">

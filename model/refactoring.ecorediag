@@ -565,6 +565,18 @@
   <children xmi:type="notation:Node" xmi:id="_LDiQAOBAEeOZhs4EmOMmuQ" type="1001">
     <children xmi:type="notation:Node" xmi:id="_LDi3EOBAEeOZhs4EmOMmuQ" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_LDi3EeBAEeOZhs4EmOMmuQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_kESAoAagEeSAxIbMIjrvqA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//PullUpAttribute/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_kESAoQagEeSAxIbMIjrvqA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_v8I_cAagEeSAxIbMIjrvqA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//PullUpAttribute/targetClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_v8I_cQagEeSAxIbMIjrvqA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_5tEG8AagEeSAxIbMIjrvqA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//PullUpAttribute/attributeToBePulledName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5tEG8QagEeSAxIbMIjrvqA"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_LDi3EuBAEeOZhs4EmOMmuQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_LDi3E-BAEeOZhs4EmOMmuQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_LDi3FOBAEeOZhs4EmOMmuQ"/>
@@ -576,7 +588,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_LDiQAeBAEeOZhs4EmOMmuQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="refactoring.ecore#//PullUpAttribute"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LDiQAuBAEeOZhs4EmOMmuQ" x="2169" y="351"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LDiQAuBAEeOZhs4EmOMmuQ" x="2151" y="351"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_GHNRMOBGEeOZhs4EmOMmuQ" type="1001">
     <children xmi:type="notation:Node" xmi:id="_GHN4QOBGEeOZhs4EmOMmuQ" type="4001"/>
@@ -592,7 +604,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_GHNRMeBGEeOZhs4EmOMmuQ" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="refactoring.ecore#//PullUpMethod"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GHNRMuBGEeOZhs4EmOMmuQ" x="2277" y="351"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GHNRMuBGEeOZhs4EmOMmuQ" x="2412" y="351"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_XtL3IM80EeOWvO27RSbfXg"/>
   <element xmi:type="ecore:EPackage" href="refactoring.ecore#/"/>

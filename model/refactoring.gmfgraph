@@ -1095,6 +1095,83 @@
       <accessors
           figure="//@figures.0/@descriptors.14/@actualFigure/@children.1/@children.2"/>
     </descriptors>
+    <descriptors
+        name="PullUpAttributeFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="PullUpAttributeFigure">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"
+            vertical="true"
+            matchMinorSize="true"
+            forceSingleLine="true"
+            minorAlignment="CENTER"
+            majorSpacing="0"
+            minorSpacing="0"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="MPullUpAttributeTittle"
+            outline="false"
+            lineWidth="0">
+          <layout
+              xsi:type="gmfgraph:GridLayout"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="PullUpAttributeNameFigure">
+            <layoutData
+                xsi:type="gmfgraph:GridLayoutData"
+                grabExcessHorizontalSpace="true"
+                grabExcessVerticalSpace="true"/>
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                height="10"
+                style="BOLD"/>
+          </children>
+        </children>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="MPullUpAttributeContent"
+            lineWidth="0">
+          <layout
+              xsi:type="gmfgraph:FlowLayout"/>
+          <foregroundColor
+              xsi:type="gmfgraph:ConstantColor"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="PullUpAttributeSourceClassNameFigure">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="PullUpAttributeAttributeToPullUpNameFigure">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="PullUpAttributeTargetClassNameFigure">
+            <font
+                xsi:type="gmfgraph:BasicFont"
+                style="ITALIC"/>
+          </children>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.15/@actualFigure/@children.0/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.15/@actualFigure/@children.1/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.15/@actualFigure/@children.1/@children.1"/>
+      <accessors
+          figure="//@figures.0/@descriptors.15/@actualFigure/@children.1/@children.2"/>
+    </descriptors>
   </figures>
   <nodes
       name="RenameFeature"
@@ -1209,6 +1286,16 @@
   <nodes
       name="PushDownAttribute"
       figure="PushDownAttributeFigure">
+    <facets
+        xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize
+          dx="30"
+          dy="35"/>
+    </facets>
+  </nodes>
+  <nodes
+      name="PullUpAttribute"
+      figure="PullUpAttributeFigure">
     <facets
         xsi:type="gmfgraph:DefaultSizeFacet">
       <defaultSize
@@ -1459,6 +1546,26 @@
       figure="PushDownAttributeFigure"
       elementIcon="false"
       accessor="//@figures.0/@descriptors.14/@accessors.3"/>
+  <labels
+      name="PullUpAttributeName"
+      figure="PullUpAttributeFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.15/@accessors.0"/>
+  <labels
+      name="PulUpAttributeSourceClass"
+      figure="PullUpAttributeFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.15/@accessors.1"/>
+  <labels
+      name="PullUpAttributeAttributeToPullUp"
+      figure="PullUpAttributeFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.15/@accessors.2"/>
+  <labels
+      name="PullUpAttributeTargetClass"
+      figure="PullUpAttributeFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.15/@accessors.3"/>
   <labels
       name="OrganizingDataName"
       figure="OrganizingDataFigure"

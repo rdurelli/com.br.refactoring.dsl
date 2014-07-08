@@ -465,6 +465,51 @@
               href="refactoring.gmfgraph#PushDownAttribute"/>
         </ownedChild>
       </children>
+      <children>
+        <containmentFeature
+            href="refactoring.ecore#//DealingWithGeneralization/allRefactorings"/>
+        <ownedChild>
+          <domainMetaElement
+              href="refactoring.ecore#//PullUpAttribute"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="Refactoring_PullUpAttribute: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PullUpAttributeName"/>
+            <features
+                href="refactoring.ecore#//DealingWithGeneralization/name"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="sourceClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PulUpAttributeSourceClass"/>
+            <features
+                href="refactoring.ecore#//PullUpAttribute/sourceClassName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="attributeToPullUp: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PullUpAttributeAttributeToPullUp"/>
+            <features
+                href="refactoring.ecore#//PullUpAttribute/attributeToBePulledName"/>
+          </labelMappings>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping"
+              viewPattern="targetClass: {0}">
+            <diagramLabel
+                href="refactoring.gmfgraph#PullUpAttributeTargetClass"/>
+            <features
+                href="refactoring.ecore#//PullUpAttribute/targetClassName"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="refactoring.gmftool#//@palette/@tools.0/@tools.15"/>
+          <diagramNode
+              href="refactoring.gmfgraph#PullUpAttribute"/>
+        </ownedChild>
+      </children>
     </ownedChild>
   </nodes>
   <nodes>

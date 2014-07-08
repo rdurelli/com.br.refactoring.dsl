@@ -27,6 +27,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpAttributeImpl#getAttributeToBePulled <em>Attribute To Be Pulled</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpAttributeImpl#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpAttributeImpl#getTargetClass <em>Target Class</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpAttributeImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpAttributeImpl#getTargetClassName <em>Target Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpAttributeImpl#getAttributeToBePulledName <em>Attribute To Be Pulled Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +65,36 @@ public class PullUpAttributeImpl extends DealingWithGeneralizationImpl implement
 	 * @ordered
 	 */
 	protected com.br.refactoring.dsl.refactoring.Class targetClass;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getTargetClassName() <em>Target Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTargetClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TARGET_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getAttributeToBePulledName() <em>Attribute To Be Pulled Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttributeToBePulledName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ATTRIBUTE_TO_BE_PULLED_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,6 +232,34 @@ public class PullUpAttributeImpl extends DealingWithGeneralizationImpl implement
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		return sourceClass.getName();
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getTargetClassName() {
+		return targetClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getAttributeToBePulledName() {
+		return attributeToBePulled.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -213,6 +274,12 @@ public class PullUpAttributeImpl extends DealingWithGeneralizationImpl implement
 			case RefactoringPackage.PULL_UP_ATTRIBUTE__TARGET_CLASS:
 				if (resolve) return getTargetClass();
 				return basicGetTargetClass();
+			case RefactoringPackage.PULL_UP_ATTRIBUTE__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.PULL_UP_ATTRIBUTE__TARGET_CLASS_NAME:
+				return getTargetClassName();
+			case RefactoringPackage.PULL_UP_ATTRIBUTE__ATTRIBUTE_TO_BE_PULLED_NAME:
+				return getAttributeToBePulledName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -273,6 +340,12 @@ public class PullUpAttributeImpl extends DealingWithGeneralizationImpl implement
 				return sourceClass != null;
 			case RefactoringPackage.PULL_UP_ATTRIBUTE__TARGET_CLASS:
 				return targetClass != null;
+			case RefactoringPackage.PULL_UP_ATTRIBUTE__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.PULL_UP_ATTRIBUTE__TARGET_CLASS_NAME:
+				return TARGET_CLASS_NAME_EDEFAULT == null ? getTargetClassName() != null : !TARGET_CLASS_NAME_EDEFAULT.equals(getTargetClassName());
+			case RefactoringPackage.PULL_UP_ATTRIBUTE__ATTRIBUTE_TO_BE_PULLED_NAME:
+				return ATTRIBUTE_TO_BE_PULLED_NAME_EDEFAULT == null ? getAttributeToBePulledName() != null : !ATTRIBUTE_TO_BE_PULLED_NAME_EDEFAULT.equals(getAttributeToBePulledName());
 		}
 		return super.eIsSet(featureID);
 	}
