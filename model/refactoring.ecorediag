@@ -593,6 +593,18 @@
   <children xmi:type="notation:Node" xmi:id="_GHNRMOBGEeOZhs4EmOMmuQ" type="1001">
     <children xmi:type="notation:Node" xmi:id="_GHN4QOBGEeOZhs4EmOMmuQ" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_GHN4QeBGEeOZhs4EmOMmuQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_UgndcAarEeSAxIbMIjrvqA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//PullUpMethod/sourceClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UgndcQarEeSAxIbMIjrvqA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_E9ZxwAasEeSAxIbMIjrvqA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//PullUpMethod/targetClassName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_E9ZxwQasEeSAxIbMIjrvqA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Kz9VcAasEeSAxIbMIjrvqA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="refactoring.ecore#//PullUpMethod/methodToBePulledName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Kz9VcQasEeSAxIbMIjrvqA"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_GHN4QuBGEeOZhs4EmOMmuQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_GHN4Q-BGEeOZhs4EmOMmuQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_GHN4ROBGEeOZhs4EmOMmuQ"/>

@@ -27,6 +27,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpMethodImpl#getMethodToBePulled <em>Method To Be Pulled</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpMethodImpl#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpMethodImpl#getTargetClass <em>Target Class</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpMethodImpl#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpMethodImpl#getTargetClassName <em>Target Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.impl.PullUpMethodImpl#getMethodToBePulledName <em>Method To Be Pulled Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +65,36 @@ public class PullUpMethodImpl extends DealingWithGeneralizationImpl implements P
 	 * @ordered
 	 */
 	protected com.br.refactoring.dsl.refactoring.Class targetClass;
+
+	/**
+	 * The default value of the '{@link #getSourceClassName() <em>Source Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SOURCE_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getTargetClassName() <em>Target Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTargetClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TARGET_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getMethodToBePulledName() <em>Method To Be Pulled Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMethodToBePulledName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String METHOD_TO_BE_PULLED_NAME_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,6 +232,33 @@ public class PullUpMethodImpl extends DealingWithGeneralizationImpl implements P
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getSourceClassName() {
+		return sourceClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getTargetClassName() {
+		return targetClass.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public String getMethodToBePulledName() {
+		return methodToBePulled.getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -213,6 +273,12 @@ public class PullUpMethodImpl extends DealingWithGeneralizationImpl implements P
 			case RefactoringPackage.PULL_UP_METHOD__TARGET_CLASS:
 				if (resolve) return getTargetClass();
 				return basicGetTargetClass();
+			case RefactoringPackage.PULL_UP_METHOD__SOURCE_CLASS_NAME:
+				return getSourceClassName();
+			case RefactoringPackage.PULL_UP_METHOD__TARGET_CLASS_NAME:
+				return getTargetClassName();
+			case RefactoringPackage.PULL_UP_METHOD__METHOD_TO_BE_PULLED_NAME:
+				return getMethodToBePulledName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -273,6 +339,12 @@ public class PullUpMethodImpl extends DealingWithGeneralizationImpl implements P
 				return sourceClass != null;
 			case RefactoringPackage.PULL_UP_METHOD__TARGET_CLASS:
 				return targetClass != null;
+			case RefactoringPackage.PULL_UP_METHOD__SOURCE_CLASS_NAME:
+				return SOURCE_CLASS_NAME_EDEFAULT == null ? getSourceClassName() != null : !SOURCE_CLASS_NAME_EDEFAULT.equals(getSourceClassName());
+			case RefactoringPackage.PULL_UP_METHOD__TARGET_CLASS_NAME:
+				return TARGET_CLASS_NAME_EDEFAULT == null ? getTargetClassName() != null : !TARGET_CLASS_NAME_EDEFAULT.equals(getTargetClassName());
+			case RefactoringPackage.PULL_UP_METHOD__METHOD_TO_BE_PULLED_NAME:
+				return METHOD_TO_BE_PULLED_NAME_EDEFAULT == null ? getMethodToBePulledName() != null : !METHOD_TO_BE_PULLED_NAME_EDEFAULT.equals(getMethodToBePulledName());
 		}
 		return super.eIsSet(featureID);
 	}

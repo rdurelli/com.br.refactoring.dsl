@@ -18,6 +18,9 @@ package com.br.refactoring.dsl.refactoring;
  *   <li>{@link com.br.refactoring.dsl.refactoring.PullUpMethod#getMethodToBePulled <em>Method To Be Pulled</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.PullUpMethod#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link com.br.refactoring.dsl.refactoring.PullUpMethod#getTargetClass <em>Target Class</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.PullUpMethod#getSourceClassName <em>Source Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.PullUpMethod#getTargetClassName <em>Target Class Name</em>}</li>
+ *   <li>{@link com.br.refactoring.dsl.refactoring.PullUpMethod#getMethodToBePulledName <em>Method To Be Pulled Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -103,5 +106,50 @@ public interface PullUpMethod extends DealingWithGeneralization {
 	 * @generated
 	 */
 	void setTargetClass(com.br.refactoring.dsl.refactoring.Class value);
+
+	/**
+	 * Returns the value of the '<em><b>Source Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Source Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getPullUpMethod_SourceClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getSourceClassName();
+
+	/**
+	 * Returns the value of the '<em><b>Target Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Target Class Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Target Class Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getPullUpMethod_TargetClassName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getTargetClassName();
+
+	/**
+	 * Returns the value of the '<em><b>Method To Be Pulled Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Method To Be Pulled Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Method To Be Pulled Name</em>' attribute.
+	 * @see com.br.refactoring.dsl.refactoring.RefactoringPackage#getPullUpMethod_MethodToBePulledName()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	String getMethodToBePulledName();
 
 } // PullUpMethod
